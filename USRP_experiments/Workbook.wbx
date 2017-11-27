@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="957BD6FBC1AB07EB6E99D8C770A8EDCB" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.0.0.23898" FeatureSetName="Editor" MinimumParsableVersion="4.0.0.0" MinimumSemanticallyEquivalentVersion="4.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.0.0.29" />
+		<ApplicationVersionInfo Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<HtmlGuidedHelp xmlns="http://www.ni.com/PlatformFramework">
+		<Page Source="1.html" Style="Title" />
+		<Page Source="2.html" />
+		<Page Source="3.html" />
+		<Page Source="4.html" />
+		<Page Source="5.html" />
+		<Page Source="6.html" />
+		<Page Source="7.html" />
+	</HtmlGuidedHelp>
+</SourceFile>
