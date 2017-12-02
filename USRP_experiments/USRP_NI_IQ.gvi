@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="8C9E1C13CDCE3CE8EA5BAC3CE434F00B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3462E3FD996BC5C3C1E5E3F8E6A40F40" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -21,7 +21,7 @@
 				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="50" Id="10" ListViewHeight="160" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="50" Id="10" ListViewHeight="175" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 80" Parameter="17" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 110" Parameter="51" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 125" Parameter="59" />
@@ -32,13 +32,13 @@
 			<ConnectorPaneTerminal Hotspot="40 15" />
 			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 65" Parameter="104" />
 			<ConnectorPaneTerminal Hotspot="40 35" />
-			<ConnectorPaneTerminal Hotspot="15 50" />
+			<ConnectorPaneTerminal Hotspot="15 50" ListViewHotspot="150 155" Parameter="171" />
 			<ConnectorPaneTerminal Hotspot="25 50" />
 			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 95" Parameter="29" />
 			<ConnectorPaneTerminal Hotspot="40 45" ListViewHotspot="150 50" Parameter="89" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0">
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<IONameControl BaseName="[string]Name" DataType="[Type]@f261aca30cd44609875979717cdeb8e0" Height="[float]22" Id="18" Label="[UIModel]19" Left="[float]160" SelectedResource="{DataItemBinding Id=17}" Top="[float]129" UdrClass="[string]niUSRPClass" UdrNamespace="[string]Usrp" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 					<TypeDefinitionTarget TargetName="Usrp:niUSRPClass:ControlDefinition" />
@@ -79,6 +79,7 @@
 			<Label Height="[float]16" Id="107" LabelOwner="[UIModel]105" Left="[float]415" Text="[string]data" Top="[float]13" Width="[float]24" xmlns="http://www.ni.com/PanelCommon" />
 			<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]niUSRPClass" DataType="[Type]@f261aca30cd44609875979717cdeb8e0" Height="[float]22" Id="115" IsReadOnly="[bool]True" Label="[UIModel]116" Left="[float]133" SelectedResource="{DataItemBinding Id=114}" ShowUserRefresh="[bool]True" Top="[float]90" UdrClass="[string]niUSRPClass" UdrNamespace="[string]Usrp" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="116" LabelOwner="[UIModel]115" Left="[float]133" Text="[string]IVI Refnum Out" Top="[float]67" Width="[float]77" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="174" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]22" Name="[string]Carrier Freq Out" Top="[float]0" Value="{DataItemBinding Id=171}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="400 240 40 15" DataItem="17" Id="15" Label="16" xmlns="http://www.ni.com/MocCommon">
@@ -89,7 +90,7 @@
 			</NodeLabel>
 			<CaseStructure Bounds="470 180 620 255" DataType="Error" Default="21" Id="20" Selected="21" UserSelectorBounds="256.666656 0 106.666664 17.333334">
 				<CaseStructure.Case Bounds="5 5 610 245" Id="21" Pattern="No Error">
-					<PropertyNode Bounds="65 80 210 105.333336" Id="123" InstanceDataType="@f261aca30cd44609875979717cdeb8e0" Mode="InstanceProperties" SubItems="" Template="List">
+					<PropertyNode Bounds="65 80 210 105" Id="123" InstanceDataType="@f261aca30cd44609875979717cdeb8e0" Mode="InstanceProperties" SubItems="" Template="List">
 						<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 40" Id="c0t0v" Path="Number of Samples Is Finite_118C31" Usage="Required" />
 						<PropertyItemTerminal Action="Write" DataType="Int64" Hotspot="0 55" Id="c1t0v" Path="Number of Samples_118C32" Usage="Required" />
 						<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 70" Id="c2t0v" Path="Carrier Frequency_118C34" Usage="Required" />
@@ -155,7 +156,7 @@
 						<Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@f261aca30cd44609875979717cdeb8e0" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@1b4705fb337c41c9ac1c1aca79d9f11e" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@b4f83c03e79f40baadb9c2f37a20f64f" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
 					<MethodCall Bounds="540 80 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="141" Target="niUSRP\ Abort\.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -180,7 +181,7 @@
 					<Wire Id="147" Joints="N(26:21) h(5) v(25) N(123:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="148" Joints="N(23:21) N(123:error in)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="149" Joints="N(57:21) h(46) B(1) N(123:c1t0v) B(1) v(90) h(405) v(-130) N(139:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="150" Joints="N(65:21) N(123:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="150" Joints="N(65:21) h(21) B(1) N(123:c2t0v) B(1) N(176:21)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="151" Joints="N(73:21) N(123:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="152" Joints="N(139:R1) h(15) v(85) N(112:21)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="159" Joints="N(141:R0) N(121:21)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -200,15 +201,17 @@
 						</Literal>
 					</ArrayLiteral>
 					<Wire Id="163" Joints="N(161:Out) N(112:22)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="178" Joints="N(65:22) h(21) N(176:22)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 95 13 10" Docking="Left" Id="23" Terminals="20=44, 21=148, 22=158" />
 				<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="26" Terminals="20=25, 21=147, 22=156" />
 				<CaseStructure.Tunnel Bounds="-4 135 13 10" Docking="Left" Id="57" Terminals="20=58, 21=149, 22" />
-				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="65" Terminals="20=66, 21=150, 22" />
+				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="65" Terminals="20=66, 21=150, 22=178" />
 				<CaseStructure.Tunnel Bounds="-4 165 13 10" Docking="Left" Id="73" Terminals="20=74, 21=151, 22" />
 				<CaseStructure.Tunnel Bounds="611 125 13 10" Docking="Right" Id="102" Terminals="20=103, 21=160, 22=158" />
 				<CaseStructure.Tunnel Bounds="611 180 13 10" Docking="Right" Id="112" Terminals="20=113, 21=152, 22=163" />
 				<CaseStructure.Tunnel Bounds="611 85 13 10" Docking="Right" Id="121" Terminals="20=122, 21=159, 22=156" />
+				<CaseStructure.Tunnel Bounds="25 246 10 13" Docking="Bottom" Id="176" Terminals="20=168, 21=150, 22=178" />
 			</CaseStructure>
 			<Wire Id="25" Joints="N(15:Value) N(26:20)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="400 275 40 15" DataItem="29" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
@@ -260,6 +263,13 @@
 				<p.Text>IVI Refnum Out</p.Text>
 			</NodeLabel>
 			<Wire Id="122" Joints="N(121:20) N(118:niUSRPClass Terminal)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="168" Joints="N(176:20) v(36) N(173:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="530 470 40 15" DataItem="171" Id="173" Label="175" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="173" Bounds="575 470 91 14" Id="175" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Carrier Freq Out</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem CallDirection="Input" CallIndex="0" DataType="@f261aca30cd44609875979717cdeb8e0" Id="17" Name="IVI Refnum In" xmlns="http://www.ni.com/MocCommon">
@@ -309,6 +319,9 @@
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Usrp:niUSRPClass" />
 			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="3" DataType="Double" Id="171" Name="Carrier Freq Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="niUSRP\ Commit\.gvi">
@@ -413,14 +426,14 @@
 		<p.TypeReference TypeId="f261aca30cd44609875979717cdeb8e0">
 			<Attributed>
 				<AttributedType>
-					<Typedef TypedefName="niUSRPClass" UnderlyingType="@cc81c730a2bd4909a6b2a2d9a3632b63" />
+					<Typedef TypedefName="niUSRPClass" UnderlyingType="@c632f8bb0b6d4e718f8a524b287854ec" />
 				</AttributedType>
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Usrp" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="1b4705fb337c41c9ac1c1aca79d9f11e">
+		<p.TypeReference TypeId="b4f83c03e79f40baadb9c2f37a20f64f">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="whole seconds" DataType="UInt64" />
@@ -428,7 +441,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="cc81c730a2bd4909a6b2a2d9a3632b63">
+		<p.TypeReference TypeId="c632f8bb0b6d4e718f8a524b287854ec">
 			<Attributed>
 				<AttributedType>
 					<Composite Id="1" Name="Usrp.niUSRPClass" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void">
