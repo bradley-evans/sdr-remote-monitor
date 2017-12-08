@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.50009" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.50009" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.50009" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.50009" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="2 2 27 27" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe6e6e6" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #ffe6e6e6 0}, {Stop: #ffd9d9d9 1}}" Height="[float]6" Id="7" IsHitTestVisible="[bool]False" Margin="[SMThickness]2,0,2,2" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" VerticalAlignment="[VerticalAlignment]Bottom" />
+                    <Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #fffafafa 0}, {Stop: #ffe6e6e6 1}}" Height="[float]6" Id="8" IsHitTestVisible="[bool]False" Margin="[SMThickness]2,2,2,0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" VerticalAlignment="[VerticalAlignment]Top" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,10.5," HorizontalAlignment="[HorizontalAlignment]Left" Id="9" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Record" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="10" Margin="[SMThickness]3,3,3,3">
+                    <LVImage Height="[float]30" Id="260" Left="[float]10" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACVSURBVEhL7Y8BDoAgCEW9/w06rbGBRD8ytVi1+ebkQ/RWKYfxa3Uy8GQYNWxqDsRNe5MahnZeyYS0Ugw6gZtxF/wgpfQEvEO4GdacIKX0hF1qyRwInhPScolgqoFvqNPS9x1TDbyqVmOsust+uqoivY8Tuis4j9VyeXSfA7Cb2td6jygM2whWB46ICv6/PMJUA2HqnFcSTzBPHfpx1AAAAABJRU5ErkJggg==" Top="[float]10" Width="[float]30" />
+                </Canvas>
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="11" ListViewHeight="30" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" />
+            <ConnectorPaneTerminal Hotspot="50 15" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="12" />
+        <FrontPanelUnplacedItems Id="13" />
+        <BlockDiagram Id="14">
+            <MethodCall Bounds="255 180 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="16" Target="niUSRP\ Open\ Rx\ Session\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="Device names" />
+                        <Parameter Id="L2" Desc="Reset" />
+                        <Parameter Id="L3" Desc="error in (no error)" />
+                        <Parameter Id="R3" Desc="Error Out" />
+                        <Parameter Id="R0" Desc="Session handle" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="String" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Output" Hotspot="50 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@2072657720_0" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="380 180 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="17" Target="niUSRP\ Configure\ Signal\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="session handle" />
+                        <Parameter Id="L1" Desc="IQ rate" />
+                        <Parameter Id="L2" Desc="carrier frequency" />
+                        <Parameter Id="L3" Desc="gain" />
+                        <Parameter Id="L4" Desc="error in (no error)" />
+                        <Parameter Id="T0" Desc="channel list" />
+                        <Parameter Id="B0" Desc="active antenna" />
+                        <Parameter Id="R0" Desc="session handle out" />
+                        <Parameter Id="R1" Desc="coerced IQ rate" />
+                        <Parameter Id="R2" Desc="coerced carrier frequency" />
+                        <Parameter Id="R3" Desc="coerced gain" />
+                        <Parameter Id="R4" Desc="Error Out" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="@2072657720_0" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@2072657720_0" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Output" Hotspot="50 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Output" Hotspot="50 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <PropertyNode Bounds="540 180 150 60" Id="18" InstanceDataType="@2072657720_0" Template="List" Terminals="instance in=44~0:5, instance out=45~150:5, #ei=41~0:20, #eo=206~150:20, c0t0v=168~0:35, c1t0v=482~0:50" VerticalChunkCount="2">
+                <p.PropertyItem IsWrite="True">
+                    <PathElement>Configuration:Advanced:Host Data Type</PathElement>
+                </p.PropertyItem>
+                <p.PropertyItem IsWrite="True">
+                    <PathElement>Configuration:Advanced:LO Frequency</PathElement>
+                </p.PropertyItem>
+            </PropertyNode>
+            <MethodCall Bounds="860 180 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="19" Target="niUSRP\ Initiate\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="session handle" />
+                        <Parameter Id="L4" Desc="error in (no error)" />
+                        <Parameter Id="R0" Desc="session handle out" />
+                        <Parameter Id="R4" Desc="Error Out" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="@2072657720_0" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@2072657720_0" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <WhileLoop Bounds="945 140 695 225" DiagramId="22" Id="21">
+                <WhileLoop.Iteration Bounds="5 195 15 15" Id="23" />
+                <WhileLoop.Condition Bounds="565 165 15 15" Id="24" />
+                <EnqueueElement Bounds="285 105 40 40" Id="25" Label="115" />
+                <Wire Id="90" Joints="N(91:22) N(25:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+                <MethodCall Bounds="135 35 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="93" Label="302" Target="niUSRP\ Fetch\ Rx\ Data\ \(I16\)\.gvi">
+                    <p.MethodDeclaration>
+                        <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                            <Parameter Id="L0" Desc="session handle" />
+                            <Parameter Id="L1" Desc="number of samples" />
+                            <Parameter Id="L2" Desc="timeout" />
+                            <Parameter Id="L4" Desc="error in (no error)" />
+                            <Parameter Id="T0" Desc="channel list" />
+                            <Parameter Id="R0" Desc="session handle out" />
+                            <Parameter Id="R1" Desc="data" />
+                            <Parameter Id="R3" Desc="timestamp" />
+                            <Parameter Id="R4" Desc="Error Out" />
+                        </MethodDeclaration>
+                    </p.MethodDeclaration>
+                    <Terminal DataType="@2072657720_0" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Int64" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="@2072657720_0" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Int16[]" Direction="Output" Hotspot="50 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="@-547286994_0" Direction="Output" Hotspot="50 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                </MethodCall>
+                <Wire Id="98" Joints="N(97:22) N(93:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="101" Joints="N(100:22) N(93:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="107" Joints="N(108:22) h(121) v(-45) N(93:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="25" Bounds="285 87 93 16" Id="115" IsReadOnly="True" Text="Enqueue Element" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="139" Joints="N(93:R0) N(140:22)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="146" Joints="N(25:error out) h(180) B(1) h(136) v(-60) N(145:22) B(1) v(25) N(237:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+                <DataAccessor Bounds="455 180 40 15" DataItem="234" Id="235" Label="236">
+                    <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+                </DataAccessor>
+                <TextNode AttachedTo="235" Bounds="425 180 25 16" Id="236" Text="Stop" xmlns="http://www.ni.com/PlatformFramework" />
+                <LogicalOr Bounds="520 160 25 20" Id="237" Terminals="o=240, c0t0v=146, c1t0v=238" />
+                <Wire Id="238" Joints="N(235:Value) h(5) v(-10) N(237:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="240" Joints="N(237:o) N(24:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+                <DataAccessor Bounds="285 60 40 15" DataItem="261" Id="262" Label="272">
+                    <Terminal DataType="Int16[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+                </DataAccessor>
+                <TextNode AttachedTo="262" Bounds="330 60 33 16" Id="272" Text="Graph" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="93" Bounds="135 17 141 16" Id="302" IsReadOnly="True" Text="niUSRP Fetch Rx Data (I16)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="304" Joints="N(93:R1) h(30) v(15) B(2) N(262:Value) B(2) v(55) N(25:element)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="338" Joints="N(93:R4) h(10) v(60) N(25:error in (no error\))" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="369" Joints="N(25:queue out) N(368:22)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Literal Bounds="214 125 51 15" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="448" Label="449" xmlns="http://www.ni.com/MocCommon">
+                    <p.Data>2000</p.Data>
+                    <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+                </Literal>
+                <Wire Id="450" Joints="N(448:Out) N(25:timeout in ms (-1\))" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="448" Bounds="214 125 0 0" Id="449" Text="timeout in milliseconds" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <WhileLoop.Tunnel Bounds="-4 110 13 10" Docking="Left" Id="91" Terminals="21=346, 22=90" />
+                <WhileLoop.Tunnel Bounds="-4 80 13 10" Docking="Left" Id="97" Terminals="21=96, 22=98" />
+                <WhileLoop.Tunnel Bounds="-4 40 13 10" Docking="Left" Id="100" Terminals="21=99, 22=101" />
+                <WhileLoop.Tunnel Bounds="-4 95 13 10" Docking="Left" Id="108" Terminals="21=109, 22=107" />
+                <WhileLoop.Tunnel Bounds="686 40 13 10" Docking="Right" Id="140" Terminals="21=141, 22=139" />
+                <WhileLoop.Tunnel Bounds="686 80 13 10" Docking="Right" Id="145" Terminals="21=144, 22=146" />
+                <WhileLoop.Tunnel Bounds="686 110 13 10" Docking="Right" Id="368" Terminals="21, 22=369" />
+            </WhileLoop>
+            <MethodCall Bounds="1670 180 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="26" Target="niUSRP\ Abort\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="Handle in" />
+                        <Parameter Id="L4" Desc="error in (no error)" />
+                        <Parameter Id="R0" Desc="Handle out" />
+                        <Parameter Id="R4" Desc="Error Out" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="@2072657720_0" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@2072657720_0" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="1780 180 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="27" Target="niUSRP\ Close\ Session\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="Handle in" />
+                        <Parameter Id="L3" Desc="error in (no error)" />
+                        <Parameter Id="R3" Desc="Error Out" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="@2072657720_0" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Output" Hotspot="50 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <OpenOrCreateOrReplaceFile Bounds="520 505 40 40" Id="34" Label="111" />
+            <ReleaseQueue Bounds="1675 445 40 40" Id="37" Label="137" />
+            <CloseFile Bounds="1760 505 40 40" Id="38" Label="138" />
+            <MergeErrors Bounds="1865 210 30 20" Id="39" Terminals="error out=472, c0t0v=219, c1t0v=218" />
+            <Wire Id="40" Joints="N(16:R3) h(10) v(10) N(17:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="41" Joints="N(17:R4) h(15) v(-25) N(18:#ei)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="43" Joints="N(16:R0) N(17:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="44" Joints="N(17:R0) N(18:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="45" Joints="N(18:instance out) N(19:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="190 180 40 15" DataItem="46" Id="48" Label="50">
+                <Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="48" Bounds="111 180 74 16" Id="50" Text="Device names" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="51" Joints="N(48:Value) N(16:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="420 505 40 15" DataItem="52" Id="54" Label="56">
+                <Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="54" Bounds="371 505 44 16" Id="56" Text="file path" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="57" Joints="N(54:Path) N(34:file path (use dialog\))" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="314 525 146 15" DataType="@744823816_0" Facade="NationalInstruments.MocCommon.Modeling.IEnumBehavior" Id="60" Label="68" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>4</p.Data>
+                <EnumBehavior Id="61" />
+            </Literal>
+            <TextNode AttachedTo="60" Bounds="314 525 0 0" Id="68" Text="operation" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="69" Joints="N(60:Out) h(5) v(-10) N(34:operation (0:open\))" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="351 550 114 15" DataType="@1499747992_0" Facade="NationalInstruments.MocCommon.Modeling.IEnumBehavior" Id="70" Label="75" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>2</p.Data>
+                <EnumBehavior Id="71" />
+            </Literal>
+            <TextNode AttachedTo="70" Bounds="351 550 0 0" Id="75" Text="access" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="76" Joints="N(70:Out) h(5) v(-25) N(34:access (0:read/write\))" xmlns="http://www.ni.com/PlatformFramework" />
+            <ObtainQueue Bounds="720 410 40 40" Id="83" Label="110" />
+            <ArrayLiteral Bounds="708 420 12 10" DataType="Int16[]" Facade="DockedConstantFacade" Id="84" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>null</p.Data>
+                <ArrayBehavior ElementType="Int16">
+                    <p.DefaultElementValue>0</p.DefaultElementValue>
+                </ArrayBehavior>
+                <Literal Bounds="47 5 40 15" DataType="Int16" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="85">
+                    <p.Data>0</p.Data>
+                    <NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+                </Literal>
+                <DockedConstantFacade UndockedBounds="589 415 101 26" />
+            </ArrayLiteral>
+            <Wire Facade="WireInvisibleFacade" Id="86" Joints="N(84:Out) N(83:element data type)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="96" Joints="N(19:R4) h(25) B(1) N(97:21) B(1) v(315) N(78:29)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="99" Joints="N(19:R0) N(100:21)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="190 315 40 15" DataItem="102" Id="104" Label="106">
+                <Terminal DataType="Int64" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="104" Bounds="83 315 102 16" Id="106" Text="number of samples" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="109" Joints="N(104:Value) h(680) v(-80) N(108:21)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="83" Bounds="720 391.04 75 16" Id="110" IsReadOnly="True" Text="Obtain Queue" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="34" Bounds="520 486.04 136 16" Id="111" IsReadOnly="True" Text="Open/Create/Replace File" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="37" Bounds="1675 426.04 79 16" Id="137" IsReadOnly="True" Text="Release Queue" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="38" Bounds="1760 486.04 49.97333 15.96" Id="138" IsReadOnly="True" Text="Close File" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="141" Joints="N(140:21) N(26:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="142" Joints="N(26:R0) N(27:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="143" Joints="N(26:R4) h(55) v(-10) N(27:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="144" Joints="N(145:21) N(26:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="168" Joints="N(171:Out) N(18:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="455 210 80 15" DataType="@14965813_0" Facade="NationalInstruments.MocCommon.Modeling.IEnumBehavior" Id="171" Label="175" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>1</p.Data>
+                <EnumBehavior Id="172" />
+            </Literal>
+            <TextNode AttachedTo="171" Bounds="455 210 0 0" Id="175" Text="Configuration:Advanced:Host Data Type" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="190 235 40 15" DataItem="176" Id="178" Label="180">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="178" Bounds="148 235 37 16" Id="180" Text="IQ rate" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="181" Joints="N(178:Value) h(100) B(1) N(479:c0t0v) B(1) v(-45) N(17:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="190 255 40 15" DataItem="182" Id="184" Label="186">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="184" Bounds="95 255 90 16" Id="186" Text="carrier frequency" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="187" Joints="N(184:Value) h(110) v(-5) B(2) N(479:c1t0v) B(2) v(-50) N(17:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="190 275 40 15" DataItem="188" Id="190" Label="192">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="190" Bounds="162 275 23 16" Id="192" Text="gain" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="193" Joints="N(190:Value) h(140) v(-65) N(17:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="190 295 40 15" DataItem="194" Id="196" Label="198">
+                <Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="196" Bounds="108 295 77 16" Id="198" Text="active antenna" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="199" Joints="N(196:Value) h(165) N(17:B0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="203" Joints="N(34:error out) h(125) v(-95) N(83:error in (no error\))" xmlns="http://www.ni.com/PlatformFramework" />
+            <MergeErrors Bounds="825 220 30 20" Id="204" Terminals="error out=205, c0t0v=206, c1t0v=484" />
+            <Wire Id="205" Joints="N(204:error out) N(19:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="206" Joints="N(18:#eo) h(110) v(25) N(204:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="218" Joints="N(38:error out) h(50) v(-315) N(39:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="219" Joints="N(27:R3) N(39:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="1990 210 40 15" DataItem="220" Id="222" Label="230">
+                <Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="222" Bounds="2035 210 47 15.96" Id="230" Text="error out" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="245" Joints="N(37:error out) h(5) v(60) N(38:error in (no error\))" xmlns="http://www.ni.com/PlatformFramework" />
+            <WhileLoop Bounds="950 375 694 210" DiagramId="30" Id="29">
+                <WhileLoop.Iteration Bounds="5 180 15 15" Id="31" />
+                <WhileLoop.Condition Bounds="590 170 15 15" Id="32" />
+                <DequeueElement Bounds="120 65 40 40" Id="33" Label="112" />
+                <WriteToBinaryFile Bounds="275 125 40 40" Id="35" Label="113" />
+                <GetQueueStatus Bounds="390 65 40 40" Id="36" Label="114" />
+                <Wire Id="79" Joints="N(78:30) h(81) v(-60) N(33:error in (no error\))" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="87" Joints="N(88:30) N(33:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="33" Bounds="120 46.04 93.9 15.96" Id="112" IsReadOnly="True" Text="Dequeue Element" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="35" Bounds="275 106.04 101 16" Id="113" IsReadOnly="True" Text="Write to Binary File" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="36" Bounds="390 46.04 93 16" Id="114" IsReadOnly="True" Text="Get Queue Status" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="118" Joints="N(117:30) N(35:file (use dialog\))" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="120" Joints="N(33:element) h(105) v(60) N(35:data)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="121" Joints="N(33:queue out) N(36:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="122" Joints="N(35:error out) h(70) v(-60) N(36:error in (no error\))" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="126" Joints="N(36:queue out) N(127:30)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Literal Bounds="9 85 51 15" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="209" Label="210" xmlns="http://www.ni.com/MocCommon">
+                    <p.Data>3000</p.Data>
+                    <NumericBehavior Interpretation="Numeric" ValueFormatter="LV:G6" />
+                </Literal>
+                <Wire Id="211" Joints="N(209:Out) N(33:timeout in ms (-1\))" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="209" Bounds="9 85 0 0" Id="210" Text="timeout in milliseconds" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <Literal Bounds="269 85 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.Modeling.IBooleanBehavior" Id="212" Label="213" xmlns="http://www.ni.com/MocCommon">
+                    <p.Data>False</p.Data>
+                    <BooleanBehavior />
+                </Literal>
+                <Wire Id="214" Joints="N(212:Out) h(5) N(35:prepend)" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="212" Bounds="269 85 44.69 15.96" Id="213" Text="prepend" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="254" Joints="N(35:refnum out) N(133:30)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="300" Joints="N(33:error out) h(25) v(60) N(35:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+                <LogicalOr Bounds="545 165 25 20" Id="433" Terminals="o=437, c0t0v=436, c1t0v=438" />
+                <Wire Id="436" Joints="N(36:error out) h(90) B(1) N(130:30) B(1) v(70) N(433:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="437" Joints="N(433:o) N(32:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="438" Joints="N(33:timed out?) h(15) v(90) N(433:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+                <WhileLoop.Tunnel Bounds="-4 160 13 10" Docking="Left" Id="78" Terminals="29=96, 30=79" />
+                <WhileLoop.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="88" Terminals="29=346, 30=87" />
+                <WhileLoop.Tunnel Bounds="-4 130 13 10" Docking="Left" Id="117" Terminals="29=349, 30=118" />
+                <WhileLoop.Tunnel Bounds="685 70 13 10" Docking="Right" Id="127" Terminals="29=430, 30=126" />
+                <WhileLoop.Tunnel Bounds="685 100 13 10" Docking="Right" Id="130" Terminals="29=358, 30=436" />
+                <WhileLoop.Tunnel Bounds="685 130 13 10" Docking="Right" Id="133" Terminals="29=355, 30=254" />
+            </WhileLoop>
+            <Wire Id="346" Joints="N(83:queue out) h(155) B(1) v(-160) N(91:21) B(1) v(35) N(88:29)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="349" Joints="N(34:refnum out) N(117:29)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="355" Joints="N(133:29) N(38:refnum)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="358" Joints="N(130:29) N(37:error in (no error\))" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="430" Joints="N(127:29) N(37:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+            <MethodCall Bounds="1915 180 50 50" Id="462" Target="Simple\ Error\ Handler\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="error code" />
+                        <Parameter Id="L1" Desc="error source" />
+                        <Parameter Id="L2" Desc="type of dialog" />
+                        <Parameter Id="L3" Desc="error in" />
+                        <Parameter Id="R0" Desc="error?" />
+                        <Parameter Id="R1" Desc="code out" />
+                        <Parameter Id="R2" Desc="source out" />
+                        <Parameter Id="R3" Desc="error out" />
+                        <Parameter Id="B2" Desc="message" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Int32" Direction="Input" Id="L0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@-585250612_0" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="50 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Output" Hotspot="50 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Output" Hotspot="25 50" Id="B2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <Wire Id="472" Joints="N(39:error out) N(462:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="473" Joints="N(462:R3) N(222:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Add Bounds="445 235 30 30" Id="479" Terminals="o=482, c0t0v=181, c1t0v=187" />
+            <Wire Id="482" Joints="N(479:o) h(60) v(-20) N(18:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Comment Bounds="405 270 157 42" Id="483" xmlns="http://www.ni.com/MocCommon">
+                <p.Text>"Shift local ocillator away \r\nfrom center frequency"</p.Text>
+            </Comment>
+            <Wire Id="484" Joints="N(83:error out) h(40) v(-210) N(204:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="15" Width="[float]2000">
+            <Rectangle Fill="[SMSolidColorBrush]#ff055dae" Height="[float]86" Id="439" Left="[float]266" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]10.6527767" RadiusY="[float]12.7794123" Stroke="[SMSolidColorBrush]#ff055eae" StrokeThickness="[float]1" Top="[float]10" Width="[float]594" xmlns="http://www.ni.com/PlatformFramework" />
+            <Rectangle Fill="[SMSolidColorBrush]#ffeaeaea" Height="[float]744" Id="440" Left="[float]266" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]10.6527767" RadiusY="[float]12.7794123" Stroke="[SMSolidColorBrush]#ff055eae" StrokeThickness="[float]1" Top="[float]68" Width="[float]594" xmlns="http://www.ni.com/PlatformFramework" />
+            <PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Save As" BrowseOption="[BrowseOption]SaveFilesOrFolders" Filter="[string]txt;*.csv" Height="[float]28" Id="55" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]58" Left="[float]279" Path="{DataItemBinding Id=52}" Top="[float]323" Width="[float]133" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="58" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]55" Left="[float]279" Locked="[bool]True" Text="[string]file path" Top="[float]301" />
+            <StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]22" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="49" IsReadOnly="[bool]False" Label="[UIModel]59" Left="[float]279" Text="{DataItemBinding Id=46}" Top="[float]267" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]133" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="59" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]49" Left="[float]279" Locked="[bool]True" Text="[string]Device names" Top="[float]245" />
+            <NumericText BaseName="[string]Numeric" Font="[SMFont]0,9," Height="[float]22" Id="105" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]169" Left="[float]279" Top="[float]385" Value="{DataItemBinding Id=102}" ValueType="[Type]Int64" Width="[float]133" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="169" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]105" Left="[float]279" Locked="[bool]True" Text="[string]number of samples" Top="[float]363" />
+            <Button BaseName="[string]Stop" Content="[string]Stop" Foreground="[SMColor]#ffff0000" Height="[float]30" Id="232" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]233" Latch="[bool]True" Left="[float]313" Shape="[ButtonShape]Square" Top="[float]431" Value="{DataItemBinding Id=234}" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="233" LabelOwner="[UIModel]232" Left="[float]313" Locked="[bool]True" Text="[string]Stop" Top="[float]411" Visible="[bool]False" />
+            <NumericText BaseName="[string]Numeric" Font="[SMFont]0,9," Height="[float]22" Id="179" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]246" Left="[float]456" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]267" Value="{DataItemBinding Id=176}" ValueFormatter="[string]LVSI:" ValueType="[Type]Double" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="246" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]179" Left="[float]456" Locked="[bool]True" Text="[string]IQ rate" Top="[float]245" />
+            <NumericText BaseName="[string]Numeric" Font="[SMFont]0,9," Height="[float]22" Id="185" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]247" Left="[float]456" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]323" Value="{DataItemBinding Id=182}" ValueFormatter="[string]LVSI:" ValueType="[Type]Double" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="247" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]185" Left="[float]456" Locked="[bool]True" Text="[string]carrier frequency" Top="[float]301" />
+            <NumericText BaseName="[string]Numeric" Font="[SMFont]0,9," Height="[float]22" Id="191" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]248" Left="[float]456" RadixVisibility="[SMVisibility]Collapsed" Top="[float]379" Value="{DataItemBinding Id=188}" ValueType="[Type]Double" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="248" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]191" Left="[float]456" Locked="[bool]True" Text="[string]gain" Top="[float]357" />
+            <StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]22" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="197" IsReadOnly="[bool]False" Label="[UIModel]249" Left="[float]456" Text="{DataItemBinding Id=194}" Top="[float]435" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]136" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="249" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]197" Left="[float]456" Locked="[bool]True" Text="[string]active antenna" Top="[float]413" />
+            <Cluster BaseName="[string]Error Out" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]194" Id="223" Label="[UIModel]250" Left="[float]628" Top="[float]267" Value="{DataItemBinding Id=220}" Width="[float]200">
+                <LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]17" Id="224" IsReadOnly="[bool]True" Label="[UIModel]225" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=status}" Width="[float]19" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <Label Id="225" LabelOwner="[UIModel]224" Left="[float]5" Locked="[bool]True" Text="[string]status" Top="[float]5" />
+                <NumericText Height="[float]22" Id="226" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]227" Left="[float]50" Top="[float]25" Value="{ClusterBinding FieldName=code}" ValueType="[Type]Int32" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <Label Id="227" LabelOwner="[UIModel]226" Left="[float]50" Locked="[bool]True" Text="[string]code" Top="[float]5" />
+                <StringControl AcceptsReturn="[bool]True" Height="[float]109" HorizontalScrollBarVisibility="[ScrollBarVisibility]Auto" Id="228" IsReadOnly="[bool]True" Label="[UIModel]229" Left="[float]5" Text="{ClusterBinding FieldName=source}" Top="[float]72" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]181" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <Label Id="229" LabelOwner="[UIModel]228" Left="[float]5" Locked="[bool]True" Text="[string]source" Top="[float]50" />
+            </Cluster>
+            <Label Id="250" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]223" Left="[float]628" Locked="[bool]True" Text="[string]error out" Top="[float]245" />
+            <PlotLegend Graph="[UIModel]451" Height="[float]28" Id="268" Left="[float]835" Top="[float]496" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]451" Height="[float]102" Id="269" Left="[float]284" Top="[float]829" Visible="[bool]False" Width="[float]251" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <GraphTools Graph="[UIModel]451" Id="270" Left="[float]284" Top="[float]807" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="271" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]451" Left="[float]279" Locked="[bool]True" Text="[string]Graph" Top="[float]474" />
+            <Text Font="[SMFont]Segoe UI,16," Foreground="[SMColor]#ffffffff" Id="442" Left="[float]385" Text="[string]RF Record &amp; Playback - Record to File" TextWrapping="[TextWrapping]NoWrap" Top="[float]10" xmlns="http://www.ni.com/PlatformFramework" />
+            <Text Font="[SMFont]Segoe UI,10," Foreground="[SMColor]#ff524d4f" Id="443" Left="[float]299" Text="[string]This example allows you to record RF data into a binary file" TextWrapping="[TextWrapping]NoWrap" Top="[float]112" xmlns="http://www.ni.com/PlatformFramework" />
+            <Text Font="[SMFont]Segoe UI,18," Foreground="[SMColor]#ff055eae" Id="444" Left="[float]299" Text="[string]Overview" TextWrapping="[TextWrapping]NoWrap" Top="[float]79" xmlns="http://www.ni.com/PlatformFramework" />
+            <Text Font="[SMFont]Segoe UI,18," Foreground="[SMColor]#ff055eae" Id="445" Left="[float]299" Text="[string]Instructions" TextWrapping="[TextWrapping]NoWrap" Top="[float]139" xmlns="http://www.ni.com/PlatformFramework" />
+            <Text Font="[SMFont]Segoe UI,10," Foreground="[SMColor]#ff524d4f" Id="446" Left="[float]299" Text="[string]Set the device name, path to the binary file, IQ rate and carrier frequency. Run the example.&#xD;&#xA;Push the stop button when you are finished recording." TextWrapping="[TextWrapping]NoWrap" Top="[float]171" xmlns="http://www.ni.com/PlatformFramework" />
+            <Path Data="[PathGeometry]M 0,0 L 495,1 " Fill="[SMSolidColorBrush]#00ffffff" Height="[float]2" Id="447" Left="[float]315" MinHeight="[float]1" MinWidth="[float]1" ShapeBuilder="[string]" Stroke="[SMSolidColorBrush]#ff524d4f" StrokeThickness="[float]1" Top="[float]228" Width="[float]496" xmlns="http://www.ni.com/PlatformFramework" />
+            <Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=261}" Height="[float]304" Id="451" Label="[UIModel]271" Left="[float]279" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]496" Width="[float]549" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <PlotRenderer Id="452" LineStroke="[SMSolidColorBrush]#ff7b161a" PointFill="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" PointSize="[SMSize]5, 5" />
+                <PlotRenderer Id="453" LineStroke="[SMSolidColorBrush]#ff205326" PointFill="[SMSolidColorBrush]#ff205326" PointShape="[PointShape]Rectangle" PointSize="[SMSize]5, 5" />
+                <PlotRenderer Id="454" LineStroke="[SMSolidColorBrush]#ffe2b683" PointFill="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" PointSize="[SMSize]5, 5" />
+                <PlotRenderer Id="455" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointFill="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" PointSize="[SMSize]5, 5" />
+                <PlotRenderer Id="456" LineStroke="[SMSolidColorBrush]#ffaedcef" PointFill="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" PointSize="[SMSize]5, 5" />
+                <PlotRenderer Id="457" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointFill="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" PointSize="[SMSize]5, 5" />
+                <PlotRenderer Id="458" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointFill="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" PointSize="[SMSize]5, 5" />
+                <PlotRenderer Id="459" LineStroke="[SMSolidColorBrush]#ff3c0726" PointFill="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" PointSize="[SMSize]5, 5" />
+                <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="264" Label="[string]Time" MajorDivisions="[UIModel]267" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 200000, System.Double" ValueType="[Type]Double">
+                    <RangeLabeledDivisions Id="267" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
+                </Axis>
+                <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="265" Label="[string]Amplitude" MajorDivisions="[UIModel]431" MajorGridLines="[UIModel]432" Orientation="[SMOrientation]Vertical" Range="[IRange]-3, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double">
+                    <RangeLabeledDivisions Id="431" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
+                    <GridLines Id="432" />
+                </Axis>
+                <Plot HorizontalScale="[UIModel]264" Id="266" Label="[string]Plot" VerticalScale="[UIModel]265">
+                    <PlotRenderer BarWidth="[double]0.75" Id="460" LineStroke="[SMSolidColorBrush]#ff0070c0" LineStyle="[LineStyle]Solid" LineThickness="[double]1" PointSize="[SMSize]5, 5" />
+                </Plot>
+            </Graph>
+        </CPFrontPanel>
+        <DataItem DataType="String" Id="46" Name="Device names">
+            <p.DefaultValue>192.168.10.2</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Path" Id="52" Name="file path">
+            <p.DefaultValue>
+                <Path a="1" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Int64" Id="102" Name="number of samples">
+            <p.DefaultValue>100000</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Double" Id="176" Name="IQ rate">
+            <p.DefaultValue>0x41086A0000000000</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Double" Id="182" Name="carrier frequency">
+            <p.DefaultValue>0x41BB9224C4000000</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Double" Id="188" Name="gain">
+            <p.DefaultValue>0x0</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="String" Id="194" Name="active antenna">
+            <p.DefaultValue>RX1</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Error" Id="220" Name="error out">
+            <p.DefaultValue>
+                <Cluster>
+                    <Field1>False</Field1>
+                    <Field2>0</Field2>
+                    <Field3>""</Field3>
+                </Cluster>
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Boolean" Id="234" IsLatched="True" Name="Stop">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Int16[]" Id="261" Name="Graph">
+            <p.DefaultValue>
+                <Array Lengths="0" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+            <p.TypeReference TypeId="2072657720_0">
+                <Attributed>
+                    <AttributedType>
+                        <Class Id="1" Name="niUSRP" ReferenceClass="">
+                            <ClosedGenericParameters />
+                            <GenericTypeDefinition>
+                                <Void />
+                            </GenericTypeDefinition>
+                            <BaseType>
+                                <Void />
+                            </BaseType>
+                            <Interfaces />
+                            <Members>
+                                <Field FieldAccessPolicy="Write" Name="Active Channel">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Clocking and Synchronization:Start Trigger Type">
+                                    <DataType>
+                                        <Enumeration Name="Start Trigger Type">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="None" />
+                                                <EnumerationMember Value="1" Name="Time" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Clocking and Synchronization:Start Trigger Time (whole seconds)">
+                                    <DataType>
+                                        <Int64 />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Clocking and Synchronization:Start Trigger Time (fractional seconds)">
+                                    <DataType>
+                                        <Double />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Enabled Channels">
+                                    <DataType>
+                                        <Enumeration Name="Enabled Channels">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="0" />
+                                                <EnumerationMember Value="1" Name="1" />
+                                                <EnumerationMember Value="2" Name="0,1" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Clocking and Synchronization:Reference Frequency Source">
+                                    <DataType>
+                                        <Enumeration Name="Clocking and Synchronization:Reference Frequency Source">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="Internal" />
+                                                <EnumerationMember Value="1" Name="RefIn" />
+                                                <EnumerationMember Value="2" Name="Mimo" />
+                                                <EnumerationMember Value="3" Name="GPS" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Clocking and Synchronization:Exported Reference Frequency Output Terminal">
+                                    <DataType>
+                                        <Enumeration Name="Clocking and Synchronization:Exported Reference Frequency Output Terminal">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="None" />
+                                                <EnumerationMember Value="1" Name="PpsTrigOut" />
+                                                <EnumerationMember Value="2" Name="RefOut" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Clocking and Synchronization:Timebase Clock Source">
+                                    <DataType>
+                                        <Enumeration Name="Clocking and Synchronization:Timebase Clock Source">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="Internal" />
+                                                <EnumerationMember Value="1" Name="PpsIn" />
+                                                <EnumerationMember Value="2" Name="Mimo" />
+                                                <EnumerationMember Value="3" Name="GPS" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Clocking and Synchronization:Exported Timebase Clock Output Terminal">
+                                    <DataType>
+                                        <Enumeration Name="Clocking and Synchronization:Exported Timebase Clock Output Terminal">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="None" />
+                                                <EnumerationMember Value="1" Name="PpsTrigOut" />
+                                                <EnumerationMember Value="2" Name="RefOut" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Clocking and Synchronization:Timebase Clock Polarity">
+                                    <DataType>
+                                        <Enumeration Name="Clocking and Synchronization:Timebase Clock Polarity">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="Rising" />
+                                                <EnumerationMember Value="1" Name="Falling" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Number of Samples Is Finite">
+                                    <DataType>
+                                        <Boolean />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Number of Samples">
+                                    <DataType>
+                                        <Int64 />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:IQ Rate">
+                                    <DataType>
+                                        <Double />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Carrier Frequency">
+                                    <DataType>
+                                        <Double />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Bandwidth">
+                                    <DataType>
+                                        <Double />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Gain">
+                                    <DataType>
+                                        <Double />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Active Antenna">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Configuration:Number of Channels in Session">
+                                    <DataType>
+                                        <Int32 />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Advanced:Host Data Type">
+                                    <DataType>
+                                        <Enumeration Name="Configuration:Advanced:Host Data Type">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="CDB" />
+                                                <EnumerationMember Value="1" Name="I16" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Advanced:Sample Width">
+                                    <DataType>
+                                        <Enumeration Name="Configuration:Advanced:Sample Width">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="8-bit" />
+                                                <EnumerationMember Value="1" Name="16-bit" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Advanced:Expected Peak">
+                                    <DataType>
+                                        <Double />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Advanced:LO Frequency">
+                                    <DataType>
+                                        <Double />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="ReadWrite" Name="Configuration:Advanced:Warning Policy">
+                                    <DataType>
+                                        <Enumeration Name="Configuration:Advanced:Warning Policy">
+                                            <Members>
+                                                <EnumerationMember Value="0" Name="Return Warnings" />
+                                                <EnumerationMember Value="1" Name="Return Errors" />
+                                                <EnumerationMember Value="2" Name="Return Success" />
+                                            </Members>
+                                            <DataType>
+                                                <UInt32 />
+                                            </DataType>
+                                        </Enumeration>
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Meta Information:Driver Identification:Current Driver Version">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Meta Information:Instrument Identification:Model">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Meta Information:Instrument Identification:Current Firmware Version">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Meta Information:Instrument Identification:Oldest Compatible Firmware Version">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Meta Information:Instrument Identification:Current FPGA Version">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Meta Information:Instrument Identification:Oldest Compatible FPGA Version">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Clocking and Synchronization:GPS Disciplined Clock:Has GPS Disciplined Clock?">
+                                    <DataType>
+                                        <Boolean />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Clocking and Synchronization:GPS Disciplined Clock:GPS Time (seconds)">
+                                    <DataType>
+                                        <Int64 />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Clocking and Synchronization:GPS Disciplined Clock:GPS Lock Status">
+                                    <DataType>
+                                        <Boolean />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Clocking and Synchronization:GPS Disciplined Clock:GPS Sentence GGA">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                                <Field FieldAccessPolicy="Read" Name="Clocking and Synchronization:GPS Disciplined Clock:GPS Sentence RMC">
+                                    <DataType>
+                                        <String />
+                                    </DataType>
+                                </Field>
+                            </Members>
+                        </Class>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-547286994_0">
+                <Class Id="1" Name="" Cluster="">
+                    <ClosedGenericParameters />
+                    <GenericTypeDefinition>
+                        <Void />
+                    </GenericTypeDefinition>
+                    <BaseType>
+                        <Void />
+                    </BaseType>
+                    <Interfaces />
+                    <Members>
+                        <Field FieldAccessPolicy="ReadWrite" Name="whole seconds">
+                            <DataType>
+                                <UInt64 />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="fractional seconds">
+                            <DataType>
+                                <Double />
+                            </DataType>
+                        </Field>
+                    </Members>
+                </Class>
+            </p.TypeReference>
+            <p.TypeReference TypeId="744823816_0">
+                <Enumeration Name="operation">
+                    <Members>
+                        <EnumerationMember Value="0" Name="open" />
+                        <EnumerationMember Value="1" Name="replace" />
+                        <EnumerationMember Value="2" Name="create" />
+                        <EnumerationMember Value="3" Name="open or create" />
+                        <EnumerationMember Value="4" Name="replace or create" />
+                        <EnumerationMember Value="5" Name="replace or create with confirmation" />
+                    </Members>
+                    <DataType>
+                        <UInt16 />
+                    </DataType>
+                </Enumeration>
+            </p.TypeReference>
+            <p.TypeReference TypeId="1499747992_0">
+                <Enumeration Name="operation">
+                    <Members>
+                        <EnumerationMember Value="0" Name="read/write" />
+                        <EnumerationMember Value="1" Name="read-only" />
+                        <EnumerationMember Value="2" Name="write-only" />
+                    </Members>
+                    <DataType>
+                        <UInt16 />
+                    </DataType>
+                </Enumeration>
+            </p.TypeReference>
+            <p.TypeReference TypeId="14965813_0">
+                <Enumeration Name="Configuration:Advanced:Host Data Type">
+                    <Members>
+                        <EnumerationMember Value="0" Name="CDB" />
+                        <EnumerationMember Value="1" Name="I16" />
+                    </Members>
+                    <DataType>
+                        <UInt32 />
+                    </DataType>
+                </Enumeration>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-585250612_0">
+                <Enumeration Name="Enum">
+                    <Members>
+                        <EnumerationMember Value="0" Name="no dialog" />
+                        <EnumerationMember Value="1" Name="OK message" />
+                        <EnumerationMember Value="2" Name="continue or stop message" />
+                        <EnumerationMember Value="3" Name="OK message + warnings" />
+                        <EnumerationMember Value="4" Name="continue/stop + warnings" />
+                    </Members>
+                    <DataType>
+                        <UInt16 />
+                    </DataType>
+                </Enumeration>
+            </p.TypeReference>
+        </DataTypeReferenceTable>
+    </VirtualInstrument>
+</SourceFile>

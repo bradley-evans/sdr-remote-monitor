@@ -1,0 +1,4 @@
+C:\Users\squel\Desktop\UCR\17FAL\EE175AB - Senior Design\sdr-remote-monitor\reference_examples\wideband_spectrum_analyzer\Simplified WB Spectrum Sense (Averaged).vi (Simplified WB Spectrum Sense (Averaged).vi)
+    NI-USRP Driver support for LabVIEW 2015 is missing and is referenced by the following VIs:
+C:\Users\squel\Desktop\UCR\17FAL\EE175AB - Senior Design\sdr-remote-monitor\reference_examples\wideband_spectrum_analyzer\subFiniteRx.vi (subFiniteRx.vi)
+    NI-USRP Driver support for LabVIEW 2015 is missing and is referenced by the following VIs:

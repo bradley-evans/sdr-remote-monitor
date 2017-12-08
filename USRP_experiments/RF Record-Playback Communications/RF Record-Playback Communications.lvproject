@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.50009" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.50009" FeatureSetName="SystemDesigner" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/SystemDiagram" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.50009" FeatureSetName="SystemDesigner" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.50009" FeatureSetName="SystemDesigner" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/SystemModelCore" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <Project xmlns="http://www.ni.com/PlatformFramework">
+        <ProjectSettings DocumentTypeIdentifier="ProjectSettings" Id="1" Name="ZProjectSettings" PersistentDockingLayoutRule="2">
+            <p.DockingLayout />
+        </ProjectSettings>
+        <DefinitionReference Bindings="Envoy,DefinitionReference,EmbeddedReference,NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager,ProjectDefaultCopyPasteServiceOptOut" DocumentTypeIdentifier="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Id="2" Name="ProjectExplorer">
+            <ProjectExplorer>
+                <ProjectRootItem AssociatedItemIdentifier="2" Id="12">
+                    <ProjectDataItem AssociatedItemIdentifier="17" Id="16" />
+                    <ProjectDataItem AssociatedItemIdentifier="19" Id="18" />
+                </ProjectRootItem>
+            </ProjectExplorer>
+        </DefinitionReference>
+        <DefinitionReference Bindings="Envoy,DefinitionReference,EmbeddedReference,NationalInstruments.SystemDesigner.SystemDiagram.Moc,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" DocumentTypeIdentifier="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" Id="3" Name="SystemDiagram">
+            <SystemDiagram ProcessMappings="" SystemDiagramVersion="56" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
+                <SystemDiagramRootDiagram Id="15" />
+                <EnvoyFacadeManager Id="5" RootEnvoy="3" xmlns="http://www.ni.com/SystemDesigner/EnvoyManagement">
+                    <Tree Id="6" Kind="{http://www.ni.com/SystemDesigner/SystemModelCore}Tree" Name="Software Layer" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore" />
+                    <MappingManager Id="7" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore">
+                        <SuperimpositionMapping Id="8" Map="T:" ReverseMap="T:" Sources="T:6">
+                            <Tree Id="9" Kind="{http://www.ni.com/SystemDesigner/SystemModelCore}Tree" Name="Root Superimposition" />
+                        </SuperimpositionMapping>
+                    </MappingManager>
+                </EnvoyFacadeManager>
+            </SystemDiagram>
+        </DefinitionReference>
+        <Target Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,NullTarget" DocumentTypeIdentifier="NullTarget" Id="10" Name="NullTarget">
+            <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="17" Name="Playback\.gvi" StoragePath="Playback.gvi" />
+            <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="19" Name="Record\.gvi" StoragePath="Record.gvi" />
+            <NullTarget />
+        </Target>
+        <Target Bindings="Envoy,DefinitionReference,DataDepot,ProjectDefaultCopyPasteServiceOptOut,ProjectDefaultDragDropServiceOptOut,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" DocumentTypeIdentifier="DataDepot" Id="14" Name="DataDepot">
+            <DataDepot />
+        </Target>
+    </Project>
+    <ProjectInformation Author="" xmlns="http://www.ni.com/PlatformFramework">
+        <p.Description></p.Description>
+    </ProjectInformation>
+</SourceFile>
