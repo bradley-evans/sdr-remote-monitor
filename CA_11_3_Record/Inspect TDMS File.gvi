@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="024E8779C53540CECA01346F04E89088" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Inspect TDMS File" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6.75" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="13">
+			<TDMSOpen Bounds="-20 195 40 40" Id="15" />
+			<FileDialog Bounds="-120 195 40 40" FileDialogSelectionMode="File" Id="16" NewOrExistingMode="New" />
+			<Literal Bounds="-265.530029 175 133 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="17" Label="91" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>Choose a TDMS File</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="18" Joints="N(17:Out) h(27.5299988) N(16:prompt)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="-191.013351 240 62 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="19" Label="92" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>*.tdms</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<Wire Id="20" Joints="N(19:Out) h(24.0099945) N(16:pattern (all files\))" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="21" Joints="N(16:selected path) N(15:file path)" xmlns="http://www.ni.com/PlatformFramework" />
+			<TDMSListContents Bounds="125 195 40 40" Id="22" />
+			<Wire Id="23" Joints="N(15:tdms file out) N(22:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="24" Joints="N(16:error out) N(15:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="25" Joints="N(15:error out) N(22:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<TDMSClose Bounds="730 195 40 40" Id="26" />
+			<MethodCall Bounds="825 225 40 40" DomainName="NI.MocCommon" Id="27" Target="Display\ Error\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="type of dialog" />
+						<Parameter Id="L0" Desc="error in" />
+						<Parameter Id="R0" Desc="error?" />
+						<Parameter Id="R1" Desc="code" />
+						<Parameter Id="R2" Desc="location" />
+						<Parameter Id="R3" Desc="description" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@f6dfab9d095b400584aa3e3c2284683f" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="28" Joints="N(26:error out) N(27:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ForLoop Bounds="233 -57 464 465" DiagramId="30" Id="29">
+				<LoopIteration Bounds="5 435 15 15" Id="39" />
+				<TDMSListContents Bounds="55 250 40 40" Id="40" />
+				<Wire Id="41" Joints="N(33:i0) N(40:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+				<BuildArray Bounds="390 135 40 30" CanToggle="False" ConcatenateInputs="True" Id="42" Terminals="outArray=45, c0t0v=46, c1t0v=53, c2t0v=54" VerticalChunkCount="3" />
+				<Wire Id="43" Joints="N(34:i0) N(40:group name)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="44" Joints="N(38:i0) N(40:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="45" Joints="N(42:outArray) N(35:30)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="46" Joints="N(36:i0) N(42:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<ForLoop Bounds="123 298 240 130" DiagramId="62" Id="47">
+					<LoopIteration Bounds="5 100 15 15" Id="66" />
+					<BuildArray Bounds="100 75 40 20" CanToggle="False" Id="67" Terminals="outArray=69, c0t0v=70, c1t0v=68" VerticalChunkCount="2" />
+					<Wire Id="68" Joints="N(64:i0) h(57) v(-5) N(67:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="69" Joints="N(67:outArray) N(65:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="70" Joints="N(72:Out) N(67:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<NodeLabel AttachedTo="72" Bounds="25 75 0 0" Id="71" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>element 1</p.Text>
+					</NodeLabel>
+					<Literal Bounds="25 75 40 15" DataType="String" Facade="EmptyString" Id="72" Label="71" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>""</p.Data>
+						<StringBehavior SearchTerm="Empty String Constant" TextDisplayMode="Default" />
+						<ModelFacade Facade="EmptyString" xmlns="http://www.ni.com/PlatformFramework" />
+					</Literal>
+					<Comment Bounds="20 10 195 45" Id="73" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>"First column is empty.\r\nSecond column is channel name."</p.Text>
+					</Comment>
+					<LoopCount Bounds="1 1 15 15" Docking="Left" Id="63" Terminals="47, 62" />
+					<LoopTunnel AutoIndex="True" Bounds="-5 92 13 10" Docking="Left" Id="64" Terminals="o0=48, i0=68" TunnelMode="0" />
+					<LoopTunnel AutoIndex="True" Bounds="230 77 13 10" Docking="Right" Id="65" Terminals="o0=54, i0=69" TunnelMode="0" />
+				</ForLoop>
+				<Wire Id="48" Joints="N(40:group/channel names) h(18) v(120) N(64:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="49" Joints="N(40:error out) N(37:30)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="50" Joints="N(40:tdms file out) N(32:30)" xmlns="http://www.ni.com/PlatformFramework" />
+				<BuildArray Bounds="215 180 40 20" CanToggle="False" Id="51" Terminals="outArray=53, c0t0v=52, c1t0v=60" VerticalChunkCount="2" />
+				<Wire Id="52" Joints="N(40:group names) h(35) v(-80) N(51:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="53" Joints="N(51:outArray) h(35) v(-35) N(42:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="54" Joints="N(65:o0) h(9) v(-220) N(42:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Comment Bounds="55 25 262 55" Id="55" xmlns="http://www.ni.com/MocCommon">
+					<p.Text>"For each group, list all the channels in the\r\ngroup and create a 2D array for display with\r\nthe first column showing the groups and the\r\nsecond column showing the channels."</p.Text>
+				</Comment>
+				<Comment Bounds="30 195 92 48" Id="56" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+					<p.Text>"List channels\r\nfor this group."</p.Text>
+				</Comment>
+				<Comment Bounds="100 150 168 28" Id="57" xmlns="http://www.ni.com/MocCommon">
+					<p.Text>"First column is group name\r\nSecond column is empty."</p.Text>
+				</Comment>
+				<Literal Bounds="155 190 40 15" DataType="String" Facade="EmptyString" Id="58" Label="59" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>""</p.Data>
+					<StringBehavior SearchTerm="Empty String Constant" TextDisplayMode="Default" />
+					<ModelFacade Facade="EmptyString" xmlns="http://www.ni.com/PlatformFramework" />
+				</Literal>
+				<NodeLabel AttachedTo="58" Bounds="155 190 0 0" Id="59" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>element 1</p.Text>
+				</NodeLabel>
+				<Wire Id="60" Joints="N(58:Out) N(51:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Comment Bounds="350 75 91 55" Id="61" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+					<p.Text>Append array.</p.Text>
+				</Comment>
+				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="31" Terminals="29=123, 30" />
+				<RightShiftRegister Bounds="454 252 13 10" Docking="Right" Id="32" Terminals="29=80, 30=50" />
+				<LeftShiftRegister Bounds="-5 252 13 10" Docking="Left" Id="33" RightRegister="32" Terminals="o0=74, i0=41" />
+				<LoopTunnel AutoIndex="True" Bounds="-5 262 13 10" Docking="Left" Id="34" Terminals="o0=75, i0=43" TunnelMode="0" />
+				<RightShiftRegister Bounds="454 137 13 10" Docking="Right" Id="35" Terminals="29=83, 30=45" />
+				<LeftShiftRegister Bounds="-5 137 13 10" Docking="Left" Id="36" RightRegister="35" Terminals="o0=81, i0=46" />
+				<RightShiftRegister Bounds="454 282 13 10" Docking="Right" Id="37" Terminals="29=79, 30=49" />
+				<LeftShiftRegister Bounds="-5 282 13 10" Docking="Left" Id="38" RightRegister="37" Terminals="o0=76, i0=44" />
+			</ForLoop>
+			<Wire Id="74" Joints="N(22:tdms file out) N(33:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="75" Joints="N(22:group names) h(40) B(1) N(34:o0) B(1) v(-135) h(-100) v(-135) N(121:array)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="76" Joints="N(22:error out) N(38:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ArrayLiteral Bounds="97 80 101 51" DataType="String[,]" Facade="NationalInstruments.MocCommon.SourceModel.IArrayBehavior" Id="77" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>null</p.Data>
+				<ArrayBehavior ElementType="String">
+					<p.DefaultElementValue>""</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="47 5 39.5 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="78">
+					<p.Data>""</p.Data>
+					<StringBehavior TextDisplayMode="Default" />
+				</Literal>
+			</ArrayLiteral>
+			<Wire Id="79" Joints="N(37:29) N(26:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="80" Joints="N(32:29) N(26:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="81" Joints="N(77:Out) N(36:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="83" Joints="N(35:29) N(118:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="-250 130 166 28" Id="84" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"Use File Dialog to choose a\r\nTDMS file from disk."</p.Text>
+			</Comment>
+			<Comment Bounds="-70 165 140 15" Id="85" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Open a TDMS session.</p.Text>
+			</Comment>
+			<Comment Bounds="105 155 94 28" Id="86" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"List all groups\r\nin the file."</p.Text>
+			</Comment>
+			<Comment Bounds="800 205 121 15" Id="87" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Display any errors.</p.Text>
+			</Comment>
+			<Comment Bounds="715 175 152 15" Id="88" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Close the TDMS session.</p.Text>
+			</Comment>
+			<NodeLabel AttachedTo="17" Bounds="-265.530029 175 0 0" Id="91" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>prompt</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="19" Bounds="-191.013351 240 0 0" Id="92" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>pattern</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="735 80 40 15" DataItem="117" Id="118" Label="119" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="118" Bounds="780 80 119 14" Id="119" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Groups and Channels</p.Text>
+			</NodeLabel>
+			<ArraySize Bounds="110 -65 40 20" Id="121" />
+			<Wire Id="123" Joints="N(121:size(s\)) N(31:29)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<Rectangle Fill="[SMSolidColorBrush]#ff055aae" Height="[float]534" Id="99" Left="[float]178" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]16" RadiusY="[float]16" Stroke="[SMSolidColorBrush]#ff0559ae" StrokeThickness="[float]1" Top="[float]89" Width="[float]716" xmlns="http://www.ni.com/PlatformFramework" />
+			<Rectangle Fill="[SMSolidColorBrush]#ffeaeaea" Height="[float]479" Id="100" Left="[float]178" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]16" RadiusY="[float]16" Stroke="[SMSolidColorBrush]#ff055bae" StrokeThickness="[float]1" Top="[float]154" Width="[float]716" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Foreground="[SMColor]#ffffffff" Id="101" Left="[float]452" Text="[string]Inspect TDMS File" TextWrapping="[TextWrapping]NoWrap" Top="[float]97" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontSize="16" Id="102" />
+			</Text>
+			<Text Foreground="[SMColor]#ffffffff" Id="103" Left="[float]435" Text="[string]See the diagram for more information" TextWrapping="[TextWrapping]NoWrap" Top="[float]128" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Foreground="[SMColor]#ff524d4f" Height="[float]16" Id="104" Left="[float]203" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Demonstrates how to use the TDMS functions to inspect a TDMS file and list groups and channels." TextWrapping="[TextWrapping]NoWrap" Top="[float]187" Width="[float]641" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontFamily="Segoe UI" FontSize="9" Id="105" />
+			</Text>
+			<Text Foreground="[SMColor]#ff4d5359" Id="106" Left="[float]203" Text="[string]Overview" TextWrapping="[TextWrapping]NoWrap" Top="[float]154" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontFamily="Segoe UI" FontSize="14" Id="107" />
+			</Text>
+			<Text Foreground="[SMColor]#ff4d5359" Id="108" Left="[float]203" Text="[string]Instructions" TextWrapping="[TextWrapping]NoWrap" Top="[float]210" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontFamily="Segoe UI" FontSize="14" Id="109" />
+			</Text>
+			<Text Foreground="[SMColor]#ff524d4f" Id="110" Left="[float]203" Text="[string]1. Have a TDMS file ready. You can create one using Export Captured Data to TDMS.gvi located in the Files Pane.&#xD;&#xA;2. Run the VI to display the groups and the channels within the groups in a TDMS file.&#xD;&#xA;3. Open the Read Captured Data.gvi located in the Files Pane." TextWrapping="[TextWrapping]NoWrap" Top="[float]246" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontFamily="Segoe UI" FontSize="9" Id="111" />
+			</Text>
+			<ArrayViewer ArrayElement="[UIModel]113" Columns="[int]2" Dimensions="[int]2" ElementType="[Type]String" Height="[float]282" Id="112" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]116" Left="[float]218" Orientation="[SMOrientation]Horizontal" Rows="[int]10" Top="[float]341" Value="{DataItemBinding Id=117}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]563" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>""</p.DefaultElementValue>
+				<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]25" Id="113" IsReadOnly="[bool]True" Left="[float]7" Text="[string]Group0" Top="[float]7" Width="[float]265" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Text Id="114" Left="[float]279" Text="[string]Groups" TextWrapping="[TextWrapping]Wrap" Top="[float]319" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Id="115" Left="[float]525" Text="[string]Channels within a group" TextWrapping="[TextWrapping]Wrap" Top="[float]319" xmlns="http://www.ni.com/PlatformFramework" />
+			<Label Height="[float]16" Id="116" LabelOwner="[UIModel]112" Left="[float]218" Text="[string]Groups and Channels" Top="[float]318" Visible="[bool]False" Width="[float]114" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Id="120" Left="[float]254" MinHeight="[float]11" MinWidth="[float]11" Text="[string]From tutorial, modified loop iterations to match group size" TextWrapping="[TextWrapping]Wrap" Top="[float]48" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem DataType="String[,]" Id="117" Name="Groups and Channels" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<IconTable xmlns="http://www.ni.com/PlatformFramework">
+			<p.IconModel Target="Display\ Error\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 40 40">
+							<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40">
+								<Canvas Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40">
+									<Path Data="[PathGeometry]M 4,0 L 36,0 C 38.209,0 40,1.791 40,4 L 40,36 C 40,38.209 38.209,40 36,40 L 4,40 C 1.791,40 0,38.209 0,36 L 0,4 C 0,1.791 1.791,0 4,0 " Fill="[SMSolidColorBrush]#ff727272" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+									<Path Data="[PathGeometry]M 4,1 L 36,1 C 37.657,1 39,2.343 39,4 L 39,36 C 39,37.657 37.657,39 36,39 L 4,39 C 2.343,39 1,37.657 1,36 L 1,4 C 1,2.343 2.343,1 4,1 " Fill="[SMSolidColorBrush]#ffffffff" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+									<Path Data="[PathGeometry]M 4,2 L 36,2 C 37.104,2 38,2.896 38,4 L 38,36 C 38,37.105 37.104,38 36,38 L 4,38 C 2.896,38 2,37.105 2,36 L 2,4 C 2,2.896 2.896,2 4,2 " Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+									<Path Data="[PathGeometry]M 4.001,2.001 C 2.897,2.001 2.001,2.966 2.001,4.155 L 2.001,16 L 16,16 L 16,2 L 4.001,2.001 Z M 4.239,11.354 L 4.024,9.42 L 7.893,9.42 L 4.239,11.354 Z M 3.452,5.968 L 5.1,4.036 L 8.897,7.903 L 3.452,5.968 Z M 12.954,14 L 10.233,14 L 10.233,12.222 L 12.954,12.222 L 12.954,14 Z M 12.692,11.11 L 10.495,11.11 L 10.186,3.97 L 13.002,3.97 L 12.692,11.11 Z" Fill="[SMSolidColorBrush]#ffa0a017" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+									<Path Data="[PathGeometry]M 18,18 L 4,18 L 4,17 L 17,17 L 17,10 L 18,10 L 18,18 Z M 33.971,10 L 19,10 L 19,18 L 19,19 L 18,19 L 4,19 L 4,26.971 C 4,28.092 4.908,29 6.029,29 L 28,29 L 28,33 L 31.971,29 L 33.971,29 C 35.091,29 36,28.092 36,26.971 L 36,12.029 C 36,10.908 35.091,10 33.971,10 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								</Canvas>
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+		</IconTable>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="f6dfab9d095b400584aa3e3c2284683f">
+			<Typedef TypedefName="Error Dialog Type.gtype" UnderlyingType="@3bec7477c33d4c2a8c8c14443c0ed085" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="3bec7477c33d4c2a8c8c14443c0ed085">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="no dialog" />
+					<EnumerationMember Value="1" Name="OK message" />
+					<EnumerationMember Value="2" Name="continue or stop message" />
+					<EnumerationMember Value="3" Name="OK message + warnings" />
+					<EnumerationMember Value="4" Name="continue/stop + warnings" />
+				</Members>
+				<DataType>
+					<UInt16 />
+				</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
