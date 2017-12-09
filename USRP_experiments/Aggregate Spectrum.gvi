@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="BA6EBA9FF38455E4FEB4EF41E086CF11" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="7401D9D0065FDCC5FEDB8931129D36E0" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -234,7 +234,7 @@
 							<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
-						<Wire Id="259" Joints="N(191:R0) N(1501:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="259" Joints="N(191:R0) N(286:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="265" Joints="N(67:R0) N(264:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="266" Joints="N(67:R4) N(267:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="316" Joints="N(315:i0) N(67:L3)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -251,6 +251,12 @@
 							<p.Text>Carrier Freq Out</p.Text>
 						</NodeLabel>
 						<Wire Id="1514" Joints="N(76:i0) N(67:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="365 170 40 15" DataItem="285" Id="286" Label="306" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="286" Bounds="410 170 114 14" Id="306" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>FFT Power Spectrum</p.Text>
+						</NodeLabel>
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="65" Terminals="63=190, 64" />
 						<LoopTunnel Bounds="-5 92 13 10" Docking="Left" Id="71" Terminals="o0=70, i0=72" />
 						<LoopTunnel Bounds="-5 132 13 10" Docking="Left" Id="76" Terminals="o0=75, i0=1514" />
@@ -263,7 +269,6 @@
 						<LoopTunnel Bounds="530 92 13 10" Docking="Right" Id="264" Terminals="o0=263, i0=265" />
 						<LoopTunnel Bounds="530 132 13 10" Docking="Right" Id="267" Terminals="o0=268, i0=266" />
 						<LoopTunnel Bounds="-5 122 13 10" Docking="Left" Id="315" Terminals="o0=314, i0=316" />
-						<LoopTunnel Bounds="530 172 13 10" Docking="Right" Id="1501" Terminals="o0=1502, i0=259" />
 					</ForLoop>
 					<Wire Id="70" Joints="N(69:i0) N(71:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="75" Joints="N(74:i0) N(76:o0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -277,7 +282,6 @@
 					<Wire Id="263" Joints="N(264:o0) N(262:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="268" Joints="N(267:o0) N(269:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="314" Joints="N(313:i0) N(315:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="1502" Joints="N(1501:o0) N(1503:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<LoopCount Bounds="1 1 15 15" Docking="Left" Id="61" Terminals="59, 60" />
 					<LoopTunnel Bounds="-5 107 13 10" Docking="Left" Id="69" Terminals="o0=1143, i0=70" />
 					<LoopTunnel Bounds="-5 147 13 10" Docking="Left" Id="74" Terminals="o0=1146, i0=75" />
@@ -290,7 +294,6 @@
 					<LoopTunnel Bounds="561 107 13 10" Docking="Right" Id="262" Terminals="o0=1979, i0=263" />
 					<LoopTunnel Bounds="561 147 13 10" Docking="Right" Id="269" Terminals="o0=1980, i0=268" />
 					<LoopTunnel Bounds="-5 137 13 10" Docking="Left" Id="313" Terminals="o0=1167, i0=314" />
-					<LoopTunnel Bounds="561 187 13 10" Docking="Right" Id="1503" Terminals="o0=1500, i0=1502" />
 				</ForLoop>
 				<Wire Id="1143" Joints="N(1144:i0) N(69:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1146" Joints="N(1147:i0) N(74:o0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -308,13 +311,6 @@
 					<p.Text>Stop Capture</p.Text>
 				</NodeLabel>
 				<Wire Id="1180" Joints="N(1177:Value) N(350:Input)" xmlns="http://www.ni.com/PlatformFramework" />
-				<DataAccessor Bounds="615 350 40 15" DataItem="285" Id="286" Label="306" xmlns="http://www.ni.com/MocCommon">
-					<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-				</DataAccessor>
-				<NodeLabel AttachedTo="286" Bounds="660 350 114 14" Id="306" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>FFT Power Spectrum</p.Text>
-				</NodeLabel>
-				<Wire Id="1500" Joints="N(1503:o0) h(8) v(130) N(286:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1979" Joints="N(262:o0) N(1159:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1980" Joints="N(269:o0) N(1162:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LoopTunnel Bounds="-4 145 13 10" Docking="Left" Id="1144" Terminals="o0=68, i0=1143" />
@@ -404,7 +400,7 @@
 			</Cluster>
 			<Label Height="[float]16" Id="238" LabelOwner="[UIModel]233" Left="[float]367" Text="[string]Display" Top="[float]362" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
 			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=285}" Height="[float]400" Id="287" IncludeInCapture="[bool]True" Label="[UIModel]305" Left="[float]520" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]49,8,26,43" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]True" Top="[float]165" Width="[float]600" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="288" Label="[string]Frequency" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]299" Orientation="[SMOrientation]Horizontal" Range="[IRange]70000000, 140000000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="288" Label="[string]Frequency" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]299" Orientation="[SMOrientation]Horizontal" Range="[IRange]85000000, 110000000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="299" LabelPresenter="[string]LVSI:" />
 				</Axis>
 				<Axis Adjuster="[RangeAdjuster]None" Id="289" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]300" Orientation="[SMOrientation]Vertical" Range="[IRange]-130, 0, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
@@ -443,7 +439,7 @@
 			<Label Height="[float]16" Id="326" LabelOwner="[UIModel]325" Left="[float]350" Text="[string]Samples per Acquisition" Top="[float]681" Width="[float]128" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="338" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]343" Left="[float]350" MinHeight="[float]22" RadixBase="[RadixBase]Decimal" Top="[float]655" Value="{DataItemBinding Id=337}" ValueFormatter="[string]LVSI:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="343" LabelOwner="[UIModel]338" Left="[float]350" Text="[string]Carrier Freq Out" Top="[float]632" Width="[float]86" xmlns="http://www.ni.com/PanelCommon" />
-			<Button BaseName="[string]Stop" ClickMode="[ClickMode]Release" Content="[string]Stop Capture" ContentVisibility="[Visibility]Visible" Foreground="[SMColor]#ffff0000" Height="[float]30" Id="1182" IncludeInCapture="[bool]False" IsMomentary="[bool]True" Label="[UIModel]1185" Latch="[bool]True" Left="[float]367" MinHeight="[float]13" MinWidth="[float]13" Shape="[ButtonShape]Square" Top="[float]515" Value="{DataItemBinding Id=1176}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Button BaseName="[string]Stop" ClickMode="[ClickMode]Press" Content="[string]Stop Capture" ContentVisibility="[Visibility]Visible" Foreground="[SMColor]#ffff0000" Height="[float]30" Id="1182" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]1185" Latch="[bool]True" Left="[float]367" MinHeight="[float]13" MinWidth="[float]13" Shape="[ButtonShape]Square" Top="[float]515" Value="{DataItemBinding Id=1176}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="1185" LabelOwner="[UIModel]1182" Left="[float]367" Text="[string]Stop Capture" Top="[float]492" Visible="[bool]False" Width="[float]70" xmlns="http://www.ni.com/PanelCommon" />
 		</CPFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="@5f55fbafa32047aea0bd50cb938b7fdf" Id="21" Name="RX Parameters In" xmlns="http://www.ni.com/MocCommon">
@@ -634,7 +630,7 @@
 		<p.TypeReference TypeId="f261aca30cd44609875979717cdeb8e0">
 			<Attributed>
 				<AttributedType>
-					<Typedef TypedefName="niUSRPClass" UnderlyingType="@c632f8bb0b6d4e718f8a524b287854ec" />
+					<Typedef TypedefName="niUSRPClass" UnderlyingType="@9ff0a3c5e1174acfbcf4012b3637277c" />
 				</AttributedType>
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Usrp" />
@@ -765,7 +761,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="c632f8bb0b6d4e718f8a524b287854ec">
+		<p.TypeReference TypeId="9ff0a3c5e1174acfbcf4012b3637277c">
 			<Attributed>
 				<AttributedType>
 					<Composite Id="1" Name="Usrp.niUSRPClass" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void">

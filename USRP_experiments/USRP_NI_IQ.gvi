@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="3462E3FD996BC5C3C1E5E3F8E6A40F40" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="BB27857AD468DC36D852854527C6B9FA" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -90,7 +90,7 @@
 			</NodeLabel>
 			<CaseStructure Bounds="470 180 620 255" DataType="Error" Default="21" Id="20" Selected="21" UserSelectorBounds="256.666656 0 106.666664 17.333334">
 				<CaseStructure.Case Bounds="5 5 610 245" Id="21" Pattern="No Error">
-					<PropertyNode Bounds="65 80 210 105" Id="123" InstanceDataType="@f261aca30cd44609875979717cdeb8e0" Mode="InstanceProperties" SubItems="" Template="List">
+					<PropertyNode Bounds="65 80 210 105.333336" Id="123" InstanceDataType="@f261aca30cd44609875979717cdeb8e0" Mode="InstanceProperties" SubItems="" Template="List">
 						<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 40" Id="c0t0v" Path="Number of Samples Is Finite_118C31" Usage="Required" />
 						<PropertyItemTerminal Action="Write" DataType="Int64" Hotspot="0 55" Id="c1t0v" Path="Number of Samples_118C32" Usage="Required" />
 						<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 70" Id="c2t0v" Path="Carrier Frequency_118C34" Usage="Required" />
@@ -156,7 +156,7 @@
 						<Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@f261aca30cd44609875979717cdeb8e0" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@b4f83c03e79f40baadb9c2f37a20f64f" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@1b4705fb337c41c9ac1c1aca79d9f11e" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
 					<MethodCall Bounds="540 80 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="141" Target="niUSRP\ Abort\.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -203,7 +203,7 @@
 					<Wire Id="163" Joints="N(161:Out) N(112:22)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="178" Joints="N(65:22) h(21) N(176:22)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
-				<CaseStructure.Selector Bounds="-4 95 13 10" Docking="Left" Id="23" Terminals="20=44, 21=148, 22=158" />
+				<CaseStructure.Selector Bounds="-4 95 13 10" Docking="Left" Id="23" Terminals="20=188, 21=148, 22=158" />
 				<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="26" Terminals="20=25, 21=147, 22=156" />
 				<CaseStructure.Tunnel Bounds="-4 135 13 10" Docking="Left" Id="57" Terminals="20=58, 21=149, 22" />
 				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="65" Terminals="20=66, 21=150, 22=178" />
@@ -214,13 +214,12 @@
 				<CaseStructure.Tunnel Bounds="25 246 10 13" Docking="Bottom" Id="176" Terminals="20=168, 21=150, 22=178" />
 			</CaseStructure>
 			<Wire Id="25" Joints="N(15:Value) N(26:20)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="400 275 40 15" DataItem="29" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="255 275 40 15" DataItem="29" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="39" Bounds="353 275 42 14" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="39" Bounds="208 275 42 14" Id="40" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>error in</p.Text>
 			</NodeLabel>
-			<Wire Id="44" Joints="N(39:Value) N(23:20)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="400 315 40 15" DataItem="51" Id="53" Label="55" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int64" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -270,6 +269,18 @@
 			<NodeLabel AttachedTo="173" Bounds="575 470 91 14" Id="175" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Carrier Freq Out</p.Text>
 			</NodeLabel>
+			<MethodCall Bounds="335 275 40 40" DomainName="NI.MocCommon" Id="179" Target="Clear\ Error\ Cluster\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="error in" />
+						<Parameter Id="R0" Desc="error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Error" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="187" Joints="N(39:Value) N(179:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="188" Joints="N(179:R0) N(23:20)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem CallDirection="Input" CallIndex="0" DataType="@f261aca30cd44609875979717cdeb8e0" Id="17" Name="IVI Refnum In" xmlns="http://www.ni.com/MocCommon">
@@ -420,20 +431,37 @@
 					</MergeItem>
 				</MergeScript>
 			</p.IconModel>
+			<p.IconModel Target="Clear\ Error\ Cluster\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 40 40">
+							<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40">
+								<Canvas Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40">
+									<Path Data="[PathGeometry]M 4,0 L 36,0 C 38.209,0 40,1.791 40,4 L 40,36 C 40,38.209 38.209,40 36,40 L 4,40 C 1.791,40 0,38.209 0,36 L 0,4 C 0,1.791 1.791,0 4,0 " Fill="[SMSolidColorBrush]#ff727272" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+									<Path Data="[PathGeometry]M 4,1 L 36,1 C 37.657,1 39,2.343 39,4 L 39,36 C 39,37.657 37.657,39 36,39 L 4,39 C 2.343,39 1,37.657 1,36 L 1,4 C 1,2.343 2.343,1 4,1 " Fill="[SMSolidColorBrush]#ffffffff" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+									<Path Data="[PathGeometry]M 4,2 L 36,2 C 37.104,2 38,2.896 38,4 L 38,36 C 38,37.105 37.104,38 36,38 L 4,38 C 2.896,38 2,37.105 2,36 L 2,4 C 2,2.896 2.896,2 4,2 " Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+									<Path Data="[PathGeometry]M 4.001,2.001 C 2.897,2.001 2.001,2.966 2.001,4.155 L 2.001,16 L 16,16 L 16,2 L 4.001,2.001 Z M 4.239,11.354 L 4.024,9.42 L 7.893,9.42 L 4.239,11.354 Z M 3.452,5.968 L 5.1,4.036 L 8.897,7.903 L 3.452,5.968 Z M 12.954,14 L 10.233,14 L 10.233,12.222 L 12.954,12.222 L 12.954,14 Z M 12.692,11.11 L 10.495,11.11 L 10.186,3.97 L 13.002,3.97 L 12.692,11.11 Z" Fill="[SMSolidColorBrush]#ffa0a017" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+									<Path Data="[PathGeometry]M 22.514,31.108 L 21.059,30.274 L 20.671,26.024 L 19.309,29.24 L 17.961,28.572 L 18.886,24.549 L 15.983,27.744 L 14.527,27.017 L 16.694,24.006 L 12.755,26.004 L 11.302,24.975 C 11.302,24.975 15.122,23.734 18.672,20.222 L 22.747,22.706 C 22.747,22.707 21.912,26.296 22.514,31.108  M 30.586,6.311 C 30.159,6 29.558,6.097 29.228,6.544 L 25.018,12.384 C 24.63,12.19 24.183,12.054 23.678,11.976 L 23.038,14.983 C 22.106,15.197 20.613,15.915 18.4,18.049 C 14.112,22.532 11.667,23.075 7.631,23.385 C 7.631,23.385 8.605,26.481 14.678,29.139 C 19.898,31.235 20.787,31.36 24.182,33.999 C 23.853,28.138 23.911,26.343 24.493,23.413 C 24.901,21.123 25.774,18.408 25.308,15.952 L 25.366,15.952 L 27.617,14.39 C 27.617,14.39 27.288,13.959 26.647,13.338 L 30.819,7.603 C 31.13,7.177 31.032,6.641 30.586,6.311  M 7.073,28.384 L 3.204,28.384 L 3.419,30.318 L 7.073,28.384 Z M 8.077,26.867 L 4.28,23 L 2.632,24.933 L 8.077,26.867 Z M 9.243,28 L 5,32.243 L 9.243,36.486 L 13.486,32.243 L 9.243,28 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								</Canvas>
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
 		</IconTable>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
 		<p.TypeReference TypeId="f261aca30cd44609875979717cdeb8e0">
 			<Attributed>
 				<AttributedType>
-					<Typedef TypedefName="niUSRPClass" UnderlyingType="@c632f8bb0b6d4e718f8a524b287854ec" />
+					<Typedef TypedefName="niUSRPClass" UnderlyingType="@9ff0a3c5e1174acfbcf4012b3637277c" />
 				</AttributedType>
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]Usrp" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="b4f83c03e79f40baadb9c2f37a20f64f">
+		<p.TypeReference TypeId="1b4705fb337c41c9ac1c1aca79d9f11e">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="whole seconds" DataType="UInt64" />
@@ -441,7 +469,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="c632f8bb0b6d4e718f8a524b287854ec">
+		<p.TypeReference TypeId="9ff0a3c5e1174acfbcf4012b3637277c">
 			<Attributed>
 				<AttributedType>
 					<Composite Id="1" Name="Usrp.niUSRPClass" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void">
