@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B35B4EDF2653E675FBE1C8A0140FAD5A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3E4062728EF8C322938FD993D6DB5EC3" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -73,7 +73,7 @@
 			<Multiply Bounds="575 250 30 30" Id="60" Terminals="o=85, c0t0v=64, c1t0v=69" />
 			<Wire Id="62" Joints="N(30:c3t0v) h(34) B(1) h(35) v(-95) N(59:c1t0v) B(1) v(35) h(475) v(-20) N(112:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="64" Joints="N(30:c0t0v) h(49) B(1) N(60:c0t0v) B(1) v(-65) N(59:c0t0v) B(1) v(65) h(445) v(-50) N(112:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="575 165 217.333328 15" Id="65" xmlns="http://www.ni.com/MocCommon">
+			<Comment Bounds="575 165 217 15" Id="65" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>Acquisition Rate * IQ Sampling Rate</p.Text>
 			</Comment>
 			<Literal Bounds="513.5 265 46 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="67" Label="68" xmlns="http://www.ni.com/MocCommon">
@@ -88,9 +88,9 @@
 				<p.Text>IQ Sampling Rate * 0.25</p.Text>
 			</Comment>
 			<Wire Id="85" Joints="N(60:o) N(186:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-			<WireComment AttachedTo="85" Bounds="625 257 129.333328 16" Id="86" xmlns="http://www.ni.com/PlatformFramework">
-				<p.ExpandedWidth>129.333328</p.ExpandedWidth>
-				<p.Point>689.6667 265</p.Point>
+			<WireComment AttachedTo="85" Bounds="625 257 129 16" Id="86" xmlns="http://www.ni.com/PlatformFramework">
+				<p.ExpandedWidth>129</p.ExpandedWidth>
+				<p.Point>689.5 265</p.Point>
 				<p.Text>IQ Sample Rate / 4</p.Text>
 			</WireComment>
 			<Wire Id="87" Joints="N(30:c1t0v) h(44) v(55) h(305) B(3) h(150) v(-40) N(112:c4t0v) B(3) v(-80) N(186:L0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -101,7 +101,7 @@
 			<NodeLabel AttachedTo="90" Bounds="788 100 102 14" Id="93" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Frame Parameters</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="1120 210 166.666672 125" HasErrorTerminals="False" Id="112" InstanceDataType="@cc40be03d5634fe2845024938a70cbfc" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="1120 210 167 125" HasErrorTerminals="False" Id="112" InstanceDataType="@cc40be03d5634fe2845024938a70cbfc" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 60" Id="c0t0v" Path="IQ Rate" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 15" Id="c1t0v" Path="Frames" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 30" Id="c2t0v" Path="Length of Subset" Usage="Required" />
@@ -111,9 +111,9 @@
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 105" Id="c6t0v" Path="Acq Duration [Sec]" Usage="Required" />
 			</PropertyNode>
 			<QuotientAndRemainder Bounds="855 195 30 30" Id="119" />
-			<WireComment AttachedTo="136" Bounds="625 192 173.333328 16" Id="121" xmlns="http://www.ni.com/PlatformFramework">
-				<p.ExpandedWidth>173.333328</p.ExpandedWidth>
-				<p.Point>711.6667 200</p.Point>
+			<WireComment AttachedTo="136" Bounds="625 192 173 16" Id="121" xmlns="http://www.ni.com/PlatformFramework">
+				<p.ExpandedWidth>173</p.ExpandedWidth>
+				<p.Point>711.5 200</p.Point>
 				<p.Text>Acq Rate * IQ Sample Rate</p.Text>
 			</WireComment>
 			<Literal Bounds="765 210 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="122" Label="123" xmlns="http://www.ni.com/MocCommon">
@@ -175,6 +175,9 @@
 			<ToQuadInteger Bounds="850 130 30 10" Id="210" />
 			<Wire Id="211" Joints="N(137:32bit integer) h(5) B(1) N(119:x) B(1) v(-65) N(210:number)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="212" Joints="N(210:64bit integer) N(182:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="1175 360 187 15" Id="213" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Writing to IQ rate is redundant</p.Text>
+			</Comment>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@5f55fbafa32047aea0bd50cb938b7fdf" Height="[float]397" Id="37" Label="[UIModel]54" Left="[float]129" Top="[float]186" Value="{DataItemBinding Id=55}" Width="[float]149" xmlns="http://www.ni.com/PanelCommon">
