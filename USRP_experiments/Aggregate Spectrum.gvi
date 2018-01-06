@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7401D9D0065FDCC5FEDB8931129D36E0" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="80EBDCAC405F6E27DED30160167DA8D4" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -105,13 +105,13 @@
 				<p.Text>Averaging Parameters</p.Text>
 			</NodeLabel>
 			<Wire Id="183" Joints="N(177:Value) h(55) B(1) N(97:instance in) B(1) v(50) N(1153:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="450 575 40 15" DataItem="232" Id="240" Label="241" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="420 560 40 15" DataItem="232" Id="240" Label="241" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@2169ee5e61874a1998bb9f1529904dfe" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="240" Bounds="404 575 41 14" Id="241" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="240" Bounds="374 560 41 14" Id="241" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Display</p.Text>
 			</NodeLabel>
-			<Wire Id="246" Joints="N(240:Value) h(285) N(1156:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="246" Joints="N(240:Value) h(315) N(1156:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<MethodCall Bounds="1370 275 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="260" Target="niUSRP\ Close\ Session\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -167,6 +167,7 @@
 									<Parameter Id="R4" Desc="error out" />
 									<Parameter Id="R2" Desc="data" />
 									<Parameter Id="B0" Desc="Carrier Freq Out" />
+									<Parameter Id="R1" Desc="timestamp" />
 								</MethodDeclaration>
 							</p.MethodDeclaration>
 							<Terminal DataType="@f261aca30cd44609875979717cdeb8e0" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
@@ -178,11 +179,12 @@
 							<Terminal DataType="Error" Direction="Output" Hotspot="40 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Double" Direction="Output" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="@1b4705fb337c41c9ac1c1aca79d9f11e" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
 						<Wire Id="72" Joints="N(71:i0) N(67:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="127" Joints="N(126:i0) N(67:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="132" Joints="N(131:i0) N(67:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-						<MethodCall Bounds="185 170 40 50" DomainName="NI.MocCommon" Id="133" Target="USRP\ Aggregate\ Spectrum\.gvi" xmlns="http://www.ni.com/MocCommon">
+						<MethodCall Bounds="200 170 40 60" DomainName="NI.MocCommon" Id="133" Target="USRP\ Aggregate\ Spectrum\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 									<Parameter Id="L2" Desc="Frame Parameters" />
@@ -204,20 +206,22 @@
 							<Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@aa606820ff8d4da3b651f0182bc33b06" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Int32" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Int32" Direction="Input" Hotspot="15 60" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@f94937c7b7fc4299b96164725f4188c0" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
-							<Terminal DataType="Boolean" Direction="Input" Hotspot="25 50" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal DataType="Boolean" Direction="Input" Hotspot="25 60" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@4484fb0b04a843d9a1521b2b33826f6d" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="Error" Direction="Output" Hotspot="40 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@2aa401105c6f42168b4a9c141e07f38a" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal Direction="Input" Hotspot="0 55" Id="L5" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+							<Terminal Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
-						<Wire Id="151" Joints="N(152:i0) h(194) N(133:B0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="151" Joints="N(152:i0) N(133:B0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="158" Joints="N(157:i0) N(133:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 						<IsEqualTo0 Bounds="125 245 30 30" Id="159" />
 						<Wire Id="160" Joints="N(66:Output) N(159:x)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="161" Joints="N(159:x = 0?) h(55) N(133:B1)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="179" Joints="N(180:i0) h(194) N(133:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="161" Joints="N(159:x = 0?) h(70) N(133:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="179" Joints="N(180:i0) h(209) N(133:T0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<MethodCall Bounds="300 170 40 40" DomainName="NI.MocCommon" Id="191" Target="USRP\ Plot\ Spectrum\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -234,7 +238,7 @@
 							<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 							<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						</MethodCall>
-						<Wire Id="259" Joints="N(191:R0) N(286:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="259" Joints="N(191:R0) N(1986:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="265" Joints="N(67:R0) N(264:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="266" Joints="N(67:R4) N(267:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="316" Joints="N(315:i0) N(67:L3)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -251,11 +255,19 @@
 							<p.Text>Carrier Freq Out</p.Text>
 						</NodeLabel>
 						<Wire Id="1514" Joints="N(76:i0) N(67:L4)" xmlns="http://www.ni.com/PlatformFramework" />
-						<DataAccessor Bounds="365 170 40 15" DataItem="285" Id="286" Label="306" xmlns="http://www.ni.com/MocCommon">
-							<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="145 205 40 15" DataItem="2104" Id="2108" Label="2109" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 						</DataAccessor>
-						<NodeLabel AttachedTo="286" Bounds="410 170 114 14" Id="306" xmlns="http://www.ni.com/PlatformFramework">
-							<p.Text>FFT Power Spectrum</p.Text>
+						<Wire Id="2110" Joints="N(2108:Value) v(15) N(133:L5)" xmlns="http://www.ni.com/PlatformFramework" />
+						<NodeLabel AttachedTo="2108" Bounds="7 205 133 14" Id="2109" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Waterfall Time Scale (s)</p.Text>
+						</NodeLabel>
+						<Wire Id="2124" Joints="N(133:R3) h(40) v(30) N(2134:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="365 230 40 15" DataItem="2133" Id="2134" Label="2135" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="Double[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="2134" Bounds="410 230 74 14" Id="2135" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Waterfall Plot</p.Text>
 						</NodeLabel>
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="65" Terminals="63=190, 64" />
 						<LoopTunnel Bounds="-5 92 13 10" Docking="Left" Id="71" Terminals="o0=70, i0=72" />
@@ -269,6 +281,7 @@
 						<LoopTunnel Bounds="530 92 13 10" Docking="Right" Id="264" Terminals="o0=263, i0=265" />
 						<LoopTunnel Bounds="530 132 13 10" Docking="Right" Id="267" Terminals="o0=268, i0=266" />
 						<LoopTunnel Bounds="-5 122 13 10" Docking="Left" Id="315" Terminals="o0=314, i0=316" />
+						<LoopTunnel Bounds="530 172 13 10" Docking="Right" Id="1986" Terminals="o0=1985, i0=259" />
 					</ForLoop>
 					<Wire Id="70" Joints="N(69:i0) N(71:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="75" Joints="N(74:i0) N(76:o0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -282,6 +295,7 @@
 					<Wire Id="263" Joints="N(264:o0) N(262:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="268" Joints="N(267:o0) N(269:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="314" Joints="N(313:i0) N(315:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1985" Joints="N(1986:o0) N(1984:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<LoopCount Bounds="1 1 15 15" Docking="Left" Id="61" Terminals="59, 60" />
 					<LoopTunnel Bounds="-5 107 13 10" Docking="Left" Id="69" Terminals="o0=1143, i0=70" />
 					<LoopTunnel Bounds="-5 147 13 10" Docking="Left" Id="74" Terminals="o0=1146, i0=75" />
@@ -294,6 +308,7 @@
 					<LoopTunnel Bounds="561 107 13 10" Docking="Right" Id="262" Terminals="o0=1979, i0=263" />
 					<LoopTunnel Bounds="561 147 13 10" Docking="Right" Id="269" Terminals="o0=1980, i0=268" />
 					<LoopTunnel Bounds="-5 137 13 10" Docking="Left" Id="313" Terminals="o0=1167, i0=314" />
+					<LoopTunnel Bounds="561 187 13 10" Docking="Right" Id="1984" Terminals="o0=2102, i0=1985" />
 				</ForLoop>
 				<Wire Id="1143" Joints="N(1144:i0) N(69:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1146" Joints="N(1147:i0) N(74:o0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -313,6 +328,13 @@
 				<Wire Id="1180" Joints="N(1177:Value) N(350:Input)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1979" Joints="N(262:o0) N(1159:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1980" Joints="N(269:o0) N(1162:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="640 220 40 15" DataItem="285" Id="286" Label="306" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="286" Bounds="685 220 114 14" Id="306" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>FFT Power Spectrum</p.Text>
+				</NodeLabel>
+				<Wire Id="2102" Joints="N(1984:o0) N(286:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LoopTunnel Bounds="-4 145 13 10" Docking="Left" Id="1144" Terminals="o0=68, i0=1143" />
 				<LoopTunnel Bounds="-4 185 13 10" Docking="Left" Id="1147" Terminals="o0=73, i0=1146" />
 				<LoopTunnel Bounds="-4 165 13 10" Docking="Left" Id="1150" Terminals="o0=128, i0=1149" />
@@ -399,8 +421,8 @@
 				<Label Height="[float]16" Id="237" LabelOwner="[UIModel]235" Left="[float]5" Text="[string]dB type" Top="[float]60" Width="[float]41" />
 			</Cluster>
 			<Label Height="[float]16" Id="238" LabelOwner="[UIModel]233" Left="[float]367" Text="[string]Display" Top="[float]362" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
-			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=285}" Height="[float]400" Id="287" IncludeInCapture="[bool]True" Label="[UIModel]305" Left="[float]520" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]49,8,26,43" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]True" Top="[float]165" Width="[float]600" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="288" Label="[string]Frequency" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]299" Orientation="[SMOrientation]Horizontal" Range="[IRange]85000000, 110000000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=285}" Height="[float]290" Id="287" IncludeInCapture="[bool]True" Label="[UIModel]305" Left="[float]520" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]49,8,26,43" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]True" Top="[float]165" Width="[float]802" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="288" Label="[string]Frequency" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]299" Orientation="[SMOrientation]Horizontal" Range="[IRange]92000000, 100000000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="299" LabelPresenter="[string]LVSI:" />
 				</Axis>
 				<Axis Adjuster="[RangeAdjuster]None" Id="289" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]300" Orientation="[SMOrientation]Vertical" Range="[IRange]-130, 0, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
@@ -418,10 +440,10 @@
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="297" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="298" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
 			</Graph>
-			<PlotLegend ControlDesignTuple="[ControlDesignPair]Flat,Flat Blue" Graph="[UIModel]287" Height="[float]28" Id="301" Left="[float]1127" Top="[float]165" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]287" Height="[float]102" Id="302" Left="[float]525" MinHeight="[float]80" Top="[float]594" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<ScaleLegend Graph="[UIModel]287" Height="[float]50" Id="303" Left="[float]1127" MinHeight="[float]50" Top="[float]463" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<GraphTools Graph="[UIModel]287" Height="[float]22" Id="304" Left="[float]525" Top="[float]572" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<PlotLegend ControlDesignTuple="[ControlDesignPair]Flat,Flat Blue" Graph="[UIModel]287" Height="[float]28" Id="301" Left="[float]1329" Top="[float]165" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]287" Height="[float]102" Id="302" Left="[float]525" MinHeight="[float]80" Top="[float]484" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]287" Height="[float]50" Id="303" Left="[float]1329" MinHeight="[float]50" Top="[float]353" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Graph="[UIModel]287" Height="[float]22" Id="304" Left="[float]525" Top="[float]462" Visible="[bool]False" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="305" LabelOwner="[UIModel]287" Left="[float]520" Text="[string]FFT Power Spectrum" Top="[float]142" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
 			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="272" IncludeInCapture="[bool]True" Label="[UIModel]279" Left="[float]201" Top="[float]633" Value="{DataItemBinding Id=271}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
@@ -441,6 +463,19 @@
 			<Label Height="[float]16" Id="343" LabelOwner="[UIModel]338" Left="[float]350" Text="[string]Carrier Freq Out" Top="[float]632" Width="[float]86" xmlns="http://www.ni.com/PanelCommon" />
 			<Button BaseName="[string]Stop" ClickMode="[ClickMode]Press" Content="[string]Stop Capture" ContentVisibility="[Visibility]Visible" Foreground="[SMColor]#ffff0000" Height="[float]30" Id="1182" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]1185" Latch="[bool]True" Left="[float]367" MinHeight="[float]13" MinWidth="[float]13" Shape="[ButtonShape]Square" Top="[float]515" Value="{DataItemBinding Id=1176}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="1185" LabelOwner="[UIModel]1182" Left="[float]367" Text="[string]Stop Capture" Top="[float]492" Visible="[bool]False" Width="[float]70" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2105" Interval="[int]1" Label="[UIModel]2106" Left="[float]350" MinHeight="[float]22" Top="[float]762" Value="{DataItemBinding Id=2104}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="2106" LabelOwner="[UIModel]2105" Left="[float]350" Text="[string]Waterfall Time Scale (s)" Top="[float]739" Width="[float]123" xmlns="http://www.ni.com/PanelCommon" />
+			<IntensityGraph BaseName="[string]Intensity Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=2133}" Height="[float]400" Id="2125" Label="[UIModel]2132" Left="[float]520" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]NaN,NaN,NaN,NaN" SuppressScaleLayout="[bool]False" Top="[float]492" Width="[float]800" p4:ControlDefinitionChecksum="" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]None" Id="2126" Label="[string]Frequency" Orientation="[SMOrientation]Horizontal" Range="[IRange]-0.5, 16383.5, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" />
+				<Axis Adjuster="[RangeAdjuster]FitExactly" Id="2127" Label="[string]Time (ds)" MajorDivisions="[UIModel]2129" Orientation="[SMOrientation]Vertical" Range="[IRange]-0.5, 49.5, System.Double" ValueType="[Type]Double">
+					<RangeLabeledDivisions Id="2129" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
+				</Axis>
+				<ColorScale Adjuster="[RangeAdjuster]None" HighColor="[SMColor]#ffffffff" Id="2128" LabelVisibility="[SMVisibility]Collapsed" Location="[RelativeLocation]Far" LowColor="[SMColor]#ff000000" MajorDivisions="[UIModel]2130" Markers="[SMLinearGradientBrush]{Start: 0 0}, {End: 1 1}, {Stops: {Stop: #ff000000 -130}, {Stop: #ff0000ff -95}, {Stop: #ffffffff -60}}">
+					<RangeLabeledDivisions Id="2130" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
+				</ColorScale>
+			</IntensityGraph>
+			<ScaleLegend Graph="[UIModel]2125" Height="[float]75" Id="2131" Left="[float]1327" MinHeight="[float]50" Top="[float]790" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="2132" LabelOwner="[UIModel]2125" Left="[float]520" Text="[string]Waterfall Plot" Top="[float]469" Width="[float]72" xmlns="http://www.ni.com/PanelCommon" />
 		</CPFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="@5f55fbafa32047aea0bd50cb938b7fdf" Id="21" Name="RX Parameters In" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -500,6 +535,14 @@
 		</DataItem>
 		<DataItem DataType="Boolean" Id="1176" Name="Stop Capture" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>True</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="2104" Name="Waterfall Time Scale (s)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>5</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Double[,]" Id="2133" Name="Waterfall Plot" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="0,0" />
+			</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="niUSRP\ Open\ Rx\ Session\.gvi">
@@ -591,8 +634,8 @@
 			<p.IconModel Target="USRP\ Aggregate\ Spectrum\.gvi">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
-						<Icon ListViewIconCrop="0 0 40 50">
-							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]40">
+						<Icon ListViewIconCrop="0 0 40 60">
+							<IconPanel Height="[float]60" Left="[float]0" Top="[float]0" Width="[float]40">
 								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
 									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
@@ -600,7 +643,7 @@
 										<FontSetting FontFamily="Verdana" FontSize="6" />
 									</FileNameText>
 								</IconTemplate>
-								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]54" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
 							</IconPanel>
 						</Icon>
 					</MergeItem>
@@ -710,6 +753,14 @@
 							</Enumeration>
 						</DataType>
 					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1b4705fb337c41c9ac1c1aca79d9f11e">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="whole seconds" DataType="UInt64" />
+					<Field FieldAccessPolicy="ReadWrite" Name="fractional seconds" DataType="Double" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
