@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="00A0D6DFBE7A772192D8F79564903ED6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="9B35DC0BB70E901BF1FFE1FA0E35680A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -306,6 +306,7 @@
 								<Parameter Id="L1" Desc="Frame Parameters" />
 								<Parameter Id="L0" Desc="Power Spectrum Subset" />
 								<Parameter Id="L3" Desc="Window Properties In" />
+								<Parameter Id="L2" Desc="Display" />
 								<Parameter Id="L4" Desc="Reset" />
 								<Parameter Id="B0" Desc="Iteration" />
 								<Parameter Id="R3" Desc="Window Properties Out" />
@@ -316,6 +317,7 @@
 						<Terminal DataType="@2aa401105c6f42168b4a9c141e07f38a" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@a8106957b9c74a119f0e3cfccf03e781" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@4484fb0b04a843d9a1521b2b33826f6d" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@2169ee5e61874a1998bb9f1529904dfe" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Boolean" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Int32" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@4484fb0b04a843d9a1521b2b33826f6d" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
@@ -327,15 +329,11 @@
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="Frame Parameters" />
-								<Parameter Id="L4" Desc="Display" />
-								<Parameter Id="L3" Desc="Window Properties" />
 								<Parameter Id="L0" Desc="Spectrum to Plot In" />
 								<Parameter Id="R0" Desc="Spectrum to Plot Out" />
 							</MethodDeclaration>
 						</p.MethodDeclaration>
 						<Terminal DataType="@2aa401105c6f42168b4a9c141e07f38a" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@2169ee5e61874a1998bb9f1529904dfe" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@b03bcaa5332d4df68959aaf6faa89cde" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
@@ -344,8 +342,6 @@
 					<Wire Id="2750" Joints="N(2743:o0) N(2663:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="2751" Joints="N(2663:R1) N(2666:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="2760" Joints="N(2757:o0) N(2663:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="2763" Joints="N(2663:R3) N(2666:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="2764" Joints="N(2754:i0) v(-153) N(2666:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 					<DataAccessor Bounds="915 140 40 15" DataItem="2683" Id="2667" Label="2678" xmlns="http://www.ni.com/MocCommon">
 						<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 					</DataAccessor>
@@ -415,6 +411,7 @@
 					<Wire Id="2782" Joints="N(2770:c1t0v) h(337) v(45) N(2658:60)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="2783" Joints="N(2770:instance out) h(610) v(65) N(262:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="2784" Joints="N(2770:error out) h(597) v(95) N(269:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2854" Joints="N(2754:i0) v(-173) N(2663:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 					<LoopCount Bounds="1 1 15 15" Docking="Left" Id="61" Terminals="59, 60" />
 					<LoopTunnel Bounds="-5 122 13 10" Docking="Left" Id="69" Terminals="o0=1143, i0=2638" />
 					<LoopTunnel Bounds="-5 187 13 10" Docking="Left" Id="74" Terminals="o0=1146, i0=2646" />
@@ -428,7 +425,7 @@
 					<LoopTunnel Bounds="1505 267 13 10" Docking="Right" Id="2612" Terminals="o0=2611, i0=2610" />
 					<RightShiftRegister Bounds="1505 152 13 10" Docking="Right" Id="2658" Terminals="59, 60=2782" />
 					<LeftShiftRegister Bounds="-5 152 13 10" Docking="Left" Id="2660" RightRegister="2658" Terminals="o0=2786, i0=2661" />
-					<LoopTunnel Bounds="587 340 10 13" Docking="Bottom" Id="2754" Terminals="o0=2753, i0=2764" />
+					<LoopTunnel Bounds="517 340 10 13" Docking="Bottom" Id="2754" Terminals="o0=2753, i0=2854" />
 				</ForLoop>
 				<Wire Id="1143" Joints="N(1144:i0) N(69:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1146" Joints="N(1147:i0) N(74:o0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -458,7 +455,7 @@
 				<LoopTunnel Bounds="-4 255 13 10" Docking="Left" Id="1165" Terminals="o0=310, i0=1164" />
 				<LoopTunnel Bounds="-4 240 13 10" Docking="Left" Id="1171" Terminals="o0=2597, i0=1170" />
 				<LoopTunnel Bounds="-4 65 13 10" Docking="Left" Id="1174" Terminals="o0=345, i0=1173" />
-				<LoopTunnel Bounds="665 431 10 13" Docking="Bottom" Id="2852" Terminals="o0=2851, i0=2753" />
+				<LoopTunnel Bounds="595 431 10 13" Docking="Bottom" Id="2852" Terminals="o0=2851, i0=2753" />
 			</WhileLoop>
 			<MethodCall Bounds="325 275 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="2539" Target="niUSRP\ Configure\ Number\ of\ Samples\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
@@ -519,10 +516,10 @@
 			<NodeLabel AttachedTo="2629" Bounds="416 585 19 14" Id="2636" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Tab</p.Text>
 			</NodeLabel>
-			<DataAccessor Bounds="1050 575 40 15" DataItem="232" Id="240" Label="241" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="980 575 40 15" DataItem="232" Id="240" Label="241" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@2169ee5e61874a1998bb9f1529904dfe" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="240" Bounds="1004 575 41 14" Id="241" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="240" Bounds="934 575 41 14" Id="241" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Display</p.Text>
 			</NodeLabel>
 			<Wire Id="2851" Joints="N(240:Value) h(5) N(2852:o0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -1018,19 +1015,6 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="5d9dcb9b138d4fa98e430ff524105580">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="f0" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="df" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="IQ">
-						<DataType>
-							<VariableArray DereferenceType="Double" />
-						</DataType>
-					</Field>
-				</Members>
-			</Composite>
-		</p.TypeReference>
 		<p.TypeReference TypeId="2169ee5e61874a1998bb9f1529904dfe">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
@@ -1070,11 +1054,16 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="b03bcaa5332d4df68959aaf6faa89cde">
+		<p.TypeReference TypeId="5d9dcb9b138d4fa98e430ff524105580">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="eq noise BW" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="coherent gain" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="f0" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="df" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="IQ">
+						<DataType>
+							<VariableArray DereferenceType="Double" />
+						</DataType>
+					</Field>
 				</Members>
 			</Composite>
 		</p.TypeReference>
