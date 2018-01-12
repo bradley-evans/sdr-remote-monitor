@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="83D31B5D631A8BA39821E4CFB25F6934" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="7803D05C9AE7F0324821397E39B923CF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -225,7 +225,7 @@
 				</PropertyNode>
 				<Wire Id="72" Joints="N(66:Value) N(71:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="73" Joints="N(71:c0t0v) N(50:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="74" Joints="N(71:c1t0v) h(232.666687) v(25) h(20) N(50:B0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="74" Joints="N(71:c1t0v) h(232.670013) v(25) h(20) N(50:B0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<ArraySize Bounds="537 575 40 20" Id="77" />
 				<Wire Id="78" Joints="N(77:size(s\)) N(50:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="80" Joints="N(46:Value) h(200) B(1) h(80) v(-175) N(85:Y) B(1) v(100) N(77:array)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -318,7 +318,7 @@
 					<p.Text>error out</p.Text>
 				</NodeLabel>
 				<ArraySubset Bounds="827 325 40 40" Id="197" Terminals="array=198, subarray=1108, index0=199, length0=183" />
-				<Wire Id="198" Joints="N(139:c1t0v) h(26.666687) B(1) N(197:array) B(1) v(125) N(337:array)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="198" Joints="N(139:c1t0v) h(26.6699829) B(1) N(197:array) B(1) v(125) N(337:array)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="199" Joints="N(81:c3t0v) h(20) v(-50) h(415) v(100) N(197:index0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<WireComment AttachedTo="183" Bounds="505.000031 232 117.333336 16" Id="201" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ExpandedWidth>117.333336</p.ExpandedWidth>
@@ -338,7 +338,7 @@
 				<NodeLabel AttachedTo="207" Bounds="754 220 48 14" Id="209" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Iteration</p.Text>
 				</NodeLabel>
-				<Wire Id="231" Joints="N(139:c0t0v) h(6.666687) N(232:19)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="231" Joints="N(139:c0t0v) h(6.669983) N(232:19)" xmlns="http://www.ni.com/PlatformFramework" />
 				<InPlaceElementStructure Bounds="979 55 337 155" DiagramId="242" Id="241">
 					<InPlaceElementStructure.UnbundleBundleReadPoser Bounds="0 0 50 35" HasErrorTerminals="False" Id="243" InstanceDataType="@5d9dcb9b138d4fa98e430ff524105580" Mode="InstanceProperties" Template="List" WritePoser="244">
 						<PropertyItemTerminal DataType="Double[]" Hotspot="50 15" Id="c0t0v" Path="IQ" Usage="Optional" />
@@ -421,33 +421,33 @@
 				<RightShiftRegister Bounds="1395 65 13 10" Docking="Right" Id="283" Terminals="15=1123, 16=280" />
 				<LeftShiftRegister Bounds="-4 65 13 10" Docking="Left" Id="284" RightRegister="283" Terminals="o0, i0=285" />
 			</WhileLoop>
-			<DataAccessor Bounds="1510 0 40 15" DataItem="260" Id="262" Label="279" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="1740 0 40 15" DataItem="260" Id="262" Label="279" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="262" Bounds="1555 0 93 14" Id="279" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="262" Bounds="1785 0 93 14" Id="279" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Spectrum to Plot</p.Text>
 			</NodeLabel>
-			<DataAccessor Bounds="2030 245 40 15" DataItem="393" Id="389" Label="392" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="1740 110 40 15" DataItem="393" Id="389" Label="392" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="389" Bounds="2075 245 74 14" Id="392" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="389" Bounds="1785 110 74 14" Id="392" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Waterfall Plot</p.Text>
 			</NodeLabel>
 			<Wire Id="1122" Joints="N(443:R0) N(389:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<PropertyNode Bounds="1690 170 50 35" HasErrorTerminals="False" Id="323" InstanceDataType="@5d9dcb9b138d4fa98e430ff524105580" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="1545 35 50 35" HasErrorTerminals="False" Id="323" InstanceDataType="@5d9dcb9b138d4fa98e430ff524105580" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal DataType="Double[]" Hotspot="50 15" Id="c0t0v" Path="IQ" Usage="Optional" />
 			</PropertyNode>
-			<ArraySize Bounds="1760 180 40 20" Id="325" />
+			<ArraySize Bounds="1615 45 40 20" Id="325" />
 			<Wire Id="326" Joints="N(323:c0t0v) h(13) B(1) N(325:array) B(1) v(65) N(443:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="1835 190 40 15" DataItem="327" Id="329" Label="331" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="1740 55 40 15" DataItem="327" Id="329" Label="331" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<Wire Id="332" Joints="N(325:size(s\)) h(10) B(1) N(329:Value) B(1) v(65) N(443:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="1690 265 40 15" DataItem="406" Id="402" Label="404" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="332" Joints="N(325:size(s\)) h(15) B(1) N(329:Value) B(1) v(65) N(443:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1625 130 40 15" DataItem="406" Id="402" Label="404" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<Wire Id="754" Joints="N(402:Value) N(443:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-			<MethodCall Bounds="1835 245 40 40" DomainName="NI.MocCommon" Id="443" Target="Function_2\.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="1685 110 40 40" DomainName="NI.MocCommon" Id="443" Target="Waterfal\ Plot\ Generator\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Magnitude" />
@@ -461,13 +461,13 @@
 				<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<NodeLabel AttachedTo="329" Bounds="1880 190 71 14" Id="331" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="329" Bounds="1785 55 71 14" Id="331" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>IQ array size</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="402" Bounds="1552 265 133 14" Id="404" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="402" Bounds="1487 130 133 14" Id="404" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Waterfall Time Scale (s)</p.Text>
 			</NodeLabel>
-			<Wire Id="1123" Joints="N(283:15) h(10) B(1) N(262:Value) B(1) v(170) N(323:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1123" Joints="N(283:15) h(39) B(1) N(262:Value) B(1) v(35) N(323:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2aa401105c6f42168b4a9c141e07f38a" Height="[float]328" Id="25" Label="[UIModel]40" Left="[float]729" Top="[float]169" Value="{DataItemBinding Id=41}" Width="[float]123" xmlns="http://www.ni.com/PanelCommon">
@@ -701,7 +701,7 @@
 					</MergeItem>
 				</MergeScript>
 			</p.IconModel>
-			<p.IconModel Target="Function_2\.gvi">
+			<p.IconModel Target="Waterfal\ Plot\ Generator\.gvi">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
 						<Icon ListViewIconCrop="0 0 40 40">
@@ -709,7 +709,7 @@
 								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
 									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Function_2" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Waterfal Plot Generator" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 										<FontSetting FontFamily="Verdana" FontSize="6" />
 									</FileNameText>
 								</IconTemplate>
