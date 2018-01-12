@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0203D2DAF46AC1B0DE9DC5FB30AE2C8A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="31344927829AD9D58E3D024BC4BD0593" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -75,39 +75,23 @@
 				<p.Text>RX Parameters In</p.Text>
 			</NodeLabel>
 			<Wire Id="58" Joints="N(56:Value) N(30:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Multiply Bounds="575 185 30 30" Id="59" Terminals="o=136, c0t0v=64, c1t0v=62" />
-			<Multiply Bounds="575 250 30 30" Id="60" Terminals="o=85, c0t0v=64, c1t0v=69" />
-			<Wire Id="62" Joints="N(30:c3t0v) h(39) B(1) h(35) v(-95) N(59:c1t0v) B(1) v(35) h(475) v(-20) N(112:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="64" Joints="N(30:c0t0v) h(54) B(1) N(60:c0t0v) B(1) v(-65) N(59:c0t0v) B(1) v(65) h(445) v(-50) N(112:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="575 165 217 15" Id="65" xmlns="http://www.ni.com/MocCommon">
+			<Multiply Bounds="520 180 30 30" Id="59" Terminals="o=222, c0t0v=64, c1t0v=62" />
+			<Multiply Bounds="665 250 30 30" Id="60" Terminals="o=85, c0t0v=64, c1t0v=246" />
+			<Wire Id="62" Joints="N(30:c3t0v) h(39) B(1) h(40) v(-100) N(59:c1t0v) B(1) v(65) N(112:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="64" Joints="N(30:c0t0v) h(7) B(1) h(62) B(2) N(60:c0t0v) B(2) v(65) N(112:c0t0v) B(1) v(-70) N(59:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="520 160 217 15" Id="65" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>Acquisition Rate * IQ Sampling Rate</p.Text>
 			</Comment>
-			<Literal Bounds="513.5 265 46 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="67" Label="68" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>0x3FD0000000000000</p.Data>
-				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-			</Literal>
-			<NodeLabel AttachedTo="67" Bounds="513.5 265 0 0" Id="68" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>input 1</p.Text>
-			</NodeLabel>
-			<Wire Id="69" Joints="N(67:Out) N(60:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="580 235 154 15" Id="70" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>IQ Sampling Rate * 0.25</p.Text>
-			</Comment>
 			<Wire Id="85" Joints="N(60:o) N(186:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-			<WireComment AttachedTo="85" Bounds="625 257 129 16" Id="86" xmlns="http://www.ni.com/PlatformFramework">
-				<p.ExpandedWidth>129</p.ExpandedWidth>
-				<p.Point>689.5 265</p.Point>
-				<p.Text>IQ Sample Rate / 4</p.Text>
-			</WireComment>
-			<Wire Id="87" Joints="N(30:c1t0v) h(49) v(55) h(305) B(3) h(150) v(-40) N(112:c4t0v) B(3) v(-80) N(186:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="88" Joints="N(30:c2t0v) h(44) v(45) h(315) B(3) h(150) v(-30) N(112:c5t0v) B(3) v(-75) N(186:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="895 100 40 15" DataItem="89" Id="90" Label="93" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="87" Joints="N(30:c1t0v) h(49) B(1) v(-25) N(186:L0) B(1) v(65) N(112:c4t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="88" Joints="N(30:c2t0v) h(9) v(65) h(355) B(3) N(112:c5t0v) B(3) v(-95) N(186:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1100 95 40 15" DataItem="89" Id="90" Label="93" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@cc40be03d5634fe2845024938a70cbfc" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="90" Bounds="788 100 102 14" Id="93" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="90" Bounds="993 95 102 14" Id="93" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Frame Parameters</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="1120 210 167 125" HasErrorTerminals="False" Id="112" InstanceDataType="@cc40be03d5634fe2845024938a70cbfc" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="1320 260 167 125" HasErrorTerminals="False" Id="112" InstanceDataType="@cc40be03d5634fe2845024938a70cbfc" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 60" Id="c0t0v" Path="IQ Rate" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 15" Id="c1t0v" Path="Frames" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 30" Id="c2t0v" Path="Length of Subset" Usage="Required" />
@@ -116,39 +100,24 @@
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 90" Id="c5t0v" Path="Stop Carrier [Hz]" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 105" Id="c6t0v" Path="Acq Duration [Sec]" Usage="Required" />
 			</PropertyNode>
-			<QuotientAndRemainder Bounds="855 195 30 30" Id="119" />
-			<WireComment AttachedTo="136" Bounds="625 192 173 16" Id="121" xmlns="http://www.ni.com/PlatformFramework">
+			<WireComment AttachedTo="222" Bounds="560 187 173 16" Id="121" xmlns="http://www.ni.com/PlatformFramework">
 				<p.ExpandedWidth>173</p.ExpandedWidth>
-				<p.Point>711.5 200</p.Point>
+				<p.Point>646.5 195</p.Point>
 				<p.Text>Acq Rate * IQ Sample Rate</p.Text>
 			</WireComment>
-			<Literal Bounds="765 210 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="122" Label="123" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>4</p.Data>
-				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-			</Literal>
-			<NodeLabel AttachedTo="122" Bounds="765 210 0 0" Id="123" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>y</p.Text>
-			</NodeLabel>
-			<Wire Id="124" Joints="N(122:Out) N(119:y)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="128" Joints="N(119:floor(x/y\)) h(30) v(25) B(2) N(112:c2t0v) B(2) v(15) N(112:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="136" Joints="N(59:o) N(137:number)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ToLongInteger Bounds="810 195 30 10" Id="137" />
-			<Wire Id="139" Joints="N(90:Value) h(160) v(110) N(112:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="1340 210 40 15" DataItem="141" Id="143" Label="173" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="139" Joints="N(90:Value) h(160) v(165) N(112:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1420 210 40 15" DataItem="141" Id="143" Label="173" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@2aa401105c6f42168b4a9c141e07f38a" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="143" Bounds="1385 210 126 14" Id="173" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="143" Bounds="1465 210 126 14" Id="173" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Frame Parameters Out</p.Text>
 			</NodeLabel>
-			<Wire Id="174" Joints="N(112:instance out) N(143:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="179" Joints="N(186:R1) h(40) v(-30) N(112:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="505 340 362 28" Id="180" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>"Is the dt variable in Ramp by Increment Waveform important?\r\nWhat happens if it changes?"</p.Text>
-			</Comment>
-			<DataAccessor Bounds="890 130 40 15" DataItem="181" Id="182" Label="184" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="174" Joints="N(112:instance out) h(5) v(-35) h(-77) v(-15) N(143:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="179" Joints="N(186:R1) h(10) v(20) N(112:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1095 125 40 15" DataItem="181" Id="182" Label="184" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int64" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="182" Bounds="935 130 133 14" Id="184" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="182" Bounds="1140 125 133 14" Id="184" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Samples per Acquisition</p.Text>
 			</NodeLabel>
 			<PatternGeneratorRampByIncrementArray Bounds="810 240 50 50" DomainName="NI.LabVIEW.VI" Id="186" Target="NI:Analysis:Generation:Ramp\ Pattern\ by\ Increment\.gvi">
@@ -171,16 +140,103 @@
 				<Terminal DataType="Int32" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</PatternGeneratorRampByIncrementArray>
-			<DataAccessor Bounds="900 425 40 15" DataItem="200" Id="205" Label="206" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="885 415 40 15" DataItem="200" Id="205" Label="206" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="205" Bounds="945 425 134 14" Id="206" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="205" Bounds="930 415 134 14" Id="206" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Test Carrier Frequencies</p.Text>
 			</NodeLabel>
-			<Wire Id="207" Joints="N(186:R0) h(15) v(185) N(205:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ToQuadInteger Bounds="850 130 30 10" Id="210" />
-			<Wire Id="211" Joints="N(137:32bit integer) h(5) B(1) N(119:x) B(1) v(-65) N(210:number)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="207" Joints="N(186:R0) h(15) v(175) N(205:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ToQuadInteger Bounds="975 125 30 10" Id="210" />
 			<Wire Id="212" Joints="N(210:64bit integer) N(182:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Multiply Bounds="1100 170 30 30" Id="213" Terminals="o=234, c0t0v=273, c1t0v=257" />
+			<QuotientAndRemainder Bounds="790 190 30 30" Id="220" />
+			<Wire Id="222" Joints="N(59:o) N(220:x)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="740 205 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="223" Label="224" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>30</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="223" Bounds="740 205 0 0" Id="224" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>y</p.Text>
+			</NodeLabel>
+			<Wire Id="225" Joints="N(223:Out) N(220:y)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Multiply Bounds="850 175 30 30" Id="226" Terminals="o=257, c0t0v=230, c1t0v=227" />
+			<Wire Id="227" Joints="N(220:floor(x/y\)) h(23) v(-15) N(226:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="800 175 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="228" Label="229" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>30</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="228" Bounds="800 175 0 0" Id="229" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>y</p.Text>
+			</NodeLabel>
+			<Wire Id="230" Joints="N(228:Out) N(226:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="610 100 127 55" Id="232" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"ex1: iq frac = 0.8\r\n0.8 = 4/5\r\n"A" = 1/10\r\nLCM(4,5,1,10) = 20"</p.Text>
+			</Comment>
+			<Wire Id="234" Joints="N(213:o) h(45) v(105) N(112:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Multiply Bounds="1100 235 30 30" Id="236" Terminals="o=264, c0t0v=253, c1t0v=260" />
+			<DataAccessor Bounds="580 265 40 15" DataItem="241" Id="243" Label="245" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="243" Bounds="537 265 38 14" Id="245" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>IQ frac</p.Text>
+			</NodeLabel>
+			<Wire Id="246" Joints="N(243:Value) N(60:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="965 140 40 15" DataItem="241" Id="248" Label="249" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="248" Bounds="922 140 38 14" Id="249" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>IQ frac</p.Text>
+			</NodeLabel>
+			<Subtract Bounds="1020 225 30 30" Id="252" />
+			<Wire Id="253" Joints="N(252:x-y) N(236:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="257" Joints="N(226:o) h(35) B(1) N(213:c1t0v) B(1) v(-60) N(210:number) B(1) v(120) N(262:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="1055 250 39.5 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="258" Label="259" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x3FE0000000000000</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="258" Bounds="1055 250 0 0" Id="259" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>input 1</p.Text>
+			</NodeLabel>
+			<Wire Id="260" Joints="N(258:Out) N(236:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="261" Joints="N(262:o) N(112:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Multiply Bounds="1145 290 30 30" Id="262" Terminals="o=261, c0t0v=264, c1t0v=257" />
+			<Wire Id="264" Joints="N(236:o) h(5) v(45) N(262:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="450 -75 434 108" Id="266" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"A note on IQ fraction: \r\nDuring acqusition, the USRP uses baseband filters to demodulated signal.\r\nThink anti-aliasing nyquist type stuff. Anyway, these filters are not ideal\r\nand attenuate frequencies at the edge of half the sampling rate. Therefore,\r\nwhen using the subspectrums it is important to throw away the edges of\r\nthe recorded data. IQ frac is the percentage you want to keep. \r\nThe default is 25%. Meaning you want to keep only the middle quarter of\r\nthe received sub-band. "</p.Text>
+			</Comment>
+			<Comment Bounds="1140 150 150 30" Id="268" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"keep IQ frac percentage\r\nof total"</p.Text>
+			</Comment>
+			<Comment Bounds="1030 205 130 28" Id="269" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"Take the middle part\r\nof the sub-band"</p.Text>
+			</Comment>
+			<Comment Bounds="720 55 190 42" Id="270" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"multiply and divide by the LCM\r\nof the num, den of IQ frac and \r\n"A""</p.Text>
+			</Comment>
+			<WireComment AttachedTo="264" Bounds="1115 255 40 16" Id="271" xmlns="http://www.ni.com/PlatformFramework">
+				<p.ExpandedWidth>40</p.ExpandedWidth>
+				<p.Point>1135 263</p.Point>
+				<p.Text>""A""</p.Text>
+			</WireComment>
+			<Comment Bounds="1515 290 260 42" Id="272" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"Length of Subset and Start Index of Subset\r\nshould probably be a multiple of sample per\r\nacquisition"</p.Text>
+			</Comment>
+			<Wire Id="273" Joints="N(248:Value) h(5) B(1) h(85) v(30) N(213:c0t0v) B(1) v(100) N(252:y)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="960 225 39.5 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="274" Label="275" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x3FF0000000000000</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="274" Bounds="960 225 0 0" Id="275" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>x</p.Text>
+			</NodeLabel>
+			<Wire Id="276" Joints="N(274:Out) N(252:x)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="745 100 122 55" Id="277" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"ex2: iq frac = 0.25\r\n0.25 = 1/4\r\n"A" = 3/8\r\nLCM(1,4,3,8) = 24"</p.Text>
+			</Comment>
+			<Comment Bounds="630 395 115 55" Id="278" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"ex3: iq frac = 0.6\r\n0.6 = 3/5\r\n"A" = 2/5\r\nLCM(3,5,2) = 30"</p.Text>
+			</Comment>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@5f55fbafa32047aea0bd50cb938b7fdf" Height="[float]397" Id="37" Label="[UIModel]54" Left="[float]129" Top="[float]186" Value="{DataItemBinding Id=55}" Width="[float]149" xmlns="http://www.ni.com/PanelCommon">
@@ -231,11 +287,13 @@
 			<Label Height="[float]16" Id="208" LabelOwner="[UIModel]144" Left="[float]304" Text="[string]Frame Parameters Out" Top="[float]163" Width="[float]119" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]202" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]42" Id="201" Label="[UIModel]203" Left="[float]461" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]186" Value="{DataItemBinding Id=200}" Width="[float]104" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText Height="[float]22" Id="202" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[double]0" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText Height="[float]22" Id="202" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[double]80000000" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="203" LabelOwner="[UIModel]201" Left="[float]461" Text="[string]Test Carrier Frequencies" Top="[float]163" Width="[float]126" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="183" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[long]1" Label="[UIModel]209" Left="[float]313" MinHeight="[float]22" Top="[float]557" Value="{DataItemBinding Id=181}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int64" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="209" LabelOwner="[UIModel]183" Left="[float]313" Text="[string]Samples per Acquisition" Top="[float]534" Width="[float]128" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="244" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]247" Left="[float]129" MinHeight="[float]22" Top="[float]641" Value="{DataItemBinding Id=241}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="247" LabelOwner="[UIModel]244" Left="[float]129" Text="[string]IQ frac" Top="[float]618" Width="[float]36" xmlns="http://www.ni.com/PanelCommon" />
 		</CPFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="0" DataType="@5f55fbafa32047aea0bd50cb938b7fdf" Id="55" Name="RX Parameters In" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -264,6 +322,9 @@
 			<p.DefaultValue>
 				<Array Lengths="0" />
 			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double" Id="241" Name="IQ frac" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="NI:Analysis:Generation:Ramp\ Pattern\ by\ Increment\.gvi">
