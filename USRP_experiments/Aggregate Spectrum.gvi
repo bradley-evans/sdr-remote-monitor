@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2C9BA3E1AA4E57B5D53CF7453D2A7F06" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="35A095FAE5C57FC999012074B6D29407" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -41,7 +41,7 @@
 			<MethodCall Bounds="135 275 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="15" Target="niUSRP\ Open\ Rx\ Session\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-						<Parameter Id="L0" Desc="device names" />
+						<Parameter Id="L0" Desc="niUSRP Device" />
 						<Parameter Id="L2" Desc="reset" />
 						<Parameter Id="L4" Desc="error in" />
 						<Parameter Id="R4" Desc="error out" />
@@ -115,7 +115,7 @@
 			<MethodCall Bounds="1420 275 50 50" DomainName="NI.LabVIEW.NIUSRP" Id="260" Target="niUSRP\ Close\ Session\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-						<Parameter Id="L0" Desc="session handle" />
+						<Parameter Id="L0" Desc="handle in" />
 						<Parameter Id="L4" Desc="error in" />
 						<Parameter Id="R4" Desc="error out" />
 					</MethodDeclaration>
@@ -239,19 +239,13 @@
 						<Comment Bounds="110 15 102 15" Id="1981" xmlns="http://www.ni.com/MocCommon">
 							<p.Text>Averaging Loop</p.Text>
 						</Comment>
-						<WireComment AttachedTo="161" Bounds="133.5 239 153 16" Id="1984" xmlns="http://www.ni.com/PlatformFramework">
+						<WireComment AttachedTo="161" Bounds="133.5 249 153 16" Id="1984" xmlns="http://www.ni.com/PlatformFramework">
 							<p.ExpandedWidth>153</p.ExpandedWidth>
-							<p.Point>210 247</p.Point>
+							<p.Point>210 257</p.Point>
 							<p.Text>First Rx for this carrier?</p.Text>
 						</WireComment>
 						<LoopCondition Bounds="692 270 15 15" Id="2245" />
-						<DataAccessor Bounds="610 270 40 15" DataItem="1176" Id="2407" Label="2408" xmlns="http://www.ni.com/MocCommon">
-							<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-						</DataAccessor>
-						<NodeLabel AttachedTo="2407" Bounds="532 270 73 14" Id="2408" xmlns="http://www.ni.com/PlatformFramework">
-							<p.Text>Stop Capture</p.Text>
-						</NodeLabel>
-						<Wire Id="2409" Joints="N(2407:Value) N(2245:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="2409" Joints="N(2542:Value) N(2245:Input)" xmlns="http://www.ni.com/PlatformFramework" />
 						<MethodCall Bounds="305 170 50 40" DomainName="NI.MocCommon" Id="2470" Target="USRP\ Plot\ Spectrum\.gvi" xmlns="http://www.ni.com/MocCommon">
 							<p.MethodDeclaration>
 								<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -317,6 +311,12 @@
 						<NodeLabel AttachedTo="2535" Bounds="595 220 31 14" Id="2536" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>count</p.Text>
 						</NodeLabel>
+						<DataAccessor Bounds="595 270 40 15" DataItem="2541" Id="2542" Label="2543" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="2542" Bounds="517 270 73 14" Id="2543" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Stop Capture</p.Text>
+						</NodeLabel>
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="65" Terminals="63=190, 64" />
 						<LoopTunnel Bounds="-5 92 13 10" Docking="Left" Id="71" Terminals="o0=70, i0=72" />
 						<LoopTunnel Bounds="-5 132 13 10" Docking="Left" Id="76" Terminals="o0=75, i0=1514" />
@@ -367,18 +367,18 @@
 				<Wire Id="1167" Joints="N(1168:i0) N(313:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1170" Joints="N(1171:i0) N(124:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1173" Joints="N(1174:i0) N(189:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-				<DataAccessor Bounds="885 390 40 15" DataItem="1176" Id="1177" Label="1179" xmlns="http://www.ni.com/MocCommon">
-					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-				</DataAccessor>
-				<NodeLabel AttachedTo="1177" Bounds="807 390 73 14" Id="1179" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Stop Capture</p.Text>
-				</NodeLabel>
-				<Wire Id="1180" Joints="N(1177:Value) N(350:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1180" Joints="N(2551:Value) N(350:Input)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1979" Joints="N(262:o0) N(1159:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1980" Joints="N(269:o0) N(1162:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Comment Bounds="90 5 190 15" Id="1983" xmlns="http://www.ni.com/MocCommon">
 					<p.Text>Restart at first carrier after end</p.Text>
 				</Comment>
+				<DataAccessor Bounds="860 390 40 15" DataItem="2541" Id="2551" Label="2552" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="2551" Bounds="782 390 73 14" Id="2552" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Stop Capture</p.Text>
+				</NodeLabel>
 				<LoopTunnel Bounds="-4 155 13 10" Docking="Left" Id="1144" Terminals="o0=68, i0=1143" />
 				<LoopTunnel Bounds="-4 195 13 10" Docking="Left" Id="1147" Terminals="o0=73, i0=1146" />
 				<LoopTunnel Bounds="-4 175 13 10" Docking="Left" Id="1150" Terminals="o0=128, i0=1149" />
@@ -465,11 +465,11 @@
 				<Label Height="[float]16" Id="237" LabelOwner="[UIModel]235" Left="[float]5" Text="[string]dB type" Top="[float]60" Width="[float]41" />
 			</Cluster>
 			<Label Height="[float]16" Id="238" LabelOwner="[UIModel]233" Left="[float]367" Text="[string]Display" Top="[float]362" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
-			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=285}" Height="[float]400" Id="287" IncludeInCapture="[bool]True" Label="[UIModel]305" Left="[float]520" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]49,8,26,43" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]True" Top="[float]165" Width="[float]600" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="288" Label="[string]Frequency" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]299" Orientation="[SMOrientation]Horizontal" Range="[IRange]85000000, 110000000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=285}" Height="[float]400" Id="287" IncludeInCapture="[bool]True" Label="[UIModel]305" Left="[float]520" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]49,8,26,43" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]True" Top="[float]165" Width="[float]853" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="288" Label="[string]Frequency" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]299" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 2200000000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="299" LabelPresenter="[string]LVSI:" />
 				</Axis>
-				<Axis Adjuster="[RangeAdjuster]None" Id="289" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]300" Orientation="[SMOrientation]Vertical" Range="[IRange]-130, 0, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+				<Axis Adjuster="[RangeAdjuster]None" Id="289" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]300" Orientation="[SMOrientation]Vertical" Range="[IRange]-140, -40, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="300" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
 				</Axis>
 				<Plot HorizontalScale="[UIModel]288" Id="290" Label="[string]Plot" VerticalScale="[UIModel]289" Visibility="[SMVisibility]Visible">
@@ -484,9 +484,9 @@
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="297" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="298" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
 			</Graph>
-			<PlotLegend ControlDesignTuple="[ControlDesignPair]Flat,Flat Blue" Graph="[UIModel]287" Height="[float]28" Id="301" Left="[float]1127" Top="[float]165" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<PlotLegend ControlDesignTuple="[ControlDesignPair]Flat,Flat Blue" Graph="[UIModel]287" Height="[float]28" Id="301" Left="[float]1380" Top="[float]165" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]287" Height="[float]102" Id="302" Left="[float]525" MinHeight="[float]80" Top="[float]594" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<ScaleLegend Graph="[UIModel]287" Height="[float]50" Id="303" Left="[float]1127" MinHeight="[float]50" Top="[float]463" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]287" Height="[float]50" Id="303" Left="[float]1380" MinHeight="[float]50" Top="[float]463" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<GraphTools Graph="[UIModel]287" Height="[float]22" Id="304" Left="[float]525" Top="[float]572" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="305" LabelOwner="[UIModel]287" Left="[float]520" Text="[string]FFT Power Spectrum" Top="[float]142" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
 			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="272" IncludeInCapture="[bool]True" Label="[UIModel]279" Left="[float]201" Top="[float]633" Value="{DataItemBinding Id=271}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
@@ -505,8 +505,6 @@
 			<Label Height="[float]16" Id="326" LabelOwner="[UIModel]325" Left="[float]350" Text="[string]Samples per Acquisition" Top="[float]681" Width="[float]128" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="338" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]343" Left="[float]350" MinHeight="[float]22" RadixBase="[RadixBase]Decimal" Top="[float]655" Value="{DataItemBinding Id=337}" ValueFormatter="[string]LVSI:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="343" LabelOwner="[UIModel]338" Left="[float]350" Text="[string]Carrier Freq Out" Top="[float]632" Width="[float]86" xmlns="http://www.ni.com/PanelCommon" />
-			<Button BaseName="[string]Stop" ClickMode="[ClickMode]Press" Content="[string]Stop Capture" ContentVisibility="[Visibility]Visible" Foreground="[SMColor]#ffff0000" Height="[float]30" Id="1182" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]1185" Latch="[bool]True" Left="[float]367" MinHeight="[float]13" MinWidth="[float]13" Shape="[ButtonShape]Square" Top="[float]515" Value="{DataItemBinding Id=1176}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="1185" LabelOwner="[UIModel]1182" Left="[float]367" Text="[string]Stop Capture" Top="[float]492" Visible="[bool]False" Width="[float]70" xmlns="http://www.ni.com/PanelCommon" />
 			<Text Id="1985" Left="[float]621" MinHeight="[float]11" MinWidth="[float]11" Text="[string]Note, signals are captured in baseband and have their power calculated as a single sided spectrum.&#xD;&#xA;We shift and interlap the individual power spectrums to create this band." TextWrapping="[TextWrapping]Wrap" Top="[float]95" xmlns="http://www.ni.com/PlatformFramework" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2508" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2509" Left="[float]561" MinHeight="[float]22" Top="[float]686" Value="{DataItemBinding Id=2507}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="2509" LabelOwner="[UIModel]2508" Left="[float]561" Text="[string]threshold" Top="[float]663" Width="[float]51" xmlns="http://www.ni.com/PanelCommon" />
@@ -517,12 +515,13 @@
 			<Label Height="[float]16" Id="2518" LabelOwner="[UIModel]2516" Left="[float]672" Text="[string]Freqs above threshold" Top="[float]663" Width="[float]118" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]2525" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]84" Id="2524" Label="[UIModel]2526" Left="[float]811" Orientation="[SMOrientation]Vertical" Rows="[int]3" Top="[float]686" Value="{DataItemBinding Id=2523}" Width="[float]114" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2525" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]79" Value="[int]0" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2525" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[int]0" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="2526" LabelOwner="[UIModel]2524" Left="[float]811" Text="[string]indices" Top="[float]663" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2532" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]2533" Left="[float]946" MinHeight="[float]22" Top="[float]686" Value="{DataItemBinding Id=2531}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="2533" LabelOwner="[UIModel]2532" Left="[float]946" Text="[string]count" Top="[float]663" Width="[float]31" xmlns="http://www.ni.com/PanelCommon" />
-			<Rectangle BaseName="[string]Rounded Rectangle" Fill="[SMSolidColorBrush]#00ffffff" Height="[float]227" Id="2538" Left="[float]520" MinHeight="[float]1" MinWidth="[float]1" Opacity="[float]0.5" RadiusX="[float]16" RadiusY="[float]16" Stroke="[SMSolidColorBrush]#ff000000" StrokeStyle="[LineStyle]Solid" StrokeThickness="[float]5" Top="[float]616" Width="[float]530" xmlns="http://www.ni.com/PlatformFramework" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="2559" Label="[UIModel]2560" Left="[float]414" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]556" TrueContent="[string]On" Value="{DataItemBinding Id=2541}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="2560" LabelOwner="[UIModel]2559" Left="[float]414" Text="[string]Stop Capture" Top="[float]533" Width="[float]70" xmlns="http://www.ni.com/PanelCommon" />
 		</CPFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="@5f55fbafa32047aea0bd50cb938b7fdf" Id="21" Name="RX Parameters In" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -580,9 +579,6 @@
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="337" Name="Carrier Freq Out" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
-		<DataItem DataType="Boolean" Id="1176" Name="Stop Capture" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>True</p.DefaultValue>
-		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="2507" Name="threshold" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
@@ -595,25 +591,10 @@
 		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="2531" Name="count" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="2541" Name="Stop Capture" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
-			<p.IconModel Target="USRP\ Plot\ Spectrum\.gvi">
-				<MergeScript>
-					<MergeItem Path="." IsPrimary="True">
-						<Icon ListViewIconCrop="0 0 50 40">
-							<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]50">
-								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
-									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
-									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]USRP Plot Spectrum" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
-										<FontSetting FontFamily="Verdana" FontSize="6.75" />
-									</FileNameText>
-								</IconTemplate>
-								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
-							</IconPanel>
-						</Icon>
-					</MergeItem>
-				</MergeScript>
-			</p.IconModel>
 			<p.IconModel Target="niUSRP\ Open\ Rx\ Session\.gvi">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
@@ -713,6 +694,24 @@
 									</FileNameText>
 								</IconTemplate>
 								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="USRP\ Plot\ Spectrum\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 50 40">
+							<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]50">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]USRP Plot Spectrum" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="6.75" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
 							</IconPanel>
 						</Icon>
 					</MergeItem>
