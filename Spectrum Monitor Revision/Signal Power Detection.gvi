@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5179B7EB36268AC043B4E2E5FEC56575" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="5A454CCFA6A351D1081C1611AFF6932D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -72,7 +72,7 @@
 				<Terminal DataType="Int32" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
 			<Literal Bounds="50 995 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="17" Label="32" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>3</p.Data>
+				<p.Data>2</p.Data>
 				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 			</Literal>
 			<PropertyNode Bounds="30 860 50 65" HasErrorTerminals="False" Id="19" InstanceDataType="@5d9dcb9b138d4fa98e430ff524105580" Mode="InstanceProperties" Template="List">
@@ -127,7 +127,7 @@
 				<LoopTunnel AutoIndex="True" Bounds="325 87 13 10" Docking="Right" Id="153" Terminals="o0=171, i0=202" TunnelMode="0" />
 				<LoopTunnel AutoIndex="True" Bounds="-5 97 13 10" Docking="Left" Id="191" Terminals="o0=195, i0=192" TunnelMode="0" />
 				<LoopTunnel AutoIndex="True" Bounds="237 -5 10 13" Docking="Top" Id="257" Terminals="o0=208, i0=261" TunnelMode="0" />
-				<LoopTunnel Bounds="-5 107 13 10" Docking="Left" Id="271" Terminals="o0=270, i0=272" />
+				<LoopTunnel Bounds="-5 107 13 10" Docking="Left" Id="271" Terminals="o0=268, i0=272" />
 			</ForLoop>
 			<ArraySize Bounds="340 750 40 20" Id="95" />
 			<Wire Id="96" Joints="N(95:size(s\)) N(92:90)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -164,9 +164,7 @@
 			<Comment Bounds="35 1020 202 28" Id="267" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"Adjust parameter for signal width\r\ndesired above threshold. "</p.Text>
 			</Comment>
-			<Wire Id="268" Joints="N(17:Out) h(80.5) v(-15) B(2) N(15:L2) B(2) v(-115) N(269:x)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Increment Bounds="250 855 30 30" Id="269" />
-			<Wire Id="270" Joints="N(269:x+1) N(271:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="268" Joints="N(17:Out) h(80.5) v(-15) B(2) N(15:L2) B(2) v(-115) N(271:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="52" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]62" Left="[float]181" MinHeight="[float]22" Top="[float]186" Value="{DataItemBinding Id=42}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />

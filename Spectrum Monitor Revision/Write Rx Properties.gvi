@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0943395B4DA1F96E4D1A87A463685068" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="743DF709CB315FC1035E4FFBE193DD48" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -99,19 +99,18 @@
 				<p.Text>error out</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="-85 210 40 15" DataItem="50" Id="51" Label="54" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@5f55fbafa32047aea0bd50cb938b7fdf" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@dc789e82304940cd90b315f0f42c9867" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="51" Bounds="-188 210 98 14" Id="54" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>RX Parameters In</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="-25 210 176 125" HasErrorTerminals="False" Id="88" InstanceDataType="@5f55fbafa32047aea0bd50cb938b7fdf" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="-25 210 176 110" HasErrorTerminals="False" Id="88" InstanceDataType="@dc789e82304940cd90b315f0f42c9867" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal DataType="Double" Hotspot="176 15" Id="c0t0v" Path="IQ Sampling Rate [S/sec]" Usage="Optional" />
 				<PropertyItemTerminal DataType="Double" Hotspot="176 30" Id="c1t0v" Path="Gain [dB]" Usage="Optional" />
 				<PropertyItemTerminal DataType="String" Hotspot="176 45" Id="c2t0v" Path="Active Antenna" Usage="Optional" />
 				<PropertyItemTerminal DataType="String" Hotspot="176 60" Id="c3t0v" Path="Reference Frequency" Usage="Optional" />
 				<PropertyItemTerminal DataType="String" Hotspot="176 75" Id="c4t0v" Path="Timebase Clock Source" Usage="Optional" />
 				<PropertyItemTerminal DataType="Double" Hotspot="176 90" Id="c5t0v" Path="Start Carrier [Hz]" Usage="Optional" />
-				<PropertyItemTerminal DataType="Double" Hotspot="176 105" Id="c6t0v" Path="Stop Carrier [Hz]" Usage="Optional" />
 			</PropertyNode>
 			<Wire Id="90" Joints="N(88:c0t0v) N(24:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="92" Joints="N(88:c1t0v) N(24:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -132,16 +131,15 @@
 			<NodeLabel AttachedTo="113" Bounds="-29 150 134 14" Id="115" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>USRP Session Handle In</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="420 300 195 80" HasErrorTerminals="False" Id="118" InstanceDataType="@5f55fbafa32047aea0bd50cb938b7fdf" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="420 300 195 65" HasErrorTerminals="False" Id="118" InstanceDataType="@dc789e82304940cd90b315f0f42c9867" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 15" Id="c0t0v" Path="IQ Sampling Rate [S/sec]" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 30" Id="c1t0v" Path="Gain [dB]" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 45" Id="c2t0v" Path="Start Carrier [Hz]" Usage="Required" />
-				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 60" Id="c3t0v" Path="Stop Carrier [Hz]" Usage="Required" />
 			</PropertyNode>
 			<Wire Id="120" Joints="N(24:c5t0v) N(118:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="121" Joints="N(24:c6t0v) N(118:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="635 285 40 15" DataItem="193" Id="195" Label="229" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@5f55fbafa32047aea0bd50cb938b7fdf" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@dc789e82304940cd90b315f0f42c9867" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="195" Bounds="680 285 106 14" Id="229" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>RX Parameters Out</p.Text>
@@ -169,22 +167,6 @@
 			<Wire Id="240" Joints="N(88:instance out) h(35) v(-60) h(224) v(150) N(118:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="241" Joints="N(88:c5t0v) N(24:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="242" Joints="N(24:c8t0v) N(118:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="244" Joints="N(88:c6t0v) h(5) v(65) B(2) N(248:t) B(2) v(5) N(250:x)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="90 395 48 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="245" Label="246" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>0x41E0642AC0000000</p.Data>
-				<NumericBehavior Interpretation="Exact" ValueFormatter="LVSI:G6" />
-			</Literal>
-			<NodeLabel AttachedTo="245" Bounds="90 395 0 0" Id="246" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>y</p.Text>
-			</NodeLabel>
-			<Wire Id="247" Joints="N(245:Out) h(17) B(1) N(250:y) B(1) v(10) N(248:f)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Select Bounds="250 375 40 40" Id="248" />
-			<Wire Id="249" Joints="N(250:x &lt; y?) N(248:s)" xmlns="http://www.ni.com/PlatformFramework" />
-			<IsLess Bounds="190 380 30 30" Id="250" />
-			<Wire Id="251" Joints="N(248:s? t:f) h(125) v(-35) N(118:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="80 420 152 15" Id="252" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>Max Freq for USRP 2920</p.Text>
-			</Comment>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<IONameControl BaseName="[string]Name" DataType="[Type]@f261aca30cd44609875979717cdeb8e0" Height="[float]22" Id="34" IsReadOnly="[bool]True" Label="[UIModel]116" Left="[float]326" SelectedResource="{DataItemBinding Id=31}" Top="[float]129" UdrClass="[string]niUSRPClass" UdrNamespace="[string]Usrp" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
@@ -199,10 +181,9 @@
 				</p.TypeDefinitionTargets>
 			</IONameControl>
 			<Label Height="[float]16" Id="117" LabelOwner="[UIModel]114" Left="[float]160" Text="[string]USRP Session Handle In" Top="[float]106" Width="[float]126" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@5f55fbafa32047aea0bd50cb938b7fdf" Height="[float]418" Id="196" Label="[UIModel]231" Left="[float]326" Top="[float]186" Value="{DataItemBinding Id=193}" Width="[float]144" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@dc789e82304940cd90b315f0f42c9867" Height="[float]418" Id="196" Label="[UIModel]231" Left="[float]326" Top="[float]186" Value="{DataItemBinding Id=193}" Width="[float]170" xmlns="http://www.ni.com/PanelCommon">
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="199" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]221" Left="[float]5" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=IQ\ Sampling\ Rate\ [S/sec]}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="202" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]222" Left="[float]5" MinHeight="[float]22" Top="[float]68" Value="{ClusterBinding FieldName=Gain\ [dB]}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]22" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="205" IsReadOnly="[bool]True" Label="[UIModel]223" Left="[float]5" Text="{ClusterBinding FieldName=Active\ Antenna}" Top="[float]113" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]22" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="208" IsReadOnly="[bool]True" Label="[UIModel]224" Left="[float]5" Text="{ClusterBinding FieldName=Reference\ Frequency}" Top="[float]158" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]22" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="211" IsReadOnly="[bool]True" Label="[UIModel]225" Left="[float]5" Text="{ClusterBinding FieldName=Timebase\ Clock\ Source}" Top="[float]203" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="214" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]226" Left="[float]5" MinHeight="[float]22" Top="[float]248" Value="{ClusterBinding FieldName=Start\ Carrier\ [Hz]}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -210,21 +191,23 @@
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="220" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]228" Left="[float]5" MinHeight="[float]22" Top="[float]338" Value="{ClusterBinding FieldName=Acq\ Duration\ [sec]}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<Label Height="[float]16" Id="221" LabelOwner="[UIModel]199" Left="[float]5" Text="[string]IQ Sampling Rate [S/sec]" Top="[float]0" Width="[float]131" />
 				<Label Height="[float]16" Id="222" LabelOwner="[UIModel]202" Left="[float]5" Text="[string]Gain [dB]" Top="[float]45" Width="[float]49" />
-				<Label Height="[float]16" Id="223" LabelOwner="[UIModel]205" Left="[float]5" Text="[string]Active Antenna" Top="[float]90" Width="[float]81" />
 				<Label Height="[float]16" Id="224" LabelOwner="[UIModel]208" Left="[float]5" Text="[string]Reference Frequency" Top="[float]135" Width="[float]111" />
 				<Label Height="[float]16" Id="225" LabelOwner="[UIModel]211" Left="[float]5" Text="[string]Timebase Clock Source" Top="[float]180" Width="[float]122" />
 				<Label Height="[float]16" Id="226" LabelOwner="[UIModel]214" Left="[float]5" Text="[string]Start Carrier [Hz]" Top="[float]225" Width="[float]88" />
 				<Label Height="[float]16" Id="227" LabelOwner="[UIModel]217" Left="[float]5" Text="[string]Stop Carrier [Hz]" Top="[float]270" Width="[float]88" />
 				<Label Height="[float]16" Id="228" LabelOwner="[UIModel]220" Left="[float]5" Text="[string]Acq Duration [sec]" Top="[float]315" Width="[float]98" />
+				<ComboboxSelector AllowDifferentText="[bool]False" AllowUndefinedValueEntry="[bool]True" BaseName="[string]Combo Box" Height="[float]22" Id="248" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]249" Left="[float]5" Top="[float]113" Value="{ClusterBinding FieldName=Active\ Antenna}" ValueType="[Type]String" VisualMode="[SelectorVisualMode]ComboBoxStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<ComboboxSelectorInfo DisplayValue="[string]RX1" IsEnabled="[bool]True" Value="[string]RX1" ValueType="[Type]String" />
+					<ComboboxSelectorInfo DisplayValue="[string]RX2" IsEnabled="[bool]True" Value="[string]RX2" ValueType="[Type]String" />
+				</ComboboxSelector>
+				<Label Height="[float]16" Id="249" LabelOwner="[UIModel]248" Left="[float]5" Text="[string]Active Antenna" Top="[float]90" Width="[float]81" />
 			</Cluster>
 			<Label Height="[float]16" Id="231" LabelOwner="[UIModel]196" Left="[float]326" Text="[string]RX Parameters Out" Top="[float]163" Width="[float]100" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@5f55fbafa32047aea0bd50cb938b7fdf" Height="[float]397" Id="52" Label="[UIModel]53" Left="[float]160" Top="[float]186" Value="{DataItemBinding Id=50}" Width="[float]149" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@dc789e82304940cd90b315f0f42c9867" Height="[float]397" Id="52" Label="[UIModel]53" Left="[float]160" Top="[float]186" Value="{DataItemBinding Id=50}" Width="[float]149" xmlns="http://www.ni.com/PanelCommon">
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="57" Label="[UIModel]58" Left="[float]0" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=IQ\ Sampling\ Rate\ [S/sec]}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<Label Height="[float]16" Id="58" LabelOwner="[UIModel]57" Left="[float]0" Text="[string]IQ Sampling Rate [S/sec]" Top="[float]0" Width="[float]131" />
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="59" Label="[UIModel]60" Left="[float]0" MinHeight="[float]22" Top="[float]71" Value="{ClusterBinding FieldName=Gain\ [dB]}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<Label Height="[float]16" Id="60" LabelOwner="[UIModel]59" Left="[float]0" Text="[string]Gain [dB]" Top="[float]48" Width="[float]49" />
-				<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]22" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="68" IsReadOnly="[bool]False" Label="[UIModel]71" Left="[float]0" Text="{ClusterBinding FieldName=Active\ Antenna}" Top="[float]119" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<Label Height="[float]16" Id="71" LabelOwner="[UIModel]68" Left="[float]0" Text="[string]Active Antenna" Top="[float]96" Width="[float]81" />
 				<ComboboxSelector AllowDifferentText="[bool]False" AllowUndefinedValueEntry="[bool]True" BaseName="[string]Combo Box" Height="[float]22" Id="75" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]79" Left="[float]0" Top="[float]167" Value="{ClusterBinding FieldName=Reference\ Frequency}" ValueType="[Type]String" VisualMode="[SelectorVisualMode]ComboBoxStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 					<ComboboxSelectorInfo DisplayValue="[string]Internal" IsEnabled="[bool]True" Value="[string]Internal" ValueType="[Type]String" />
 					<ComboboxSelectorInfo DisplayValue="[string]RefIn" IsEnabled="[bool]True" Value="[string]RefIn" ValueType="[Type]String" />
@@ -245,6 +228,11 @@
 				<Label Height="[float]16" Id="156" LabelOwner="[UIModel]155" Left="[float]0" Text="[string]Stop Carrier [Hz]" Top="[float]288" Width="[float]88" />
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="191" Label="[UIModel]192" Left="[float]0" MinHeight="[float]22" Top="[float]365" Value="{ClusterBinding FieldName=Acq\ Duration\ [sec]}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<Label Height="[float]16" Id="192" LabelOwner="[UIModel]191" Left="[float]0" Text="[string]Acq Duration [sec]" Top="[float]342" Width="[float]98" />
+				<ComboboxSelector AllowDifferentText="[bool]False" AllowUndefinedValueEntry="[bool]True" BaseName="[string]Combo Box" Height="[float]22" Id="243" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]244" Left="[float]0" Top="[float]119" Value="{ClusterBinding FieldName=Active\ Antenna}" ValueType="[Type]String" VisualMode="[SelectorVisualMode]ComboBoxStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<ComboboxSelectorInfo DisplayValue="[string]RX1" IsEnabled="[bool]True" Value="[string]RX1" ValueType="[Type]String" />
+					<ComboboxSelectorInfo DisplayValue="[string]RX2" IsEnabled="[bool]True" Value="[string]RX2" ValueType="[Type]String" />
+				</ComboboxSelector>
+				<Label Height="[float]16" Id="244" LabelOwner="[UIModel]243" Left="[float]0" Text="[string]Active Antenna" Top="[float]96" Width="[float]81" />
 			</Cluster>
 			<Label Height="[float]16" Id="53" LabelOwner="[UIModel]52" Left="[float]160" Text="[string]RX Parameters In" Top="[float]163" Width="[float]90" xmlns="http://www.ni.com/PanelCommon" />
 		</CPFrontPanel>
@@ -266,17 +254,17 @@
 				<TypeDefinitionTarget TargetName="Error\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem CallDirection="Input" CallIndex="0" DataType="@5f55fbafa32047aea0bd50cb938b7fdf" Id="50" Name="RX Parameters In" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="0" DataType="@dc789e82304940cd90b315f0f42c9867" Id="50" Name="RX Parameters In" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0x0</Field1>
 					<Field2>0x0</Field2>
 					<Field3>""</Field3>
 					<Field4>""</Field4>
-					<Field5>""</Field5>
+					<Field5>0x0</Field5>
 					<Field6>0x0</Field6>
 					<Field7>0x0</Field7>
-					<Field8>0x0</Field8>
+					<Field8>""</Field8>
 				</Cluster>
 			</p.DefaultValue>
 		</DataItem>
@@ -304,17 +292,17 @@
 				<TypeDefinitionTarget TargetName="Usrp:niUSRPClass" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="@5f55fbafa32047aea0bd50cb938b7fdf" Id="193" Name="RX Parameters Out" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="@dc789e82304940cd90b315f0f42c9867" Id="193" Name="RX Parameters Out" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0x0</Field1>
 					<Field2>0x0</Field2>
 					<Field3>""</Field3>
 					<Field4>""</Field4>
-					<Field5>""</Field5>
+					<Field5>0x0</Field5>
 					<Field6>0x0</Field6>
 					<Field7>0x0</Field7>
-					<Field8>0x0</Field8>
+					<Field8>""</Field8>
 				</Cluster>
 			</p.DefaultValue>
 		</DataItem>
@@ -356,17 +344,17 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="5f55fbafa32047aea0bd50cb938b7fdf">
+		<p.TypeReference TypeId="dc789e82304940cd90b315f0f42c9867">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="IQ Sampling Rate [S/sec]" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Gain [dB]" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Active Antenna" DataType="String" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Reference Frequency" DataType="String" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Timebase Clock Source" DataType="String" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Start Carrier [Hz]" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Stop Carrier [Hz]" DataType="Double" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Acq Duration [sec]" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Active Antenna" DataType="String" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
