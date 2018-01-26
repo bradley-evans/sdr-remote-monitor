@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="4BB5B53165D723D675D6758B924020E3" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="04A0207F60833430B517CC35267ACD22" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -21,7 +21,7 @@
 				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]54" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="60" Id="10" ListViewHeight="190" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="60" Id="10" ListViewHeight="205" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 110" Parameter="387" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="41" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 155" Parameter="452" />
@@ -35,7 +35,7 @@
 			<ConnectorPaneTerminal Hotspot="15 60" ListViewHotspot="0 65" Parameter="205" />
 			<ConnectorPaneTerminal Hotspot="25 60" />
 			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 50" Parameter="292" />
-			<ConnectorPaneTerminal Hotspot="50 45" />
+			<ConnectorPaneTerminal Hotspot="50 45" ListViewHotspot="150 185" Parameter="515" />
 			<ConnectorPaneTerminal Hotspot="35 0" />
 			<ConnectorPaneTerminal Hotspot="35 60" />
 			<ConnectorPaneTerminal Hotspot="0 55" />
@@ -115,6 +115,17 @@
 			</Cluster>
 			<Label Height="[float]16" Id="464" LabelOwner="[UIModel]459" Left="[float]165" Text="[string]Display" Top="[float]159" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="510" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" Left="[float]0" MinHeight="[float]22" Name="[string]Spectrum Size" Top="[float]0" Value="{DataItemBinding Id=507}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<IntensityGraph BaseName="[string]Intensity Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=515}" Height="[float]400" Id="516" Label="[UIModel]523" Left="[float]632" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]NaN,NaN,NaN,NaN" SuppressScaleLayout="[bool]False" Top="[float]170" Width="[float]802" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]None" Id="517" Label="[string]Frequency" Orientation="[SMOrientation]Horizontal" Range="[IRange]-0.5, 16383.5, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" />
+				<Axis Adjuster="[RangeAdjuster]FitExactly" Id="518" Label="[string]Time (ds)" MajorDivisions="[UIModel]520" Orientation="[SMOrientation]Vertical" Range="[IRange]-0.5, 49.5, System.Double" ValueType="[Type]Double">
+					<RangeLabeledDivisions Id="520" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
+				</Axis>
+				<ColorScale Adjuster="[RangeAdjuster]None" HighColor="[SMColor]#ffffffff" Id="519" LabelVisibility="[SMVisibility]Collapsed" Location="[RelativeLocation]Far" LowColor="[SMColor]#ff000000" MajorDivisions="[UIModel]521" Markers="[SMLinearGradientBrush]{Start: 0 0}, {End: 1 1}, {Stops: {Stop: #ff000000 -130}, {Stop: #ff0000ff -95}, {Stop: #ffffffff -60}}">
+					<RangeLabeledDivisions Id="521" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
+				</ColorScale>
+			</IntensityGraph>
+			<ScaleLegend Graph="[UIModel]516" Height="[float]75" Id="522" Left="[float]1441" MinHeight="[float]50" Top="[float]468" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="523" LabelOwner="[UIModel]516" Left="[float]632" Text="[string]Waterfall Plot" Top="[float]147" Width="[float]72" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="1510 0 40 15" DataItem="260" Id="262" Label="279" xmlns="http://www.ni.com/MocCommon">
@@ -123,7 +134,7 @@
 			<NodeLabel AttachedTo="262" Bounds="1555 0 93 14" Id="279" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Spectrum to Plot</p.Text>
 			</NodeLabel>
-			<CaseStructure Bounds="665 -60 335 170" Default="20" Id="19" Selected="21" UserSelectorBounds="123.333336 0 88 17.333334">
+			<CaseStructure Bounds="665 -60 335 170" Default="20" Id="19" Selected="21" UserSelectorBounds="124 0 88 17">
 				<CaseStructure.Case Bounds="5 5 325 160" Id="20" Pattern="False">
 					<Wire Id="287" Joints="N(286:20) v(56) N(248:20)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
@@ -179,20 +190,20 @@
 			<NodeLabel AttachedTo="90" Bounds="585 195 126 14" Id="120" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Frame Parameters Out</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="710 240 93.3333359 50" HasErrorTerminals="False" Id="139" InstanceDataType="@a8106957b9c74a119f0e3cfccf03e781" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal DataType="Double" Hotspot="93.3333359 15" Id="c0t0v" Path="df" Usage="Optional" />
-				<PropertyItemTerminal DataType="Double[]" Hotspot="93.3333359 30" Id="c1t0v" Path="magnitude" Usage="Optional" />
+			<PropertyNode Bounds="710 240 93 50" HasErrorTerminals="False" Id="139" InstanceDataType="@a8106957b9c74a119f0e3cfccf03e781" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="Double" Hotspot="93 15" Id="c0t0v" Path="df" Usage="Optional" />
+				<PropertyItemTerminal DataType="Double[]" Hotspot="93 30" Id="c1t0v" Path="magnitude" Usage="Optional" />
 			</PropertyNode>
 			<Multiply Bounds="455 35 30 30" Id="181" Terminals="o=334, c0t0v=333, c1t0v=183" />
 			<ArraySubset Bounds="890 265 40 40" Id="197" Terminals="array=198, subarray=466, index0=199, length0=183" />
-			<WireComment AttachedTo="183" Bounds="505.000031 172 117.333336 16" Id="201" xmlns="http://www.ni.com/PlatformFramework">
-				<p.ExpandedWidth>117.333336</p.ExpandedWidth>
-				<p.Point>563.6667 180</p.Point>
+			<WireComment AttachedTo="183" Bounds="505 172 117 16" Id="201" xmlns="http://www.ni.com/PlatformFramework">
+				<p.ExpandedWidth>117</p.ExpandedWidth>
+				<p.Point>563.5 180</p.Point>
 				<p.Text>Length of Subset</p.Text>
 			</WireComment>
-			<WireComment AttachedTo="199" Bounds="625 182 85.3333359 16" Id="202" xmlns="http://www.ni.com/PlatformFramework">
-				<p.ExpandedWidth>85.3333359</p.ExpandedWidth>
-				<p.Point>667.6667 190</p.Point>
+			<WireComment AttachedTo="199" Bounds="625 182 85 16" Id="202" xmlns="http://www.ni.com/PlatformFramework">
+				<p.ExpandedWidth>85</p.ExpandedWidth>
+				<p.Point>667.5 190</p.Point>
 				<p.Text>Start Index</p.Text>
 			</WireComment>
 			<Multiply Bounds="945 160 30 30" Id="203" Terminals="o=251, c0t0v=210, c1t0v=183" />
@@ -236,7 +247,7 @@
 			<PropertyNode Bounds="1190 215 50 35" HasErrorTerminals="False" Id="323" InstanceDataType="@5d9dcb9b138d4fa98e430ff524105580" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal DataType="Double[]" Hotspot="50 15" Id="c0t0v" Path="IQ" Usage="Optional" />
 			</PropertyNode>
-			<ArraySize Bounds="1375 225 40 20" Id="325" />
+			<ArraySize Bounds="1250 225 40 20" Id="325" />
 			<Comment Bounds="165 -40 104 15" Id="356" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>Reset is unused</p.Text>
 			</Comment>
@@ -247,7 +258,7 @@
 			<Wire Id="198" Joints="N(139:c1t0v) N(197:array)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="199" Joints="N(81:c3t0v) h(20) v(-50) h(410) v(100) N(197:index0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="210" Joints="N(207:Value) N(203:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="231" Joints="N(139:c0t0v) h(6.666687) B(1) N(232:19) B(1) v(210) h(175) N(437:B0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="231" Joints="N(139:c0t0v) h(7) B(1) N(232:19) B(1) v(210) h(175) N(437:B0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="249" Joints="N(248:19) N(245:241)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="251" Joints="N(203:o) h(35) v(-95) N(252:241)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="280" Joints="N(246:241) h(7) B(1) h(62) B(2) N(262:Value) B(2) v(-85) N(359:input) B(2) v(280) N(471:instance in) B(1) v(155) h(-203) v(60) N(323:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -332,15 +343,42 @@
 			<PropertyNode Bounds="1490 280 50 35" HasErrorTerminals="False" Id="471" InstanceDataType="@5d9dcb9b138d4fa98e430ff524105580" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal DataType="Double[]" Hotspot="50 15" Id="c0t0v" Path="IQ" Usage="Optional" />
 			</PropertyNode>
-			<ArraySize Bounds="1580 290 40 20" Id="505" />
-			<DataAccessor Bounds="1655 300 40 15" DataItem="507" Id="509" Label="511" xmlns="http://www.ni.com/MocCommon">
+			<ArraySize Bounds="1630 270 40 20" Id="505" />
+			<DataAccessor Bounds="1740 280 40 15" DataItem="507" Id="509" Label="511" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="509" Bounds="1700 300 81 14" Id="511" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="509" Bounds="1785 280 81 14" Id="511" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Spectrum Size</p.Text>
 			</NodeLabel>
 			<Wire Id="512" Joints="N(505:size(s\)) N(509:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="513" Joints="N(471:c0t0v) N(505:array)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="513" Joints="N(471:c0t0v) h(10) B(1) v(-20) N(505:array) B(1) v(70) N(514:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1565 360 50 30" DomainName="NI.MocCommon" Id="514" Target="Spectrum\ History\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L2" Desc="Waterfall Time Scale (s)" />
+						<Parameter Id="L0" Desc="Magnitude" />
+						<Parameter Id="R0" Desc="Waterfall Plot" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[,]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<DataAccessor Bounds="1740 370 40 15" DataItem="515" Id="525" Label="526" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="525" Bounds="1785 370 74 14" Id="526" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Waterfall Plot</p.Text>
+			</NodeLabel>
+			<Wire Id="527" Joints="N(514:R0) h(120) v(10) N(525:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="1495 375 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="528" Label="529" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>10</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="528" Bounds="1495 375 0 0" Id="529" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Waterfall Time Scale (s)</p.Text>
+			</NodeLabel>
+			<Wire Id="530" Joints="N(528:Out) h(5) v(5) N(514:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2aa401105c6f42168b4a9c141e07f38a" Height="[float]327" Id="25" Label="[UIModel]40" Left="[float]729" Top="[float]169" Value="{DataItemBinding Id=41}" Width="[float]123" xmlns="http://www.ni.com/PanelCommon">
@@ -367,8 +405,8 @@
 				<Label Height="[float]16" Id="221" LabelOwner="[UIModel]220" Left="[float]9" Text="[string]df" Top="[float]79" Width="[float]11" />
 				<ArrayViewer ArrayElement="[UIModel]223" BaseName="[string]Numeric Array Input" Columns="[int]1" Dimensions="[int]1" Height="[float]116" Id="222" IndexVisibility="[Visibility]Collapsed" Label="[UIModel]225" Left="[float]88" Orientation="[SMOrientation]Vertical" Rows="[int]4" Top="[float]23" Value="{ClusterBinding FieldName=IQ}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
 					<p.DefaultElementValue>0x0</p.DefaultElementValue>
-					<NumericText Height="[float]24" Id="223" Label="[UIModel]224" Left="[float]7" MinHeight="[float]22" Top="[float]7" Value="[double]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]71" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-						<Label Id="224" IsVisualChild="[bool]False" LabelOwner="[UIModel]223" Left="[float]7" Text="[string]Numeric" Top="[float]7" xmlns="http://www.ni.com/PanelCommon" />
+					<NumericText Height="[float]24" Id="223" Label="[UIModel]224" Left="[float]7" MinHeight="[float]22" Top="[float]33" Value="[double]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]71" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<Label Id="224" IsVisualChild="[bool]False" LabelOwner="[UIModel]223" Left="[float]7" Text="[string]Numeric" Top="[float]33" xmlns="http://www.ni.com/PanelCommon" />
 					</NumericText>
 				</ArrayViewer>
 				<Label Height="[float]16" Id="225" LabelOwner="[UIModel]222" Left="[float]88" Text="[string]IQ" Top="[float]0" Width="[float]13" />
@@ -428,6 +466,11 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="4" DataType="Int32" Id="507" Name="Spectrum Size" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Double[,]" Id="515" Name="Waterfall Plot" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="0,0" />
+			</p.DefaultValue>
+		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="NI:Analysis:Measurement:Spectrum\ Unit\ Conversion\.gvi">
 				<MergeScript>
@@ -448,6 +491,24 @@
 									<Path Data="[PathGeometry]M 46,2 L 4,2 C 2.9,2 2,2.9 2,4 L 2,12 L 48,12 L 48,4 C 48,2.9 47.1,2 46,2 Z M 30,8 L 31,8 L 31,9 L 30,9 L 30,8 Z M 28,7 L 29,7 L 29,9 L 28,9 L 28,7 Z M 26,6 L 27,6 L 27,9 L 26,9 L 26,6 Z M 24,4 L 25,4 L 25,9 L 24,9 L 24,4 Z M 22,3 L 23,3 L 23,9 L 22,9 L 22,3 Z M 20,5 L 21,5 L 21,9 L 20,9 L 20,5 Z M 18,7.125 L 19,7.125 L 19,8.875 L 18,8.875 L 18,7.125 Z M 34,11 L 16,11 L 16,3 L 17,3 L 17,10 L 34,10 L 34,11 Z" Fill="[SMSolidColorBrush]#ff58997f" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 									<Path Data="[PathGeometry]M 36,24 L 18.958,24 L 16.958,24 L 12.958,24 L 13.958,27 L 9,23.458 L 13.958,20 L 12.958,23 L 16.958,23 L 18.958,23 L 36,23 L 35,20 L 40.083,23.417 L 35,27 L 36,24 Z M 15.419,37.96 C 15.419,38.694 15.268,39.227 14.964,39.56 C 14.661,39.893 14.182,40.059 13.526,40.059 C 12.861,40.059 12.38,39.886 12.084,39.539 C 11.788,39.192 11.64,38.666 11.64,37.96 L 11.64,31.609 L 9,31.609 L 9,38.11 C 9,39.363 9.382,40.325 10.146,40.995 C 10.909,41.665 12.036,42 13.526,42 C 15.016,42 16.144,41.665 16.91,40.995 C 17.676,40.325 18.058,39.361 18.058,38.103 L 18.058,31.609 L 15.419,31.609 L 15.419,37.96 Z M 25.599,34.111 C 25.108,34.111 24.661,34.202 24.258,34.384 C 23.855,34.566 23.435,34.828 22.998,35.17 L 22.998,34.322 L 20.53,34.322 L 20.53,42 L 22.998,42 L 22.998,36.559 C 23.267,36.399 23.517,36.283 23.747,36.21 C 23.976,36.137 24.203,36.101 24.427,36.101 C 24.741,36.101 24.987,36.14 25.161,36.217 C 25.337,36.295 25.471,36.418 25.561,36.586 C 25.638,36.732 25.693,36.959 25.725,37.266 C 25.757,37.573 25.773,37.882 25.773,38.192 L 25.773,42 L 28.241,42 L 28.241,37.003 C 28.241,36.042 28.008,35.319 27.541,34.836 C 27.075,34.353 26.428,34.111 25.599,34.111 Z M 30.436,33.229 L 33.04,33.229 L 33.04,31.363 L 30.436,31.363 L 30.436,33.229 Z M 30.504,42 L 32.972,42 L 32.972,34.323 L 30.504,34.323 L 30.504,42 Z M 37.703,31.979 L 35.235,31.979 L 35.235,34.173 L 34.223,34.173 L 34.223,35.841 L 35.235,35.841 L 35.235,39.43 C 35.235,40.369 35.468,41.032 35.935,41.419 C 36.403,41.806 37.115,42 38.072,42 C 38.501,42 38.863,41.98 39.159,41.942 C 39.455,41.904 39.735,41.85 40,41.782 L 40,40.1 L 39.796,40.1 C 39.714,40.145 39.569,40.196 39.362,40.25 C 39.156,40.305 38.989,40.332 38.861,40.332 C 38.552,40.332 38.317,40.285 38.156,40.192 C 37.995,40.098 37.883,39.972 37.819,39.812 C 37.751,39.652 37.715,39.472 37.71,39.271 C 37.705,39.07 37.703,38.835 37.703,38.566 L 37.703,35.841 L 40,35.841 L 40,34.173 L 37.703,34.173 L 37.703,31.979 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 								</Canvas>
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="Spectrum\ History\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 50 30">
+							<IconPanel Height="[float]30" Left="[float]0" Top="[float]0" Width="[float]50">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Spectrum History" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="6.75" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]24" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
 							</IconPanel>
 						</Icon>
 					</MergeItem>
