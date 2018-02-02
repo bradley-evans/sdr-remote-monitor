@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="524384525DA365D64542EBDF0D3DC344" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="86B93AEAB32ADFD445677DA7B3EFC944" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -180,7 +180,7 @@
 						<PropertyItemTerminal DataType="Double" Hotspot="110 15" Id="c0t0v" Path="eq noise BW" Usage="Optional" />
 						<PropertyItemTerminal DataType="Double" Hotspot="110 30" Id="c1t0v" Path="coherent gain" Usage="Optional" />
 					</PropertyNode>
-					<CaseStructure Bounds="335 240 495 245" DataType="@b096da50953241eab2727bc5d70b353b" Default="106" Id="51" Selected="107" UserSelectorBounds="152 0 191 17">
+					<CaseStructure Bounds="335 240 495 245" DataType="@b096da50953241eab2727bc5d70b353b" Default="106" Id="51" Selected="106" UserSelectorBounds="152 0 191 17">
 						<CaseStructure.Case Bounds="5 5 485 235" Id="106" Pattern="&quot;No averaging&quot;, Default">
 							<Literal Bounds="405.5 155 39.5 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="150" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>0x3FF0000000000000</p.Data>
@@ -449,7 +449,7 @@
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 70 13 10" Docking="Left" Id="110" Terminals="51=82, 106, 107, 108, 109" />
 						<CaseStructure.Tunnel Bounds="-4 105 13 10" Docking="Left" Id="111" Terminals="51=80, 106=161, 107=180, 108=200, 109=218" />
-						<CaseStructure.Tunnel Bounds="486 120 13 10" Docking="Right" Id="112" Terminals="51=69, 106=159, 107=173, 108=194, 109=216" />
+						<CaseStructure.Tunnel Bounds="486 120 13 10" Docking="Right" Id="112" Terminals="51=493, 106=159, 107=173, 108=194, 109=216" />
 						<CaseStructure.Tunnel Bounds="486 110 13 10" Docking="Right" Id="113" Terminals="51=71, 106=158, 107=181, 108=201, 109=213" />
 						<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="114" Terminals="51=93, 106, 107=175, 108=195, 109=209" />
 						<CaseStructure.Tunnel Bounds="-4 160 13 10" Docking="Left" Id="115" Terminals="51=77, 106, 107=184, 108=202, 109=214" />
@@ -460,13 +460,13 @@
 						<CaseStructure.Tunnel Bounds="-4 90 13 10" Docking="Left" Id="120" Terminals="51=76, 106, 107=176, 108=196, 109" />
 						<CaseStructure.Tunnel Bounds="-4 175 13 10" Docking="Left" Id="121" Terminals="51=75, 106=155, 107=170, 108=190, 109=208" />
 						<CaseStructure.Tunnel Bounds="486 175 13 10" Docking="Right" Id="122" Terminals="51=73, 106=155, 107=169, 108=189, 109=207" />
-						<CaseStructure.Tunnel Bounds="486 95 13 10" Docking="Right" Id="123" Terminals="51=59, 106=154, 107=168, 108=188, 109=206" />
+						<CaseStructure.Tunnel Bounds="486 95 13 10" Docking="Right" Id="123" Terminals="51=495, 106=154, 107=168, 108=188, 109=206" />
 						<CaseStructure.Tunnel Bounds="370 -4 10 13" Docking="Top" Id="401" Terminals="51=458, 106=158, 107=409, 108=198, 109=215" />
 					</CaseStructure>
 					<PropertyNode Bounds="915 455 110 35" HasErrorTerminals="False" Id="52" InstanceDataType="@62c73e14acb94014a17f26e6a7bed680" Mode="InstanceProperties" Template="List">
 						<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 15" Id="c0t0v" Path="lin avg done" Usage="Required" />
 					</PropertyNode>
-					<CaseStructure Bounds="915 305 240 110" Default="124" Id="53" Selected="124" UserSelectorBounds="76 0 88 17">
+					<CaseStructure Bounds="915 305 240 110" Default="124" Id="53" Selected="125" UserSelectorBounds="76 0 88 17">
 						<CaseStructure.Case Bounds="5 5 230 100" Id="124" Pattern="False">
 							<Wire Id="219" Joints="N(127:124) N(128:124)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
@@ -482,8 +482,8 @@
 						<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="126" Terminals="53=68, 124, 125" />
 						<CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="127" Terminals="53=71, 124=219, 125=225" />
 						<CaseStructure.Tunnel Bounds="231 45 13 10" Docking="Right" Id="128" Terminals="53=70, 124=219, 125=224" />
-						<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="129" Terminals="53=485, 124, 125=223" />
-						<CaseStructure.Tunnel Bounds="-4 55 13 10" Docking="Left" Id="130" Terminals="53=69, 124, 125=222" />
+						<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="129" Terminals="53=492, 124, 125=223" />
+						<CaseStructure.Tunnel Bounds="-4 55 13 10" Docking="Left" Id="130" Terminals="53=493, 124, 125=222" />
 					</CaseStructure>
 					<CaseStructure Bounds="1200 300 110 120" Default="131" Id="54" Selected="132" UserSelectorBounds="11 0 88 17">
 						<CaseStructure.Case Bounds="5 5 100 110" Id="131" Pattern="False">
@@ -564,16 +564,14 @@
 					</ClusterLiteral>
 					<Wire Facade="WireInvisibleFacade" Id="57" Joints="N(56:Out) N(55:instance in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 					<MergeErrors Bounds="200 530 30 20" Id="58" Terminals="error out=62, c0t0v=63, c1t0v=66" />
-					<Wire Id="59" Joints="N(123:51) h(51) v(-50) N(55:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="60" Joints="N(44:Out) N(47:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="61" Joints="N(47:R4) N(36:27)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="62" Joints="N(58:error out) h(95) v(10) N(47:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="63" Joints="N(46:R4) h(45) v(130) N(58:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="65" Joints="N(37:27) h(1176) B(1) h(10) v(110) N(133:54) B(1) v(-130) N(433:430)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="65" Joints="N(37:27) h(1176) B(1) v(-130) N(433:430) B(1) v(110) N(133:54)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="66" Joints="N(29:27) N(58:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="67" Joints="N(41:27) N(46:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="68" Joints="N(43:Value) h(95) B(1) v(-105) N(417:414) B(1) v(135) N(126:53)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="69" Joints="N(112:51) h(16) B(1) h(40) B(2) N(130:53) B(2) v(-70) h(440) v(10) N(55:c1t0v) B(1) v(-240) B(8) N(421:414) B(8) v(-75) N(442:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="70" Joints="N(128:53) N(134:54)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="71" Joints="N(113:51) N(127:53)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="72" Joints="N(48:R1) h(15) v(145) N(50:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -610,7 +608,7 @@
 						<p.Text>spectrum type</p.Text>
 					</NodeLabel>
 					<Wire Id="413" Joints="N(442:instance out) N(482:27)" xmlns="http://www.ni.com/PlatformFramework" />
-					<CaseStructure Bounds="905 65 240 110" Default="415" Id="414" Selected="415" UserSelectorBounds="76 0 88 17">
+					<CaseStructure Bounds="905 65 240 110" Default="415" Id="414" Selected="416" UserSelectorBounds="76 0 88 17">
 						<CaseStructure.Case Bounds="5 5 230 100" Id="415" Pattern="False">
 							<Wire Id="422" Joints="N(418:415) N(419:415)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
@@ -626,8 +624,8 @@
 						<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="417" Terminals="414=68, 415, 416" />
 						<CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="418" Terminals="414=458, 415=422, 416=428" />
 						<CaseStructure.Tunnel Bounds="231 45 13 10" Docking="Right" Id="419" Terminals="414=443, 415=422, 416=427" />
-						<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="420" Terminals="414=485, 415, 416=426" />
-						<CaseStructure.Tunnel Bounds="-4 55 13 10" Docking="Left" Id="421" Terminals="414=69, 415, 416=425" />
+						<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="420" Terminals="414=492, 415, 416=426" />
+						<CaseStructure.Tunnel Bounds="-4 55 13 10" Docking="Left" Id="421" Terminals="414=493, 415, 416=425" />
 					</CaseStructure>
 					<CaseStructure Bounds="1190 60 110 120" Default="431" Id="430" Selected="432" UserSelectorBounds="11 0 88 17">
 						<CaseStructure.Case Bounds="5 5 100 110" Id="431" Pattern="False">
@@ -718,7 +716,9 @@
 						<p.Text>spectrum type</p.Text>
 					</NodeLabel>
 					<Wire Id="458" Joints="N(401:51) v(-121) N(418:414)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="485" Joints="N(50:c0t0v) h(355) v(-125) B(2) N(129:53) B(2) v(-240) B(4) N(420:414) B(4) v(-85) h(450) v(10) N(442:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="492" Joints="N(50:c0t0v) h(355) v(-125) B(2) N(129:53) B(2) v(-240) N(420:414)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="493" Joints="N(112:51) h(16) B(1) h(40) B(2) N(130:53) B(2) v(-70) h(440) v(10) h(1) B(7) N(55:c1t0v) B(7) v(-240) N(442:c1t0v) B(1) v(-240) N(421:414)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="495" Joints="N(123:51) h(51) v(-50) h(450) B(3) N(55:c0t0v) B(3) v(-240) N(442:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 1565 570" Id="28" Pattern="Error">
 					<Literal Bounds="1499 425 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="98" xmlns="http://www.ni.com/MocCommon">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F697ABE9B37854848859A11AD017CC52" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B06475C3E299B4DBF009F28D47B718DB" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -9,13 +9,13 @@
 		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
-		<Icon Id="2" ListViewIconCrop="0 0 40 50" xmlns="http://www.ni.com/PlatformFramework">
-			<IconPanel Height="[float]50" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+		<Icon Id="2" ListViewIconCrop="0 0 40 60" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]60" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="200" Left="[float]0" TemplateName="GrayNoText" Top="[float]0">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="201" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="202" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 				</IconTemplate>
-				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34">
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]54" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34">
 					<Path Data="[PathGeometry]M 9.385,13.625 L 12.385,16.625 L 6.996,22 L 4.996,22 L 3.996,21 L 3.996,19 L 9.385,13.625 Z M 15.996,0 L 13.996,2 L 17.514,5.518 L 13.6,9.421 L 16.601,12.421 L 20.514,8.518 L 23.996,12 L 27.997,7.999 L 20.996,1 L 15.996,0 Z M 22.002,19.237 L 9.424,6.66 C 10.118,4.888 9.863,2.906 8.431,1.474 C 6.999,0.042 4.908,-0.323 3.135,0.371 L 6.629,3.865 C 6.629,3.865 6.629,5.263 5.931,5.962 C 5.232,6.66 3.834,6.66 3.834,6.66 L 0.34,3.166 C -0.353,4.939 0.011,7.03 1.443,8.462 C 2.875,9.894 4.857,10.149 6.629,9.455 L 19.207,22.033 L 20.605,22.033 L 22.002,20.636 L 22.002,19.237 Z M 20.605,20.635 C 20.219,21.021 19.593,21.021 19.207,20.635 C 18.821,20.249 18.821,19.623 19.207,19.237 C 19.593,18.851 20.219,18.851 20.605,19.237 C 20.991,19.624 20.991,20.25 20.605,20.635 " EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#b2000000" Height="[float]22.032" Id="197" Left="[float]4" MinHeight="[float]1" MinWidth="[float]1" Top="[float]19" Width="[float]27.997" />
 					<Text Id="198" Left="[float]3" Text="[string]Set USRP &#xD;&#xA;Params" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]3" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 						<FontSetting FontFamily="Verdana" FontSize="4" Id="199" />
@@ -23,7 +23,7 @@
 				</Canvas>
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="50" Id="10" ListViewHeight="175" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="60" Id="10" ListViewHeight="190" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 50" Parameter="75" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 155" Parameter="309" />
 			<ConnectorPaneTerminal Hotspot="0 25" />
@@ -34,10 +34,12 @@
 			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 125" Parameter="181" />
 			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 110" Parameter="188" />
 			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 140" Parameter="160" />
-			<ConnectorPaneTerminal Hotspot="15 50" />
-			<ConnectorPaneTerminal Hotspot="25 50" />
+			<ConnectorPaneTerminal Hotspot="15 60" />
+			<ConnectorPaneTerminal Hotspot="25 60" ListViewHotspot="150 170" Parameter="314" />
 			<ConnectorPaneTerminal Hotspot="40 45" ListViewHotspot="150 80" Parameter="95" />
 			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 65" Parameter="82" />
+			<ConnectorPaneTerminal Hotspot="40 55" />
+			<ConnectorPaneTerminal Hotspot="0 55" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
@@ -84,6 +86,7 @@
 				<NumericText Height="[float]22" Id="190" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[double]0" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="191" LabelOwner="[UIModel]189" Left="[float]461" Text="[string]Test Carrier Frequencies" Top="[float]163" Width="[float]126" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="317" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]22" Name="[string]IQ frac out" Top="[float]0" Value="{DataItemBinding Id=314}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<MethodCall Bounds="145 225 50 50" DomainName="NI.MocCommon" Id="15" Label="16" Target="Write\ Rx\ Properties\.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -245,13 +248,19 @@
 				<CaseStructure.Tunnel Bounds="231 35 13 10" Docking="Right" Id="278" Terminals="260=279, 265=281, 261=289, 266=285, 267=277" />
 			</CaseStructure>
 			<Wire Id="276" Joints="N(275:260) h(146) N(115:T0)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="279" Joints="N(278:260) h(156) N(115:T1)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="279" Joints="N(278:260) h(156) B(1) N(316:Value) B(1) N(115:T1)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="300" Joints="N(310:Value) N(263:260)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="-20 45 40 15" DataItem="309" Id="310" Label="311" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@d8ea1daf9e064bdfa9b67a8c3ac872ee" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="310" Bounds="-63 45 38 14" Id="311" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>IQ frac</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="635 40 40 15" DataItem="314" Id="316" Label="318" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="316" Bounds="680 40 60 14" Id="318" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>IQ frac out</p.Text>
 			</NodeLabel>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
@@ -375,6 +384,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" DataType="@d8ea1daf9e064bdfa9b67a8c3ac872ee" Id="309" Name="IQ frac" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="5" DataType="Double" Id="314" Name="IQ frac out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="Write\ Rx\ Properties\.gvi">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="A6C410953015A06348D28C148AEB2718" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D6B58C16DF7A352639D84EDE506E0A77" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -23,8 +23,8 @@
 		</Icon>
 		<ConnectorPane Height="50" Id="10" ListViewHeight="205" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 95" Parameter="78" />
-			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="77" />
-			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 80" Parameter="81" />
 			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 110" Parameter="79" />
 			<ConnectorPaneTerminal Hotspot="15 0" />
 			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 65" Parameter="86" />
@@ -32,9 +32,9 @@
 			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 170" Parameter="189" />
 			<ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 185" Parameter="235" />
 			<ConnectorPaneTerminal Hotspot="50 35" ListViewHotspot="150 140" Parameter="83" />
-			<ConnectorPaneTerminal Hotspot="15 50" />
+			<ConnectorPaneTerminal Hotspot="15 50" ListViewHotspot="0 50" Parameter="77" />
 			<ConnectorPaneTerminal Hotspot="25 50" ListViewHotspot="0 35" Parameter="87" />
-			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 80" Parameter="81" />
+			<ConnectorPaneTerminal Hotspot="0 45" />
 			<ConnectorPaneTerminal Hotspot="50 45" ListViewHotspot="150 155" Parameter="84" />
 			<ConnectorPaneTerminal Hotspot="35 0" />
 			<ConnectorPaneTerminal Hotspot="35 50" />
@@ -246,7 +246,7 @@
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 15" Id="c0t0v" Path="eq noise bw" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 30" Id="c1t0v" Path="coherent gain" Usage="Required" />
 			</PropertyNode>
-			<DataAccessor Bounds="995 660 40 15" DataItem="83" Id="34" Label="71" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="990 660 40 15" DataItem="83" Id="34" Label="71" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@4484fb0b04a843d9a1521b2b33826f6d" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<DataAccessor Bounds="1010 420 40 15" DataItem="84" Id="35" Label="72" xmlns="http://www.ni.com/MocCommon">
@@ -290,7 +290,7 @@
 			<NodeLabel AttachedTo="32" Bounds="775 645 0 0" Id="70" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Window Properties Init</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="34" Bounds="995 643 103 14" Id="71" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="34" Bounds="990 643 103 14" Id="71" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Window Properties</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="35" Bounds="1055 420 50 14" Id="72" xmlns="http://www.ni.com/PlatformFramework">
