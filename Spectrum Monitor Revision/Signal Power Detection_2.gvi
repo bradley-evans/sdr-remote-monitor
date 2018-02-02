@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="92BCB0EB4096F60FF84504B727325E61" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="939CD6119CEC05E5BF83FF629A960DE7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -29,14 +29,14 @@
 			<ConnectorPaneTerminal Hotspot="25 0" />
 			<ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 95" Parameter="154" />
 			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 125" Parameter="333" />
-			<ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 80" Parameter="163" />
+			<ConnectorPaneTerminal Hotspot="50 25" />
 			<ConnectorPaneTerminal Hotspot="15 50" />
 			<ConnectorPaneTerminal Hotspot="25 50" />
 			<ConnectorPaneTerminal Hotspot="35 0" />
-			<ConnectorPaneTerminal Hotspot="35 50" />
-			<ConnectorPaneTerminal Hotspot="50 35" />
+			<ConnectorPaneTerminal Hotspot="35 50" ListViewHotspot="150 80" Parameter="163" />
+			<ConnectorPaneTerminal Hotspot="50 35" ListViewHotspot="150 65" Parameter="80" />
 			<ConnectorPaneTerminal Hotspot="0 35" />
-			<ConnectorPaneTerminal Hotspot="50 45" ListViewHotspot="150 65" Parameter="80" />
+			<ConnectorPaneTerminal Hotspot="50 45" />
 			<ConnectorPaneTerminal Hotspot="0 45" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
