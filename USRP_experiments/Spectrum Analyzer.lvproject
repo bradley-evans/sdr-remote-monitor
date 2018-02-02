@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5CE91CAB56989E5028F3B97C63AAFFCB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="12C6EDE9A2753AC4DAA5C56C84F6317D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Data" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Data" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GComponentFeatureSet" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GComponent.xsd" Version="4.5.0.49152" />
@@ -90,6 +90,9 @@
 						<Instance Id="1878" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Waterfall Plotter.gvi" p9:Process.AssociatedIdentifier="1876" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
+						<Instance Id="1938" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Save Data.gvi" p9:Process.AssociatedIdentifier="1936" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="8" Name="Root Superimposition">
 							<Superimpose Source="16">
 								<Superimpose Parent="{:/16}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="299" />
@@ -102,6 +105,7 @@
 								<Superimpose Parent="{:/16}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="1703" />
 								<Superimpose Parent="{:/16}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="1811" />
 								<Superimpose Parent="{:/16}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="1878" />
+								<Superimpose Parent="{:/16}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="1938" />
 							</Superimpose>
 						</Superimposition>
 					</MappingManager>
@@ -175,6 +179,7 @@
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="1701" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="USRP\ Plot\ Spectrum\.gvi" StoragePath="USRP Plot Spectrum.gvi" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="1809" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Signal\ Power\ Detection\.gvi" StoragePath="Signal Power Detection.gvi" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="1876" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Waterfall\ Plotter\.gvi" StoragePath="Waterfall Plotter.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="1936" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Save\ Data\.gvi" StoragePath="Save Data.gvi" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="372" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib_2\.Common" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
@@ -582,6 +587,7 @@
 							<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="960" Id="1271" Name="Analysis">
 								<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="960" Id="1272" Name="Filtering">
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="1273" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Filter\ Reset\.gtype" StoragePath="Filter Reset.gtype" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1925" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Filtering\ \(DBL\)\.gvi" StoragePath="Filtering (DBL).gvi" />
 								</NameScopingContentReference>
 							</NameScopingContentReference>
 						</NameScopingContentReference>
@@ -793,6 +799,7 @@
 							<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="1025" Id="1698" Name="Analysis">
 								<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="1025" Id="1699" Name="Filtering">
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1700" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Inverse\ f\ Filter\ \(DBL\)\.gvi" StoragePath="Inverse f Filter (DBL).gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1926" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Inverse\ f\ Filter\ Design\.gvi" StoragePath="Inverse f Filter Design.gvi" />
 								</NameScopingContentReference>
 							</NameScopingContentReference>
 						</NameScopingContentReference>
@@ -820,6 +827,17 @@
 							<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="1045" Id="1358" Name="Analysis">
 								<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="1045" Id="1359" Name="IntegralDifferentiation">
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1360" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Integral\ x\(t\)\.gvi" StoragePath="Integral x(t).gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary,NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary.Moc,FileReference,SourceFileReference" Id="1927" ModelDefinitionType="NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary" Name="AAL\ Integration\ Differentiation\.sli" StoragePath="AAL Integration Differentiation.sli">
+										<NameScopingContentReference Bindings="Envoy,ContentReference,NameScopingContentReference" ContentName="AAL Integration Differentiation.sli" Id="1929" Name="AAL\ Integration\ Differentiation\.sli" SynchronizeNameWithOwningEnvoy="True">
+											<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibraryEntryPoint,SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc" ContentIdentifier="10" Id="1930" ModelDefinitionType="NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary" Name="Derivative85" />
+											<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibraryEntryPoint,SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc" ContentIdentifier="45" Id="1931" ModelDefinitionType="NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary" Name="Integral" />
+											<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibraryEntryPoint,SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc" ContentIdentifier="80" Id="1932" ModelDefinitionType="NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary" Name="Integral90" />
+											<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibraryEntryPoint,SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc" ContentIdentifier="115" Id="1933" ModelDefinitionType="NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary" Name="NumerIntegration_head" />
+											<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibraryEntryPoint,SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc" ContentIdentifier="150" Id="1934" ModelDefinitionType="NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary" Name="NumerIntegration2D_head" />
+											<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibraryEntryPoint,SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc" ContentIdentifier="181" Id="1935" ModelDefinitionType="NationalInstruments.MocCommon.ExternalCode.SourceModel.SharedLibrary" Name="NumerIntegration3D_head" />
+										</NameScopingContentReference>
+									</SourceFileReference>
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="1928" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Integral\ Method\.gtype" StoragePath="Integral Method.gtype" />
 								</NameScopingContentReference>
 							</NameScopingContentReference>
 						</NameScopingContentReference>
@@ -1247,6 +1265,7 @@
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1702" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="USRP\ Plot\ Spectrum\.gvi" StoragePath="USRP Plot Spectrum.gvi" />
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1810" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Signal\ Power\ Detection\.gvi" StoragePath="Signal Power Detection.gvi" />
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1877" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Waterfall\ Plotter\.gvi" StoragePath="Waterfall Plotter.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1937" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Save\ Data\.gvi" StoragePath="Save Data.gvi" />
 			</EmbeddedDefinitionReference>
 			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,PackageReferencesDefinition,EmbeddedReference" Id="545" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 				<PackageReferencesDefinition xmlns="http://www.ni.com/GComponent.xsd" />
