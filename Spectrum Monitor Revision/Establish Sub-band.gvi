@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="008C6FB6BA64C7C7B94F75BAA60FBAC0" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D6B58C16DF7A352639D84EDE506E0A77" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -246,7 +246,7 @@
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 15" Id="c0t0v" Path="eq noise bw" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Double" Hotspot="0 30" Id="c1t0v" Path="coherent gain" Usage="Required" />
 			</PropertyNode>
-			<DataAccessor Bounds="995 660 40 15" DataItem="83" Id="34" Label="71" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="990 660 40 15" DataItem="83" Id="34" Label="71" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@4484fb0b04a843d9a1521b2b33826f6d" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<DataAccessor Bounds="1010 420 40 15" DataItem="84" Id="35" Label="72" xmlns="http://www.ni.com/MocCommon">
@@ -290,7 +290,7 @@
 			<NodeLabel AttachedTo="32" Bounds="775 645 0 0" Id="70" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Window Properties Init</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="34" Bounds="995 643 103 14" Id="71" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="34" Bounds="990 643 103 14" Id="71" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Window Properties</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="35" Bounds="1055 420 50 14" Id="72" xmlns="http://www.ni.com/PlatformFramework">

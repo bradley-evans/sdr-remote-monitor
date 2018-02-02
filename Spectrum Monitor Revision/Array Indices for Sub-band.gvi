@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0329C5DF5928D8ED47037B3B943752CB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="68A4600CAF3198820E7690699C3BA483" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -120,7 +120,6 @@
 					<Wire Id="726" Joints="N(261:36) N(740:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<ForLoop Bounds="353 18 640 470" DiagramId="735" Id="734">
 						<LoopIteration Bounds="5 440 15 15" Id="737" />
-						<LoopCondition Bounds="605 440 15 15" Id="746" />
 						<IsGreaterOrEqual Bounds="140 200 30 30" Id="100" />
 						<LogicalAnd Bounds="190 235 25 20" Id="114" Terminals="o=373, c0t0v=107, c1t0v=108" />
 						<Comment Bounds="30 15 378 42" Id="265" xmlns="http://www.ni.com/MocCommon">
@@ -131,7 +130,7 @@
 						</Comment>
 						<ArrayIndex Bounds="45 120 40 30" Id="268" Terminals="array=805, c0t0v, c0out=267" />
 						<WireComment AttachedTo="267" Bounds="84.5 152 47 16" Id="274" xmlns="http://www.ni.com/PlatformFramework">
-							<p.ExpandedWidth>45</p.ExpandedWidth>
+							<p.ExpandedWidth>47</p.ExpandedWidth>
 							<p.Point>108 160</p.Point>
 							<p.Text>Freq</p.Text>
 						</WireComment>
@@ -182,14 +181,12 @@
 							<CaseStructure.Tunnel Bounds="-4 160 13 10" Docking="Left" Id="834" Terminals="275=833, 276=844, 277=836" />
 							<CaseStructure.Tunnel Bounds="295 160 13 10" Docking="Right" Id="839" Terminals="275=840, 276=844, 277=837" />
 						</CaseStructure>
-						<Not Bounds="575 440 25 20" Id="372" />
 						<IsLessOrEqual Bounds="140 255 30 30" Id="712" />
 						<Wire Id="107" Joints="N(100:x &gt;= y?) h(5) v(25) N(114:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="108" Joints="N(712:x &lt;= y?) h(5) v(-20) N(114:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="267" Joints="N(268:c0out) h(23) v(30) B(2) h(128) v(35) N(763:275) B(2) v(30) h(22) B(7) N(100:x) B(7) v(55) N(712:x)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="298" Joints="N(297:275) N(741:i0)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="373" Joints="N(114:o) h(15) B(1) N(278:275) B(1) v(205) h(330) B(4) N(372:x) B(4) v(-75) B(6) N(745:condition) B(6) v(-35) N(741:condition)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="378" Joints="N(372:.not. x?) h(10) v(-5) N(746:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="373" Joints="N(114:o) h(15) B(1) N(278:275) B(1) v(205) h(330) v(-75) B(5) N(745:condition) B(5) v(-35) N(741:condition)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="560" Joints="N(559:275) N(745:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="805" Joints="N(740:i0) h(29) B(1) h(245) N(767:275) B(1) v(20) N(268:array)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="807" Joints="N(808:i0) h(35) v(-5) N(100:y)" xmlns="http://www.ni.com/PlatformFramework" />
