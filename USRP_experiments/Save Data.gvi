@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="D05ED013601F901A9B61BC27A49E8707" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Save Data" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="10.5" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="51" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="17" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="228" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0">
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=17}" Height="[float]400" Id="18" IncludeInCapture="[bool]True" Label="[UIModel]37" Left="[float]520" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]49,8,26,43" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]True" Top="[float]165" Width="[float]853" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="19" Label="[string]Frequency" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]30" Orientation="[SMOrientation]Horizontal" Range="[IRange]88000000, 101000000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="30" LabelPresenter="[string]LVSI:" />
+				</Axis>
+				<Axis Adjuster="[RangeAdjuster]None" Id="20" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]31" Orientation="[SMOrientation]Vertical" Range="[IRange]-140, -40, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="31" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Plot HorizontalScale="[UIModel]19" Id="21" Label="[string]Plot" VerticalScale="[UIModel]20" Visibility="[SMVisibility]Visible">
+					<PlotRenderer BarWidth="[double]0.75" Id="32" LineStroke="[SMSolidColorBrush]#ff7b161a" LineStyle="[LineStyle]Solid" LineThickness="[double]1" />
+				</Plot>
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="22" LineStroke="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="23" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="24" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="25" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="26" LineStroke="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="27" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="28" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="29" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
+			</Graph>
+			<PlotLegend ControlDesignTuple="[ControlDesignPair]Flat,Flat Blue" Graph="[UIModel]18" Height="[float]28" Id="33" Left="[float]1380" Top="[float]165" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]18" Height="[float]102" Id="34" Left="[float]525" MinHeight="[float]80" Top="[float]594" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]18" Height="[float]50" Id="35" Left="[float]1380" MinHeight="[float]50" Top="[float]463" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Graph="[UIModel]18" Height="[float]22" Id="36" Left="[float]525" Top="[float]572" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="37" LabelOwner="[UIModel]18" Left="[float]520" Text="[string]FFT Power Spectrum" Top="[float]142" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
+			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Height="[float]28" Id="54" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Left="[float]0" Name="[string]file path" Path="{DataItemBinding Id=51}" Top="[float]0" Width="[float]180" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="231" Left="[float]0" Name="[string]tdms file out" RefnumType="[Type]@c0dfdb7fe7ab43c7b491e81b968e1324" Top="[float]0" Value="{DataItemBinding Id=228}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<DataAccessor Bounds="195 260 40 15" DataItem="17" Id="15" Label="16" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="15" Bounds="76 260 114 14" Id="16" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>FFT Power Spectrum</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="195 240 40 15" DataItem="51" Id="53" Label="55" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="53" Bounds="144 240 46 14" Id="55" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>file path</p.Text>
+			</NodeLabel>
+			<PropertyNode Bounds="275 260 50 65" HasErrorTerminals="False" Id="71" InstanceDataType="@5d9dcb9b138d4fa98e430ff524105580" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="Double" Hotspot="50 45" Id="c0t0v" Path="f0" Usage="Optional" />
+				<PropertyItemTerminal DataType="Double" Hotspot="50 30" Id="c1t0v" Path="df" Usage="Optional" />
+				<PropertyItemTerminal DataType="Double[]" Hotspot="50 15" Id="c2t0v" Path="IQ" Usage="Optional" />
+			</PropertyNode>
+			<Wire Id="72" Joints="N(15:Value) N(71:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<BuildWaveformNode Bounds="470 260 40 40" Id="77" />
+			<Wire Id="78" Joints="N(71:c2t0v) h(97) v(-10) N(77:Y)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="80" Joints="N(71:c1t0v) h(100) v(-15) N(77:dt)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ToTimeStamp Bounds="370 300 30 10" Id="83" />
+			<Wire Id="84" Joints="N(71:c0t0v) N(83:number)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="85" Joints="N(83:time stamp) h(35) v(-20) N(77:t0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<TDMSWrite Bounds="560 230 40 40" Id="86" />
+			<Wire Id="87" Joints="N(77:output waveform) h(45) v(-7) N(86:data)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="92" Joints="N(53:Path) h(5) v(-85) N(219:100)" xmlns="http://www.ni.com/PlatformFramework" />
+			<CaseStructure Bounds="360 130 185 115" Default="101" Id="100" Selected="102" UserSelectorBounds="48.6666679 0 88 17.333334">
+				<CaseStructure.Case Bounds="5 5 175 105" Id="101" Pattern="False" />
+				<CaseStructure.Case Bounds="5 5 175 105" Id="102" Pattern="True">
+					<TDMSOpen Bounds="110 20 40 40" Id="91" />
+					<Literal Bounds="10.1600037 30 90.73333 15" DataType="@ef10a780f37043f098ceb6f9b2b7c7ee" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="93" Label="95" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>3</p.Data>
+						<EnumBehavior Id="94" />
+					</Literal>
+					<Literal Bounds="10 60 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="97" Label="98" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="93" Bounds="10.1600037 30 0 0" Id="95" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>operation</p.Text>
+					</NodeLabel>
+					<NodeLabel AttachedTo="97" Bounds="10 60 0 0" Id="98" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>disable buffering</p.Text>
+					</NodeLabel>
+					<Wire Id="215" Joints="N(91:tdms file out) N(216:102)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="218" Joints="N(219:102) N(91:file path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="99" Joints="N(97:Out) h(89) N(91:disable buffering)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="96" Joints="N(93:Out) N(91:operation)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="103" Terminals="100=222, 101, 102" />
+				<CaseStructure.Tunnel Bounds="176 25 13 10" DefaultIfUnwired="True" Docking="Right" Id="216" Terminals="100=226, 101, 102=215" />
+				<CaseStructure.Tunnel Bounds="-4 25 13 10" Docking="Left" Id="219" Terminals="100=92, 101, 102=218" />
+			</CaseStructure>
+			<IsFirstCall Bounds="320 170 15 15" Id="221" />
+			<Wire Id="222" Joints="N(221:First Call?: T/F) N(103:100)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="226" Joints="N(216:100) h(6) v(75) N(86:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="710 230 40 15" DataItem="228" Id="230" Label="232" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@c0dfdb7fe7ab43c7b491e81b968e1324" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="230" Bounds="755 230 70 14" Id="232" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>tdms file out</p.Text>
+			</NodeLabel>
+			<Wire Id="233" Joints="N(86:tdms file out) N(230:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="@5d9dcb9b138d4fa98e430ff524105580" Id="17" Name="FFT Power Spectrum" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>0x0</Field1>
+					<Field2>0x0</Field2>
+					<Field3>null</Field3>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Path" Id="51" Name="file path" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="@c0dfdb7fe7ab43c7b491e81b968e1324" Id="228" Name="tdms file out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="c0dfdb7fe7ab43c7b491e81b968e1324">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="NationalInstruments.LabVIEW.CoreRuntime.TDMSFileRefnum" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void" />
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="5d9dcb9b138d4fa98e430ff524105580">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="f0" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="df" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="IQ">
+						<DataType>
+							<VariableArray DereferenceType="Double" />
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ef10a780f37043f098ceb6f9b2b7c7ee">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="open" />
+					<EnumerationMember Value="1" Name="open or create" />
+					<EnumerationMember Value="2" Name="create or replace" />
+					<EnumerationMember Value="3" Name="create" />
+					<EnumerationMember Value="4" Name="open (read-only)" />
+				</Members>
+				<DataType>
+					<UInt16 />
+				</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
