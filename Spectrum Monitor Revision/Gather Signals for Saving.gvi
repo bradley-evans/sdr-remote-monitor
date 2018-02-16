@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F6BF3350D298079EA2B2A2758BAD6386" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="85822DCB8BB63A63E79CDB624FB946FC" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -11,19 +11,19 @@
 		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
-		<Icon Id="2" ListViewIconCrop="0 0 50 40" xmlns="http://www.ni.com/PlatformFramework">
-			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]50">
+		<Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]50" Id="3" Left="[float]0" Top="[float]0" Width="[float]50">
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Gather Signals for Saving" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
-						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+						<FontSetting FontFamily="Verdana" FontSize="6.75" Id="8" />
 					</FileNameText>
 				</IconTemplate>
-				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="40" Id="10" ListViewHeight="145" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="50" Id="10" ListViewHeight="160" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="29" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="49" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 125" Parameter="111" />
@@ -34,10 +34,12 @@
 			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 65" Parameter="72" />
 			<ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 110" Parameter="86" />
 			<ConnectorPaneTerminal Hotspot="50 35" ListViewHotspot="150 95" Parameter="81" />
-			<ConnectorPaneTerminal Hotspot="15 40" />
-			<ConnectorPaneTerminal Hotspot="25 40" />
+			<ConnectorPaneTerminal Hotspot="15 50" />
+			<ConnectorPaneTerminal Hotspot="25 50" />
 			<ConnectorPaneTerminal Hotspot="35 0" />
-			<ConnectorPaneTerminal Hotspot="35 40" />
+			<ConnectorPaneTerminal Hotspot="35 50" />
+			<ConnectorPaneTerminal Hotspot="50 45" ListViewHotspot="150 140" Parameter="118" />
+			<ConnectorPaneTerminal Hotspot="0 45" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0">
@@ -87,16 +89,18 @@
 				<Label Id="115" LabelOwner="[UIModel]113" Left="[float]5" Text="[string]eq noise bw" Top="[float]0" />
 				<Label Id="116" LabelOwner="[UIModel]114" Left="[float]5" Text="[string]coherent gain" Top="[float]45" />
 			</Cluster>
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="121" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]B" Top="[float]0" Value="{DataItemBinding Id=118}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
-			<MathNode Bounds="325 95 540 275" DocumentText="&quot;B = uint32(round(100000/df));\r\nL_ind = length(ind);\r\nL_IQ = length(IQ_current);\r\nsignals2D = zeros(L_ind, 2*B+1);\r\nf0 = zeros(1,L_ind);\r\nif indices_in_subband\r\n    for ii = 1:L_ind\r\n        if ind(ii) - B &lt; 0 || ind(ii) + B &gt; L_IQ\r\n            %error\r\n        else\r\n            signals2D(ii,:) = IQ_current(ind(ii) - B : ind(ii) + B);\r\n            f0(ii) = freq(ii) - B*df;\r\n        end\r\n    end\r\nend&quot;" Id="15" OutliningMode="Manual" xmlns="http://www.ni.com/MScript">
-				<MVariable Bounds="-25 125 45 15" DataType="Double" Direction="Input" Facade="" Hotspot="-25 130" Id="1" Name="df" Usage="Required" />
-				<MVariable Bounds="-30 40 50 15" DataType="UInt32[]" Direction="Input" Facade="" Hotspot="-30 45" Id="2" Name="ind" Usage="Required" />
-				<MVariable Bounds="-70 140 90 15" DataType="Double[]" Direction="Input" Facade="" Hotspot="-70 145" Id="3" Name="IQ_current" Usage="Required" />
-				<MVariable Bounds="520 60 90 15" DataType="Double[,]" Direction="Output" Facade="" Hotspot="610 65" Id="4" Name="signals2D" Usage="Optional" />
-				<MVariable Bounds="-35 55 55 15" DataType="Double[]" Direction="Input" Facade="" Hotspot="-35 60" Id="6" Name="freq" Usage="Required" />
-				<MVariable Bounds="520 75 50 15" DataType="Double[]" Direction="Output" Facade="" Hotspot="570 80" Id="7" Name="f0" Usage="Optional" />
-				<MVariable Bounds="-120 70 140 15" DataType="Boolean" Direction="Input" Facade="" Hotspot="-120 75" Id="8" Name="indices_in_subband" Usage="Required" />
+			<MathNode Bounds="325 95 540 275" DocumentText="&quot;B = uint32(round(5000000/df));\r\nL_ind = length(ind);\r\nL_IQ = length(IQ_current);\r\nsignals2D = zeros(L_ind, 2*B+1);\r\nf0 = zeros(1,L_ind);\r\nif indices_in_subband\r\n    for ii = 1:L_ind\r\n        if ind(ii) - B &lt; 0 || ind(ii) + B &gt; L_IQ\r\n            %error\r\n        else\r\n            signals2D(ii,:) = IQ_current(ind(ii) - B : ind(ii) + B);\r\n            f0(ii) = freq(ii) - B*df;\r\n        end\r\n    end\r\nend&quot;" Id="15" OutliningMode="Manual" xmlns="http://www.ni.com/MScript">
+				<MVariable Bounds="-25.3333321 125 45.3333321 14.666667" DataType="Double" Direction="Input" Hotspot="-25.3333321 130" Id="1" Name="df" Usage="Required" />
+				<MVariable Bounds="-30 40 50 14.666667" DataType="UInt32[]" Direction="Input" Hotspot="-30 45" Id="2" Name="ind" Usage="Required" />
+				<MVariable Bounds="-70 140 90 14.666667" DataType="Double[]" Direction="Input" Hotspot="-70 145" Id="3" Name="IQ_current" Usage="Required" />
+				<MVariable Bounds="520 60 90 14.666667" DataType="Double[,]" Direction="Output" Hotspot="610 65" Id="4" Name="signals2D" Usage="Optional" />
+				<MVariable Bounds="-34.6666679 55 54.6666679 14.666667" DataType="Double[]" Direction="Input" Hotspot="-34.6666679 60" Id="6" Name="freq" Usage="Required" />
+				<MVariable Bounds="520 75 50 14.666667" DataType="Double[]" Direction="Output" Hotspot="570 80" Id="7" Name="f0" Usage="Optional" />
+				<MVariable Bounds="-120 70 140 14.666667" DataType="Boolean" Direction="Input" Hotspot="-120 75" Id="8" Name="indices_in_subband" Usage="Required" />
+				<MVariable Bounds="520 45 50 14.666667" DataType="UInt32" Direction="Output" Facade="" Hotspot="570 50" Id="9" Name="B" Usage="Optional" />
 			</MathNode>
 			<DataAccessor Bounds="-35 90 40 15" DataItem="29" Id="27" Label="28" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@f2b82c0ffb914c6da8780c9771cd1824" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -104,7 +108,7 @@
 			<NodeLabel AttachedTo="27" Bounds="-122 90 82 14" Id="28" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Local Interests</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="25 125 150 65" HasErrorTerminals="False" Id="40" InstanceDataType="@f2b82c0ffb914c6da8780c9771cd1824" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="25 125 150 65.3333359" HasErrorTerminals="False" Id="40" InstanceDataType="@f2b82c0ffb914c6da8780c9771cd1824" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal DataType="UInt32[]" Hotspot="150 15" Id="c0t0v" Path="Indices" Usage="Optional" />
 				<PropertyItemTerminal DataType="Double[]" Hotspot="150 30" Id="c1t0v" Path="Frequencies" Usage="Optional" />
 				<PropertyItemTerminal DataType="Boolean" Hotspot="150 45" Id="c2t0v" Path="Indices in sub-band?" Usage="Optional" />
@@ -151,10 +155,10 @@
 			<NodeLabel AttachedTo="88" Bounds="990 405 11 14" Id="90" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>df</p.Text>
 			</NodeLabel>
-			<Comment Bounds="905 215 383 108" Id="91" xmlns="http://www.ni.com/MocCommon">
+			<Comment Bounds="905 215 382.666656 108" Id="91" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"signals2D:\r\n\tEach row is a different signal that peaked above threshold\r\nf0:\r\n\tBeginning frequency of signal\r\nTrigger Save?:\r\n\tBoolean indicating whether to save this data\r\ndf:\r\n\tCommon df for the recorded signals"</p.Text>
 			</Comment>
-			<Comment Bounds="905 465 305 42" Id="92" xmlns="http://www.ni.com/MocCommon">
+			<Comment Bounds="905 465 305.333344 42" Id="92" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"Note, signals2D is not the consecutive recordings.\r\nThere will be #numberavergages of these signals2D\r\nby the end of the inner while loop."</p.Text>
 			</Comment>
 			<MethodCall Bounds="-10 270 50 50" DomainName="NI.MocCommon" Id="93" Target="NI:Analysis:Measurement:Spectrum\ Unit\ Conversion\.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -218,6 +222,13 @@
 				<p.Text>Window Properties</p.Text>
 			</NodeLabel>
 			<Wire Id="117" Joints="N(109:Value) h(33) v(-85) N(93:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="955 135 40 15" DataItem="118" Id="120" Label="122" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="120" Bounds="1000 135 10 14" Id="122" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>B</p.Text>
+			</NodeLabel>
+			<Wire Id="123" Joints="N(15:9) h(55) v(-5) N(120:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem CallDirection="Input" CallIndex="0" DataType="@f2b82c0ffb914c6da8780c9771cd1824" Id="29" Name="Local Interests" xmlns="http://www.ni.com/MocCommon">
@@ -255,6 +266,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="@4484fb0b04a843d9a1521b2b33826f6d" Id="111" Name="Window Properties" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0_0x0_</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="4" DataType="UInt32" Id="118" Name="B" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="NI:Analysis:Measurement:Spectrum\ Unit\ Conversion\.gvi">

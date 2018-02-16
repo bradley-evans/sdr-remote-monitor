@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="02FE21A5E9F2F34634892B572D042003" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="9AC99EDAD5C84DCA5D5C29D5567BE803" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -105,18 +105,18 @@
 			<CaseStructure Bounds="375 -75 560 400" Default="522" Id="521" Selected="523" UserSelectorBounds="236 0 88 17.333334">
 				<CaseStructure.Case Bounds="5 5 550 390" Id="522" Pattern="False" />
 				<CaseStructure.Case Bounds="5 5 550 390" Id="523" Pattern="True">
-					<ForLoop Bounds="83 173 415 175" DiagramId="106" Id="105">
-						<LoopIteration Bounds="5 145 15 15" Id="108" />
+					<ForLoop Bounds="83 173 415 200" DiagramId="106" Id="105">
+						<LoopIteration Bounds="5 170 15 15" Id="108" />
 						<BuildWaveformNode Bounds="185 40 40 40" Id="45" />
 						<ToTimeStamp Bounds="90 60 30 10" Id="48" />
 						<TDMSWrite Bounds="325 40 40 40" Id="51" />
 						<Wire Id="493" Joints="N(494:i0) h(5) v(-25) N(45:dt)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="496" Joints="N(497:i0) h(5) v(-50) N(48:number)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="496" Joints="N(497:i0) h(14) v(-50) N(48:number)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="499" Joints="N(500:i0) v(39) N(51:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="502" Joints="N(51:tdms file out) h(20) N(503:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="505" Joints="N(506:i0) N(45:Y)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="50" Joints="N(48:time stamp) N(45:t0)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="1151" Joints="N(45:output waveform) h(80) v(23) N(51:data)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="1151" Joints="N(45:output waveform) h(10) v(23) N(51:data)" xmlns="http://www.ni.com/PlatformFramework" />
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="107" Terminals="105=990, 106" />
 						<LoopTunnel Bounds="-5 77 13 10" Docking="Left" Id="494" Terminals="o0=975, i0=493" />
 						<LoopTunnel AutoIndex="True" Bounds="-5 112 13 10" Docking="Left" Id="497" Terminals="o0=978, i0=496" TunnelMode="0" />
