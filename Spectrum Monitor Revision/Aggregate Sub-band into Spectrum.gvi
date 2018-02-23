@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B45249568ABEE139224DDEFE5EF08FC5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="19B3E64860C12781D0D0B4EC594A6CE7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -123,7 +123,7 @@
 			<NodeLabel AttachedTo="262" Bounds="1555 0 93 14" Id="279" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Spectrum to Plot</p.Text>
 			</NodeLabel>
-			<CaseStructure Bounds="665 -60 335 170" Default="20" Id="19" Selected="21" UserSelectorBounds="124 0 88 17">
+			<CaseStructure Bounds="665 -60 335 170" Default="20" Id="19" Selected="21" UserSelectorBounds="123.333336 0 88 17.333334">
 				<CaseStructure.Case Bounds="5 5 325 160" Id="20" Pattern="False">
 					<Wire Id="287" Joints="N(286:20) v(56) N(248:20)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
@@ -179,23 +179,23 @@
 			<NodeLabel AttachedTo="90" Bounds="585 195 126 14" Id="120" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Frame Parameters Out</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="710 240 93 50" HasErrorTerminals="False" Id="139" InstanceDataType="@a8106957b9c74a119f0e3cfccf03e781" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal DataType="Double" Hotspot="93 15" Id="c0t0v" Path="df" Usage="Optional" />
-				<PropertyItemTerminal DataType="Double[]" Hotspot="93 30" Id="c1t0v" Path="magnitude" Usage="Optional" />
+			<PropertyNode Bounds="710 240 93.3333359 50" HasErrorTerminals="False" Id="139" InstanceDataType="@a8106957b9c74a119f0e3cfccf03e781" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="Double" Hotspot="93.3333359 15" Id="c0t0v" Path="df" Usage="Optional" />
+				<PropertyItemTerminal DataType="Double[]" Hotspot="93.3333359 30" Id="c1t0v" Path="magnitude" Usage="Optional" />
 			</PropertyNode>
-			<Multiply Bounds="455 35 30 30" Id="181" Terminals="o=334, c0t0v=333, c1t0v=183" />
-			<ArraySubset Bounds="890 265 40 40" Id="197" Terminals="array=198, subarray=466, index0=199, length0=183" />
-			<WireComment AttachedTo="183" Bounds="505 172 117 16" Id="201" xmlns="http://www.ni.com/PlatformFramework">
-				<p.ExpandedWidth>117</p.ExpandedWidth>
-				<p.Point>563.5 180</p.Point>
+			<Multiply Bounds="455 35 30 30" Id="181" Terminals="o=334, c0t0v=333, c1t0v=552" />
+			<ArraySubset Bounds="890 265 40 40" Id="197" Terminals="array=198, subarray=466, index0=553, length0=552" />
+			<WireComment AttachedTo="552" Bounds="505.000031 172 117.333336 16" Id="201" xmlns="http://www.ni.com/PlatformFramework">
+				<p.ExpandedWidth>117.333336</p.ExpandedWidth>
+				<p.Point>563.6667 180</p.Point>
 				<p.Text>Length of Subset</p.Text>
 			</WireComment>
-			<WireComment AttachedTo="199" Bounds="625 182 85 16" Id="202" xmlns="http://www.ni.com/PlatformFramework">
-				<p.ExpandedWidth>85</p.ExpandedWidth>
-				<p.Point>667.5 190</p.Point>
+			<WireComment AttachedTo="553" Bounds="625 182 85.3333359 16" Id="202" xmlns="http://www.ni.com/PlatformFramework">
+				<p.ExpandedWidth>85.3333359</p.ExpandedWidth>
+				<p.Point>667.6667 190</p.Point>
 				<p.Text>Start Index</p.Text>
 			</WireComment>
-			<Multiply Bounds="945 160 30 30" Id="203" Terminals="o=251, c0t0v=210, c1t0v=183" />
+			<Multiply Bounds="945 160 30 30" Id="203" Terminals="o=251, c0t0v=210, c1t0v=552" />
 			<DataAccessor Bounds="870 160 40 15" DataItem="205" Id="207" Label="209" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -243,11 +243,9 @@
 			<Wire Id="82" Joints="N(42:Value) N(81:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="121" Joints="N(81:instance out) N(90:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="138" Joints="N(389:Value) h(460) v(-30) N(139:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="183" Joints="N(81:c2t0v) h(30) v(-45) B(2) h(-7) v(-125) N(181:c1t0v) B(2) h(410) B(6) N(203:c1t0v) B(6) v(120) N(197:length0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="198" Joints="N(139:c1t0v) N(197:array)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="199" Joints="N(81:c3t0v) h(20) v(-50) h(410) v(100) N(197:index0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="210" Joints="N(207:Value) N(203:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="231" Joints="N(139:c0t0v) h(7) B(1) N(232:19) B(1) v(210) h(175) N(437:B0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="231" Joints="N(139:c0t0v) h(6.666687) B(1) N(232:19) B(1) v(210) h(175) N(437:B0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="249" Joints="N(248:19) N(245:241)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="251" Joints="N(203:o) h(35) v(-95) N(252:241)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="280" Joints="N(246:241) h(7) B(1) h(62) B(2) N(262:Value) B(2) v(-85) N(359:input) B(2) v(280) N(471:instance in) B(1) v(155) h(-203) v(60) N(323:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -341,6 +339,8 @@
 			</NodeLabel>
 			<Wire Id="512" Joints="N(505:size(s\)) N(509:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="548" Joints="N(471:c0t0v) h(10) v(-20) N(505:array)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="552" Joints="N(81:c2t0v) h(30) v(-45) B(2) h(-7) v(-125) N(181:c1t0v) B(2) h(410) B(6) N(203:c1t0v) B(6) v(120) N(197:length0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="553" Joints="N(81:c3t0v) h(20) v(-50) h(410) v(100) N(197:index0)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2aa401105c6f42168b4a9c141e07f38a" Height="[float]327" Id="25" Label="[UIModel]40" Left="[float]729" Top="[float]169" Value="{DataItemBinding Id=41}" Width="[float]123" xmlns="http://www.ni.com/PanelCommon">

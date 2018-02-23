@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="9AC99EDAD5C84DCA5D5C29D5567BE803" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3B92FC60070FFA3F41E58BBAA8216302" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -80,13 +80,13 @@
 			<NodeLabel AttachedTo="21" Bounds="49 215 11 14" Id="26" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>f0</p.Text>
 			</NodeLabel>
-			<DataAccessor Bounds="65 -115 40 15" DataItem="79" Id="42" Label="76" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="65 -20 40 15" DataItem="79" Id="42" Label="76" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<Wire Id="47" Joints="N(17:Value) N(976:521)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="49" Joints="N(21:Value) N(979:521)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="53" Joints="N(42:Path) h(15) v(95) N(1089:521)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="42" Bounds="14 -115 46 14" Id="76" xmlns="http://www.ni.com/PlatformFramework">
+			<Wire Id="53" Joints="N(42:Path) N(1089:521)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="42" Bounds="14 -20 46 14" Id="76" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>file path</p.Text>
 			</NodeLabel>
 			<Wire Id="104" Joints="N(15:Value) h(30) B(1) N(988:521) B(1) v(-80) N(508:array)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -109,11 +109,11 @@
 						<LoopIteration Bounds="5 170 15 15" Id="108" />
 						<BuildWaveformNode Bounds="185 40 40 40" Id="45" />
 						<ToTimeStamp Bounds="90 60 30 10" Id="48" />
-						<TDMSWrite Bounds="325 40 40 40" Id="51" />
+						<TDMSWrite Bounds="335 40 40 40" Id="51" />
 						<Wire Id="493" Joints="N(494:i0) h(5) v(-25) N(45:dt)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="496" Joints="N(497:i0) h(14) v(-50) N(48:number)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="499" Joints="N(500:i0) v(39) N(51:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="502" Joints="N(51:tdms file out) h(20) N(503:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="502" Joints="N(51:tdms file out) h(10) N(503:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="505" Joints="N(506:i0) N(45:Y)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="50" Joints="N(48:time stamp) N(45:t0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1151" Joints="N(45:output waveform) h(10) v(23) N(51:data)" xmlns="http://www.ni.com/PlatformFramework" />
