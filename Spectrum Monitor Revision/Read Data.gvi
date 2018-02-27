@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="98DD19F683245B3ED067A28064ED4CD3" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DF1E51BCCADF1BF0BA177150984D901E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -119,9 +119,9 @@
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="session handle" />
-						<Parameter Id="L4" Desc="error in" />
+						<Parameter Id="L4" Desc="error in (no error)" />
 						<Parameter Id="R0" Desc="session handle out" />
-						<Parameter Id="R4" Desc="error out" />
+						<Parameter Id="R4" Desc="Error Out" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
 				<Terminal DataType="@f261aca30cd44609875979717cdeb8e0" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
@@ -135,12 +135,12 @@
 						<Parameter Id="L0" Desc="session handle" />
 						<Parameter Id="L1" Desc="number of samples" />
 						<Parameter Id="L2" Desc="timeout" />
-						<Parameter Id="L4" Desc="error in" />
+						<Parameter Id="L4" Desc="error in (no error)" />
 						<Parameter Id="T0" Desc="channel list" />
 						<Parameter Id="R0" Desc="session handle out" />
 						<Parameter Id="R1" Desc="data" />
 						<Parameter Id="R3" Desc="timestamp" />
-						<Parameter Id="R4" Desc="error out" />
+						<Parameter Id="R4" Desc="Error Out" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
 				<Terminal DataType="@f261aca30cd44609875979717cdeb8e0" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />

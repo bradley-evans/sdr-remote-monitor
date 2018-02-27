@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="92CE04F3D27C3D9DA992DB036BDA489C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 60" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]60" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Save Data to File_chris - Copy" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]54" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="60" Id="10" ListViewHeight="100" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="79" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="1156" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 65" Parameter="1770" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 80" Parameter="2043" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 60" />
+			<ConnectorPaneTerminal Hotspot="25 60" />
+			<ConnectorPaneTerminal Hotspot="0 45" />
+			<ConnectorPaneTerminal Hotspot="40 45" />
+			<ConnectorPaneTerminal Hotspot="0 55" />
+			<ConnectorPaneTerminal Hotspot="40 55" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Height="[float]28" Id="101" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Left="[float]0" Name="[string]file path" Path="{DataItemBinding Id=79}" Top="[float]0" Width="[float]180" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ArrayViewer ArrayElement="[UIModel]1158" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]3" Height="[float]76" Id="1157" IndexVisibility="[Visibility]Visible" Left="[float]0" Name="[string]Signals3D" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=1156}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1158" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@77e29d62155d44b9a95d707b3c3994ea" Height="[float]219" Id="2005" Label="[UIModel]2015" Left="[float]0" Top="[float]23" Value="{DataItemBinding Id=1770}" Width="[float]365" p4:ControlDefinitionChecksum="qvXabbWO9wS0pIyj+5c9iw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Signal\ Data\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<p4:ArrayViewer ArrayElement="[UIModel]2014" BaseName="[string]Array" Columns="[int]4" Dimensions="[int]1" Height="[float]36" Id="2006" IndexVisibility="[Visibility]Visible" Label="[UIModel]2010" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]23" Value="{ClusterBinding FieldName=fc}" Width="[float]346">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2014" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]197" MinHeight="[float]22" Name="[string]Child" RadixBase="[RadixBase]Decimal" Top="[float]31" Value="[double]0" ValueFormatter="[string]LVSI:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				</p4:ArrayViewer>
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2007" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2011" Left="[float]5" MinHeight="[float]22" Top="[float]82" Value="{ClusterBinding FieldName=df}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2008" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" Label="[UIModel]2012" Left="[float]5" MinHeight="[float]22" Top="[float]127" Value="{ClusterBinding FieldName=B}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="2009" IsReadOnly="[bool]False" Label="[UIModel]2013" Left="[float]5" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]172" TrueContent="[string]On" Value="{ClusterBinding FieldName=Trigger\ Save?}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="2010" LabelOwner="[UIModel]2006" Left="[float]5" Text="[string]fc" Top="[float]0" />
+				<p4:Label Height="[float]16" Id="2011" LabelOwner="[UIModel]2007" Left="[float]5" Text="[string]df" Top="[float]59" Width="[float]11" />
+				<p4:Label Height="[float]16" Id="2012" LabelOwner="[UIModel]2008" Left="[float]5" Text="[string]B" Top="[float]104" />
+				<p4:Label Height="[float]16" Id="2013" LabelOwner="[UIModel]2009" Left="[float]5" Text="[string]Trigger Save?" Top="[float]149" Width="[float]71" />
+			</Cluster>
+			<Label Height="[float]16" Id="2015" LabelOwner="[UIModel]2005" Left="[float]0" Text="[string]Signal Data" Top="[float]0" Width="[float]61" xmlns="http://www.ni.com/PanelCommon" />
+			<TimeStampTextBox BaseName="[string]TimeStamp" Height="[float]22" Id="2045" Left="[float]0" Maximum="[PrecisionDateTime]3001-01-01T00:00:00.0" MinHeight="[float]22" MinWidth="[float]40" Minimum="[PrecisionDateTime]1600-01-01T00:00:00.0" Top="[float]0" Value="{DataItemBinding Id=2043}" Width="[float]202" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<DataAccessor Bounds="-140 10 40 15" DataItem="79" Id="42" Label="76" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="42" Bounds="-191 10 46 14" Id="76" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>file path</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="330 160 40 15" DataItem="1156" Id="1154" Label="1155" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double[,,]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="1154" Bounds="269 160 56 14" Id="1155" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Signals3D</p.Text>
+			</NodeLabel>
+			<Comment Bounds="440 -145 411 135" Id="1266" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"signals3D:\r\n\tThe added third dimension corresponds to a time of recording, \r\n\tthe nth iteration of the averaging loop.\r\n\tEach row is a different signal that peaked above threshold\r\nf0:\r\n\tBeginning frequency of signal.\r\nTrigger Save?:\r\n\tBoolean indicating whether to save this data\r\ndf:\r\n\tCommon df for the recorded signals"</p.Text>
+			</Comment>
+			<CaseStructure Bounds="-89 -30 385 180" Default="1641" Id="1640" Selected="1642" UserSelectorBounds="148 0 88 17">
+				<CaseStructure.Case Bounds="5 5 375 170" Id="1641" Pattern="False">
+					<Wire Id="1647" Joints="N(1648:tdms file out) N(1644:1641)" xmlns="http://www.ni.com/PlatformFramework" />
+					<TDMSOpen Bounds="284 35 40 40" Id="1648" />
+					<Literal Bounds="134 45 85.89333 15" DataType="@f04ce550eeae4593b2f54cc3dbfd2eaa" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="1649" Label="1651" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0</p.Data>
+						<EnumBehavior Id="1661" />
+					</Literal>
+					<NodeLabel AttachedTo="1649" Bounds="134 45 0 0" Id="1651" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>operation</p.Text>
+					</NodeLabel>
+					<Wire Id="1963" Joints="N(1649:Out) h(5.00334167) B(1) N(1648:operation) B(1) v(50) N(1967:operation)" xmlns="http://www.ni.com/PlatformFramework" />
+					<BuildPath Bounds="174 85 30 30" Id="1964" />
+					<Literal Bounds="7 100 65 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="1965" Label="1970" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>helper_</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<TDMSOpen Bounds="289 85 40 40" Id="1967" />
+					<Wire Id="1968" Joints="N(1964:appended path) N(1967:file path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1969" Joints="N(1967:tdms file out) N(1961:1641)" xmlns="http://www.ni.com/PlatformFramework" />
+					<NodeLabel AttachedTo="1965" Bounds="7 100 0 0" Id="1970" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>name or relative path</p.Text>
+					</NodeLabel>
+					<StripPath Bounds="44 50 30 30" Id="2545" />
+					<Wire Id="2546" Joints="N(1645:1641) h(16) B(1) N(1648:file path) B(1) v(25) N(2545:path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<ConcatenateStrings Bounds="94 90 40 20" Id="2549" Terminals="outString=2552, c0t0v=2572, c1t0v=2571" />
+					<Wire Id="2552" Joints="N(2549:outString) h(33) v(10) N(1964:name or relative path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2553" Joints="N(2545:stripped path) h(5) v(10) h(90) v(25) N(1964:base path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2571" Joints="N(2545:name) h(7) v(20) h(5) v(15) N(2549:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2572" Joints="N(1965:Out) h(12) v(-10) N(2549:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 375 170" Id="1642" Pattern="True">
+					<TDMSOpen Bounds="254 35 40 40" Id="1652" />
+					<Literal Bounds="64 45 142.166672 15" DataType="@f04ce550eeae4593b2f54cc3dbfd2eaa" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="1653" Label="1655" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>2</p.Data>
+						<EnumBehavior Id="1662" />
+					</Literal>
+					<NodeLabel AttachedTo="1653" Bounds="64 45 0 0" Id="1655" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>operation</p.Text>
+					</NodeLabel>
+					<Wire Id="1657" Joints="N(1652:tdms file out) N(1644:1642)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1660" Joints="N(1653:Out) h(23.8300018) B(1) N(1652:operation) B(1) v(50) N(1950:operation)" xmlns="http://www.ni.com/PlatformFramework" />
+					<TDMSOpen Bounds="254 85 40 40" Id="1950" />
+					<Wire Id="2554" Joints="N(1645:1642) h(11) B(1) N(1652:file path) B(1) v(60) N(2561:path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2556" Joints="N(2561:stripped path) N(2559:base path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<BuildPath Bounds="164 85 30 30" Id="2559" />
+					<Literal Bounds="14 120 65 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="2560" Label="2567" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>helper_</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<StripPath Bounds="39 85 30 30" Id="2561" />
+					<ConcatenateStrings Bounds="109 100 40 20" Id="2562" Terminals="outString=2565, c0t0v=2570, c1t0v=2569" />
+					<Wire Id="2565" Joints="N(2562:outString) N(2559:name or relative path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<NodeLabel AttachedTo="2560" Bounds="14 120 0 0" Id="2567" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>name or relative path</p.Text>
+					</NodeLabel>
+					<Wire Id="2568" Joints="N(2559:appended path) N(1950:file path)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2569" Joints="N(2561:name) h(33) v(10) N(2562:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2570" Joints="N(2560:Out) h(5) v(-20) N(2562:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<TDMSWrite Bounds="319 85 40 40" Id="2578" />
+					<Wire Id="2579" Joints="N(2578:tdms file out) N(1961:1642)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2580" Joints="N(1950:tdms file out) N(2578:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+					<BuildArray Bounds="249 135 40 20" CanToggle="False" Id="2581" Terminals="outArray=2585, c0t0v=2582, c1t0v=2586" VerticalChunkCount="2" />
+					<Wire Id="2582" Joints="N(2583:1642) v(-26) N(2581:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2585" Joints="N(2581:outArray) h(17) v(-27) N(2578:data)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2586" Joints="N(2587:1642) v(-16) N(2581:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="289 150 46 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="2589" Label="2590" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>B,df</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<Wire Id="2591" Joints="N(2589:Out) h(5) v(-20) h(-31) v(-38) N(2578:group name in)" xmlns="http://www.ni.com/PlatformFramework" />
+					<NodeLabel AttachedTo="2589" Bounds="289 150 0 0" Id="2590" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>group name in</p.Text>
+					</NodeLabel>
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="1643" Terminals="1640=1664, 1641, 1642" />
+				<CaseStructure.Tunnel Bounds="376 40 13 10" DefaultIfUnwired="True" Docking="Right" Id="1644" Terminals="1640=1723, 1641=1647, 1642=1657" />
+				<CaseStructure.Tunnel Bounds="-4 40 13 10" Docking="Left" Id="1645" Terminals="1640=1667, 1641=2546, 1642=2554" />
+				<CaseStructure.Tunnel Bounds="376 90 13 10" Docking="Right" Id="1961" Terminals="1640=1975, 1641=1969, 1642=2579" />
+				<CaseStructure.Tunnel Bounds="184 171 10 13" Docking="Bottom" Id="2583" Terminals="1640=2584, 1641, 1642=2582" />
+				<CaseStructure.Tunnel Bounds="244 171 10 13" Docking="Bottom" Id="2587" Terminals="1640=2078, 1641, 1642=2586" />
+			</CaseStructure>
+			<Wire Id="1664" Joints="N(1665:First Call?: T/F) N(1643:1640)" xmlns="http://www.ni.com/PlatformFramework" />
+			<IsFirstCall Bounds="-155 -10 15 15" Id="1665" />
+			<Wire Id="1667" Joints="N(42:Path) N(1645:1640)" xmlns="http://www.ni.com/PlatformFramework" />
+			<TDMSClose Bounds="1270 35 40 40" Id="1104" />
+			<DataAccessor Bounds="-80 225 40 15" DataItem="1770" Id="1768" Label="1769" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@77e29d62155d44b9a95d707b3c3994ea" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="1768" Bounds="-149 225 64 14" Id="1769" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Signal Data</p.Text>
+			</NodeLabel>
+			<PropertyNode Bounds="-20 225 110 80" HasErrorTerminals="False" Id="1782" InstanceDataType="@77e29d62155d44b9a95d707b3c3994ea" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="Double" Hotspot="110 60" Id="c0t0v" Path="df" Usage="Optional" />
+				<PropertyItemTerminal DataType="Boolean" Hotspot="110 15" Id="c1t0v" Path="Trigger Save?" Usage="Optional" />
+				<PropertyItemTerminal DataType="UInt32" Hotspot="110 30" Id="c2t0v" Path="B" Usage="Optional" />
+				<PropertyItemTerminal DataType="Double[]" Hotspot="110 45" Id="c3t0v" Path="fc" Usage="Optional" />
+			</PropertyNode>
+			<Wire Id="1783" Joints="N(1768:Value) N(1782:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="295 180 40 15" DataItem="2043" Id="2044" Label="2046" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Timestamp" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="2044" Bounds="226 180 64 14" Id="2046" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>TimeStamp</p.Text>
+			</NodeLabel>
+			<CaseStructure Bounds="430 20 785 430" Default="522" Id="521" Selected="523" UserSelectorBounds="348 0 88 17">
+				<CaseStructure.Case Bounds="5 5 775 420" Id="522" Pattern="False">
+					<Wire Id="1726" Joints="N(1724:522) h(491) v(25) N(1717:522)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2544" Joints="N(1973:522) h(762) v(240) N(2542:522)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 775 420" Id="523" Pattern="True">
+					<Wire Id="502" Joints="N(2523:o0) N(1717:523)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1263" Joints="N(1160:523) N(2526:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1638" Joints="N(1724:523) h(81) v(25) N(2529:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<BuildArray Bounds="175 235 40 30" CanToggle="False" ConcatenateInputs="True" Id="2054" Terminals="outArray=2539, c0t0v=2634, c1t0v=2598, c2t0v=2595" VerticalChunkCount="3" />
+					<ForLoop Bounds="258 8 460 225" DiagramId="2087" Id="2086">
+						<LoopIteration Bounds="5 195 15 15" Id="2089" />
+						<ForLoop Bounds="68 8 355 195" DiagramId="1167" Id="1166">
+							<LoopIteration Bounds="0 165 15 15" Id="1169" />
+							<BuildWaveformNode Bounds="125 115 40 40" Id="1933" />
+							<TDMSWrite Bounds="185 15 40 40" Id="1935" />
+							<Wire Id="1936" Joints="N(1258:i0) N(1935:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="1937" Joints="N(1935:tdms file out) N(1261:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="1938" Joints="N(1264:i0) N(1933:Y)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="1944" Joints="N(1933:output waveform) h(5) v(-77) N(1935:data)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="1986" Joints="N(1985:i0) v(-53) N(1933:dt)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="2029" Joints="N(2024:i0) h(112) v(-15) N(1933:t0)" xmlns="http://www.ni.com/PlatformFramework" />
+							<LoopCount Bounds="1 1 15 15" Docking="Left" Id="1168" Terminals="1166, 1167" />
+							<LoopTunnel Bounds="-5 17 13 10" Docking="Left" Id="1258" Terminals="o0=2528, i0=1936" />
+							<LoopTunnel Bounds="345 17 13 10" Docking="Right" Id="1261" Terminals="o0=2522, i0=1937" />
+							<LoopTunnel AutoIndex="True" Bounds="-5 117 13 10" Docking="Left" Id="1264" Terminals="o0=2525, i0=1938" TunnelMode="0" />
+							<LoopTunnel Bounds="77 185 10 13" Docking="Bottom" Id="1985" Terminals="o0=2534, i0=1986" />
+							<LoopTunnel Bounds="-5 152 13 10" Docking="Left" Id="2024" Terminals="o0=2531, i0=2029" />
+						</ForLoop>
+						<Wire Id="2522" Joints="N(1261:o0) N(2523:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="2525" Joints="N(2526:i0) N(1264:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="2528" Joints="N(2529:i0) N(1258:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="2531" Joints="N(2532:i0) N(2024:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="2534" Joints="N(2535:i0) N(1985:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="2088" Terminals="2086, 2087" />
+						<LoopTunnel Bounds="450 27 13 10" Docking="Right" Id="2523" Terminals="o0=502, i0=2522" />
+						<LoopTunnel AutoIndex="True" Bounds="-5 127 13 10" Docking="Left" Id="2526" Terminals="o0=1263, i0=2525" TunnelMode="0" />
+						<LoopTunnel Bounds="-5 27 13 10" Docking="Left" Id="2529" Terminals="o0=1638, i0=2528" />
+						<LoopTunnel Bounds="-5 162 13 10" Docking="Left" Id="2532" Terminals="o0=2627, i0=2531" />
+						<LoopTunnel Bounds="147 215 10 13" Docking="Bottom" Id="2535" Terminals="o0=2576, i0=2534" />
+					</ForLoop>
+					<TDMSWrite Bounds="270 300 40 40" Id="2537" />
+					<Wire Id="2538" Joints="N(1973:523) h(5) v(240) N(2537:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2539" Joints="N(2054:outArray) h(5) v(88) N(2537:data)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2543" Joints="N(2537:tdms file out) N(2542:523)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2576" Joints="N(2079:523) h(406) N(2535:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="129.5 310 75 15" DataType="String" Facade="NationalInstruments.MocCommon.SourceModel.IStringBehavior" Id="2592" Label="2593" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>tod,len,fc</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<Wire Id="2594" Joints="N(2592:Out) h(5) v(-3) N(2537:group name in)" xmlns="http://www.ni.com/PlatformFramework" />
+					<NodeLabel AttachedTo="2592" Bounds="129.5 310 0 0" Id="2593" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>group name in</p.Text>
+					</NodeLabel>
+					<Wire Id="2595" Joints="N(2084:523) h(81) B(1) h(80) v(-10) N(2054:c2t0v) B(1) v(-20) N(2597:array)" xmlns="http://www.ni.com/PlatformFramework" />
+					<ArraySize Bounds="105 245 40 20" Id="2597" />
+					<Wire Id="2598" Joints="N(2597:size(s\)) h(5) v(-10) N(2054:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2627" Joints="N(2027:523) h(31) B(1) h(40) v(15) N(2532:o0) B(1) v(45) N(2629:number)" xmlns="http://www.ni.com/PlatformFramework" />
+					<ToDoublePrecisionFloat Bounds="65 200 30 10" Id="2629" />
+					<Wire Id="2634" Joints="N(2629:double precision float) h(75) v(35) N(2054:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 215 13 10" Docking="Left" Id="524" Terminals="521=2070, 522, 523" />
+				<CaseStructure.Tunnel Bounds="-4 140 13 10" Docking="Left" Id="1160" Terminals="521=1632, 522, 523=1263" />
+				<CaseStructure.Tunnel Bounds="776 40 13 10" Docking="Right" Id="1717" Terminals="521=1718, 522=1726, 523=502" />
+				<CaseStructure.Tunnel Bounds="-4 15 13 10" Docking="Left" Id="1724" Terminals="521=1723, 522=1726, 523=1638" />
+				<CaseStructure.Tunnel Bounds="-4 65 13 10" Docking="Left" Id="1973" Terminals="521=1975, 522=2544, 523=2538" />
+				<CaseStructure.Tunnel Bounds="-4 160 13 10" Docking="Left" Id="2027" Terminals="521=2026, 522, 523=2627" />
+				<CaseStructure.Tunnel Bounds="-4 360 13 10" Docking="Left" Id="2079" Terminals="521=2078, 522, 523=2576" />
+				<CaseStructure.Tunnel Bounds="-4 270 13 10" Docking="Left" Id="2084" Terminals="521=2083, 522, 523=2595" />
+				<CaseStructure.Tunnel Bounds="776 305 13 10" Docking="Right" Id="2542" Terminals="521=2541, 522=2544, 523=2543" />
+			</CaseStructure>
+			<Wire Id="1632" Joints="N(1154:Value) N(1160:521)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1718" Joints="N(1717:521) h(6) v(-25) N(1104:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1723" Joints="N(1644:1640) h(100) v(25) N(1724:521)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1975" Joints="N(1961:1640) h(90) v(25) N(1973:521)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2026" Joints="N(2044:Value) N(2027:521)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2070" Joints="N(1782:c1t0v) N(524:521)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2078" Joints="N(1782:c0t0v) h(5) B(1) h(65) N(2587:1640) B(1) v(100) N(2079:521)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2083" Joints="N(1782:c3t0v) h(331) v(25) N(2084:521)" xmlns="http://www.ni.com/PlatformFramework" />
+			<TDMSClose Bounds="1240 325 40 40" Id="2540" />
+			<Wire Id="2541" Joints="N(2542:521) N(2540:tdms file)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2584" Joints="N(1782:c2t0v) h(10) N(2583:1640)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Path" Id="79" Name="file path" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="Double[,,]" Id="1156" Name="Signals3D" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="5" DataType="@77e29d62155d44b9a95d707b3c3994ea" Id="1770" Name="Signal Data" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>0x0</Field2>
+					<Field3>0</Field3>
+					<Field4>False</Field4>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Signal\ Data\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Timestamp" Id="2043" Name="TimeStamp" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>60052752000;0;Utc</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="77e29d62155d44b9a95d707b3c3994ea">
+			<Typedef TypedefName="Signal Data.gtype" UnderlyingType="@66b22b51471844b28de51e39bcba9918" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f04ce550eeae4593b2f54cc3dbfd2eaa">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="open" />
+					<EnumerationMember Value="1" Name="open or create" />
+					<EnumerationMember Value="2" Name="create or replace" />
+					<EnumerationMember Value="3" Name="create" />
+					<EnumerationMember Value="4" Name="open (read-only)" />
+				</Members>
+				<DataType>
+					<UInt16 />
+				</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="66b22b51471844b28de51e39bcba9918">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="fc">
+						<DataType>
+							<VariableArray DereferenceType="Double" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="df" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="B" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Trigger Save?" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

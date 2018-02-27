@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DC7C9ACC3431E6E921039EE643208ED8" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="411C2754C866A748EB71602E3BE38C48" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -112,7 +112,7 @@
 						<AbsoluteValue Bounds="80 55 30 30" Id="78" />
 						<Wire Id="79" Joints="N(78:abs(x\)) h(5) v(15) N(72:x)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Literal Bounds="90 95 49 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="82" Label="83" xmlns="http://www.ni.com/MocCommon">
-							<p.Data>0x40F86A0000000000</p.Data>
+							<p.Data>0x41024F8000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LVSI:G6" />
 						</Literal>
 						<Wire Id="84" Joints="N(82:Out) N(72:y)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -187,7 +187,7 @@
 			<Label Height="[float]16" Id="26" LabelOwner="[UIModel]22" Left="[float]144" Text="[string]Est. Freqs above Thresh" Top="[float]82" Width="[float]124" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]25" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]60" Id="24" IndexVisibility="[Visibility]Visible" Label="[UIModel]27" Left="[float]319" Orientation="[SMOrientation]Vertical" Rows="[int]2" Top="[float]105" Value="{DataItemBinding Id=21}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="25" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]31" Value="[int]689" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="25" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[int]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="27" LabelOwner="[UIModel]24" Left="[float]319" Text="[string]sub_band_ind" Top="[float]82" Width="[float]73" xmlns="http://www.ni.com/PanelCommon" />
 		</CPFrontPanel>
