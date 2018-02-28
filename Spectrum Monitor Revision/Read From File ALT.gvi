@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <SourceFile Checksum="A9CF592D1A40897E41D19530279E1F6C" xmlns="http://www.ni.com/PlatformFramework">
+=======
+<SourceFile Checksum="7B38B45E785817370CE061BEF0809E3B" xmlns="http://www.ni.com/PlatformFramework">
+>>>>>>> cb421c284156b487f644532552bab4076dc2dd3d
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -37,6 +41,7 @@
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+<<<<<<< HEAD
 			<Waveform BaseName="[string]Waveform" Height="[float]136" Id="1467" Label="[UIModel]1468" Left="[float]712" Top="[float]664" WaveformData="{DataItemBinding Id=1465}" WaveformDataType="[Type]Double" Width="[float]255" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<Label Height="[float]16" Id="1468" IsVisualChild="[bool]False" LabelOwner="[UIModel]1467" Left="[float]712" Text="[string]Type: Waveform" Top="[float]641" Width="[float]55" xmlns="http://www.ni.com/PanelCommon" />
 			</Waveform>
@@ -47,6 +52,11 @@
 				</NumericText>
 				<Label Height="[float]16" Id="1474" IsVisualChild="[bool]False" LabelOwner="[UIModel]1471" Left="[float]603" Text="[string] Type: Numeric Array" Top="[float]619" Width="[float]111" />
 			</ArrayViewer>
+=======
+			<Waveform BaseName="[string]Waveform" Height="[float]136" Id="1467" Label="[UIModel]1468" Left="[float]530" Top="[float]580" WaveformData="{DataItemBinding Id=1465}" WaveformDataType="[Type]Double" Width="[float]255" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Label Height="[float]16" Id="1468" IsVisualChild="[bool]False" LabelOwner="[UIModel]1467" Left="[float]530" Text="[string]Waveform" Top="[float]557" Width="[float]55" xmlns="http://www.ni.com/PanelCommon" />
+			</Waveform>
+>>>>>>> cb421c284156b487f644532552bab4076dc2dd3d
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<WhileLoop Bounds="410 -15 1305 540" DiagramId="54" Id="53">
@@ -121,6 +131,7 @@
 					<Wire Id="1417" Joints="N(1418:i0) N(1213:B0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="1422" Joints="N(1398:i0) N(1213:B1)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="1423" Joints="N(1409:x = 0?) v(15) h(5) N(1213:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+<<<<<<< HEAD
 					<DataAccessor Bounds="145 200 40 15" DataItem="1465" Id="1466" Label="1469" xmlns="http://www.ni.com/MocCommon">
 						<Terminal DataType="Wfm(Double)" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 					</DataAccessor>
@@ -128,6 +139,15 @@
 						<p.Text>Type: Waveform</p.Text>
 					</NodeLabel>
 					<Wire Id="1470" Joints="N(1466:Value) h(45) N(836:data type)" xmlns="http://www.ni.com/PlatformFramework" />
+=======
+					<DataAccessor Bounds="150 200 40 15" DataItem="1465" Id="1466" Label="1469" xmlns="http://www.ni.com/MocCommon">
+						<Terminal DataType="Wfm(Double)" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+					</DataAccessor>
+					<NodeLabel AttachedTo="1466" Bounds="89 200 56 14" Id="1469" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Waveform</p.Text>
+					</NodeLabel>
+					<Wire Id="1470" Joints="N(1466:Value) h(40) N(836:data type)" xmlns="http://www.ni.com/PlatformFramework" />
+>>>>>>> cb421c284156b487f644532552bab4076dc2dd3d
 					<LoopCount Bounds="1 1 15 15" Docking="Left" Id="833" Terminals="831=1457, 832" />
 					<LoopTunnel Bounds="212 -5 10 13" Docking="Top" Id="859" Terminals="o0=860, i0=895" />
 					<LoopTunnel Bounds="-5 132 13 10" Docking="Left" Id="881" Terminals="o0=880, i0=1346" />
@@ -352,7 +372,21 @@
 			<Wire Id="728" Joints="N(726:Out) h(10.5) v(42) N(724:group name in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ArrayIndex Bounds="280 265 40 30" Id="729" Terminals="array=730, c0t0v, c0out=748" />
 			<Wire Id="730" Joints="N(724:data) h(14) B(1) v(-3) N(729:array) B(1) v(32) N(744:array)" xmlns="http://www.ni.com/PlatformFramework" />
+<<<<<<< HEAD
 			<Wire Id="735" Joints="N(1476:Value) h(20) B(1) N(1035:o0) B(1) N(724:data type)" xmlns="http://www.ni.com/PlatformFramework" />
+=======
+			<Wire Id="735" Joints="N(741:Out) h(9) B(1) N(1035:o0) B(1) N(724:data type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ArrayLiteral Bounds="115 400 101 44" DataType="Double[]" Facade="NationalInstruments.MocCommon.SourceModel.IArrayBehavior" Id="741" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>null</p.Data>
+				<ArrayBehavior ElementType="Double" VisibleRows="2">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="47.11111 23.4444447 39.5 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="743">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				</Literal>
+			</ArrayLiteral>
+>>>>>>> cb421c284156b487f644532552bab4076dc2dd3d
 			<ArrayIndex Bounds="280 300 40 30" Id="744" Terminals="array=730, c0t0v=753, c0out=754" />
 			<Wire Id="748" Joints="N(729:c0out) h(5) v(-35) h(-55) v(-80) h(5) v(-5) N(1460:number)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="749" Joints="N(1460:32bit integer) h(10) B(1) N(317:c0t0v) B(1) v(30) h(81) v(105) N(1060:o0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -475,10 +509,17 @@
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="1414" Name="Min Freq" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x419312D000000000</p.DefaultValue>
 		</DataItem>
+<<<<<<< HEAD
 		<DataItem DataType="Wfm(Double)" Id="1465" Name="Type: Waveform" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Waveform>
 					<Timestamp>63655413917;3583067898761232741;Utc</Timestamp>
+=======
+		<DataItem DataType="Wfm(Double)" Id="1465" Name="Waveform" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Waveform>
+					<Timestamp>63655349463;13674320506121488163;Utc</Timestamp>
+>>>>>>> cb421c284156b487f644532552bab4076dc2dd3d
 					<Interval>0x3FB999999999999A</Interval>
 					<Data>
 						<Array Lengths="0" />
@@ -486,9 +527,12 @@
 				</Waveform>
 			</p.DefaultValue>
 		</DataItem>
+<<<<<<< HEAD
 		<DataItem AdaptToDiagramType="True" DataType="Double[]" Id="1475" Name="&quot; Type: Numeric Array&quot;" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
+=======
+>>>>>>> cb421c284156b487f644532552bab4076dc2dd3d
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="Put\ in\ Spectrum\.gvi">
 				<MergeScript>
