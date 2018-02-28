@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C2F4F7DF2925492D1A7ED5CFE5ABA69B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B43D344A370B78A236519F12A194AF7C" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -14,7 +14,7 @@
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Spectrum Monitor no Saving" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Spectrum Monitor (no saving)" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
@@ -445,7 +445,7 @@
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="Magnitude" />
-							<Parameter Id="L2" Desc="Waterfall Time Scale (s)" />
+							<Parameter Id="L2" Desc="Waterfall History Length" />
 							<Parameter Id="R0" Desc="Waterfall Plot" />
 						</MethodDeclaration>
 					</p.MethodDeclaration>
@@ -580,12 +580,14 @@
 				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="4617" Bounds="1637 580 133 14" Id="4618" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Waterfall Time Scale (s)</p.Text>
+				<p.Text>Waterfall Histpry Length</p.Text>
 			</NodeLabel>
 			<Wire Id="4842" Joints="N(4617:Value) h(10) N(4843:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
-			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="272" IncludeInCapture="[bool]True" Label="[UIModel]279" Left="[float]105" Top="[float]653" Value="{DataItemBinding Id=271}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Rectangle BaseName="[string]Rounded Rectangle" Fill="[SMSolidColorBrush]#ff0070bc" Height="[float]131" Id="5039" Left="[float]107" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]16" RadiusY="[float]16" Stroke="[SMSolidColorBrush]#ff000000" StrokeThickness="[float]1" Top="[float]54" Width="[float]1796" xmlns="http://www.ni.com/PlatformFramework" />
+			<Rectangle BaseName="[string]Rectangle" Fill="[SMSolidColorBrush]#ffe0e0e0" Height="[float]927" Id="5038" Left="[float]107" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]10.65278" RadiusY="[float]12.77941" Stroke="[SMSolidColorBrush]#ff000000" StrokeThickness="[float]1" Top="[float]136" Width="[float]1796" xmlns="http://www.ni.com/PlatformFramework" />
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="272" IncludeInCapture="[bool]True" Label="[UIModel]279" Left="[float]201" Top="[float]822" Value="{DataItemBinding Id=271}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Error\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
@@ -596,9 +598,9 @@
 				<StringControl AcceptsReturn="[bool]True" Height="[float]80" Id="277" IsReadOnly="[bool]True" Label="[UIModel]278" Left="[float]5" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]120" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<p4:Label Height="[float]16" Id="278" LabelOwner="[UIModel]277" Left="[float]5" Text="[string]source" Top="[float]52" Width="[float]35" />
 			</Cluster>
-			<Label Height="[float]16" Id="279" LabelOwner="[UIModel]272" Left="[float]105" Text="[string]error out" Top="[float]630" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
-			<Text Id="1985" Left="[float]806" MinHeight="[float]11" MinWidth="[float]11" Text="[string]Note, signals are captured in baseband and then have their power calculated.&#xD;&#xA;We shift and interlap the individual power spectrums to create this band." TextWrapping="[TextWrapping]Wrap" Top="[float]101" xmlns="http://www.ni.com/PlatformFramework" />
-			<TabControl BaseName="[string]Tab" Height="[float]521" Id="2630" IncludeInCapture="[bool]False" Label="[UIModel]2635" Left="[float]106" MinHeight="[float]55" MinWidth="[float]60" SelectedIndex="{DataItemBinding Id=2628}" Top="[float]101" Width="[float]670" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<Label Height="[float]16" Id="279" LabelOwner="[UIModel]272" Left="[float]201" Text="[string]error out" Top="[float]799" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Id="1985" Left="[float]902" MinHeight="[float]11" MinWidth="[float]11" Text="[string]Note, signals are captured in baseband and then have their power calculated.&#xD;&#xA;We shift and interlap the individual power spectrums to create this band." TextWrapping="[TextWrapping]Wrap" Top="[float]270" xmlns="http://www.ni.com/PlatformFramework" />
+			<TabControl BaseName="[string]Tab" Height="[float]521" Id="2630" IncludeInCapture="[bool]False" Label="[UIModel]2635" Left="[float]202" MinHeight="[float]55" MinWidth="[float]60" SelectedIndex="{DataItemBinding Id=2628}" Top="[float]270" Width="[float]670" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<TabItem Header="[string]USRP init" Id="2631" Left="[float]0" TabIndex="[int]0" Top="[float]0">
 					<Canvas Height="[float]492" Id="2633" Left="[float]5" Top="[float]24" Width="[float]660" xmlns="http://www.ni.com/PlatformFramework">
 						<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@dc789e82304940cd90b315f0f42c9867" Height="[float]397" Id="22" IncludeInCapture="[bool]True" Label="[UIModel]39" Left="[float]13" Top="[float]34" Value="{DataItemBinding Id=21}" Width="[float]149" xmlns="http://www.ni.com/PanelCommon">
@@ -747,8 +749,8 @@
 					</Canvas>
 				</TabItem>
 			</TabControl>
-			<Label Height="[float]16" Id="2635" LabelOwner="[UIModel]2630" Left="[float]106" Text="[string]Tab" Top="[float]78" Width="[float]19" xmlns="http://www.ni.com/PanelCommon" />
-			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" ControlDesignTuple="[ControlDesignPair]IDE,Default" DataSource="{DataItemBinding Id=2883}" Height="[float]290" Id="2855" IncludeInCapture="[bool]True" IsAntiAliased="[bool]True" Label="[UIModel]2880" Left="[float]823" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]49,8,26,43" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]True" Top="[float]166" Width="[float]802" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<Label Height="[float]16" Id="2635" LabelOwner="[UIModel]2630" Left="[float]202" Text="[string]Tab" Top="[float]247" Width="[float]19" xmlns="http://www.ni.com/PanelCommon" />
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" ControlDesignTuple="[ControlDesignPair]IDE,Default" DataSource="{DataItemBinding Id=2883}" Height="[float]290" Id="2855" IncludeInCapture="[bool]True" IsAntiAliased="[bool]True" Label="[UIModel]2880" Left="[float]919" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]49,8,26,43" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]True" Top="[float]335" Width="[float]802" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="2856" Label="[string]Frequency" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]2867" Orientation="[SMOrientation]Horizontal" Range="[IRange]92000000, 108000000, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 					<RangeLabeledDivisions Id="2867" LabelPresenter="[string]LVSI:" />
 				</Axis>
@@ -767,27 +769,33 @@
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="2865" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
 				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="2866" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
 			</Graph>
-			<PlotLegend ControlDesignTuple="[ControlDesignPair]IDE,Default" Graph="[UIModel]2855" Height="[float]28" Id="2876" Left="[float]1632" Top="[float]166" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<CursorLegend ControlDesignTuple="[ControlDesignPair]IDE,Default" DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]2855" Height="[float]102" Id="2877" Left="[float]828" MinHeight="[float]80" Top="[float]485" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<ScaleLegend ControlDesignTuple="[ControlDesignPair]IDE,Default" Graph="[UIModel]2855" Height="[float]50" Id="2878" Left="[float]1632" MinHeight="[float]50" Top="[float]354" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<GraphTools ControlDesignTuple="[ControlDesignPair]IDE,Default" Graph="[UIModel]2855" Height="[float]22" Id="2879" Left="[float]828" Top="[float]463" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label ControlDesignTuple="[ControlDesignPair]IDE,Default" Height="[float]16" Id="2880" LabelOwner="[UIModel]2855" Left="[float]823" Text="[string]FFT Power Spectrum" Top="[float]143" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
-			<Button BaseName="[string]Stop" ClickMode="[ClickMode]Release" Content="[string]Stop" Foreground="[SMColor]#ffff0000" Height="[float]30" Id="2996" IncludeInCapture="[bool]False" IsMomentary="[bool]False" IsReadOnly="[bool]False" Label="[UIModel]2999" Latch="[bool]True" Left="[float]625" MinHeight="[float]13" MinWidth="[float]13" Shape="[ButtonShape]Square" Top="[float]653" Value="{DataItemBinding Id=1176}" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="2999" LabelOwner="[UIModel]2996" Left="[float]625" Text="[string]Stop Capture" Top="[float]630" Width="[float]70" xmlns="http://www.ni.com/PanelCommon" />
-			<Text Id="3062" Left="[float]415" MinHeight="[float]11" MinWidth="[float]11" Text="[string]Recommend using peak hold for finding spikes. weighting mode applies&#xD;&#xA;to vector and rms. linear weighting gives all Rxs equal weight. exponential&#xD;&#xA;gives heigher weight to the most recent Rx. " TextWrapping="[TextWrapping]Wrap" Top="[float]40" xmlns="http://www.ni.com/PlatformFramework" />
-			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="4614" Interval="[int]1" Label="[UIModel]4615" Left="[float]1466" MinHeight="[float]22" Top="[float]494" Value="{DataItemBinding Id=4613}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="4615" LabelOwner="[UIModel]4614" Left="[float]1466" Text="[string]Waterfall Time Scale (s)" Top="[float]471" Width="[float]123" xmlns="http://www.ni.com/PanelCommon" />
-			<IntensityGraph BaseName="[string]Intensity Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=5033}" Height="[float]240" Id="5025" Label="[UIModel]5032" Left="[float]823" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]NaN,NaN,NaN,NaN" SuppressScaleLayout="[bool]False" Top="[float]557" Width="[float]819" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="5026" Label="[string]Frequency" Orientation="[SMOrientation]Horizontal" Range="[IRange]-100, 1500.5, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" />
-				<Axis Adjuster="[RangeAdjuster]FitExactly" Id="5027" Label="[string]Time (ds)" MajorDivisions="[UIModel]5029" Orientation="[SMOrientation]Vertical" Range="[IRange]-1, 50, System.Double" ValueType="[Type]Double">
+			<PlotLegend ControlDesignTuple="[ControlDesignPair]IDE,Default" Graph="[UIModel]2855" Height="[float]26" Id="2876" Left="[float]1728" Top="[float]335" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend ControlDesignTuple="[ControlDesignPair]IDE,Default" DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]2855" Height="[float]102" Id="2877" Left="[float]924" MinHeight="[float]80" Top="[float]654" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend ControlDesignTuple="[ControlDesignPair]IDE,Default" Graph="[UIModel]2855" Height="[float]50" Id="2878" Left="[float]1728" MinHeight="[float]50" Top="[float]523" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools ControlDesignTuple="[ControlDesignPair]IDE,Default" Graph="[UIModel]2855" Height="[float]22" Id="2879" Left="[float]924" Top="[float]632" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label ControlDesignTuple="[ControlDesignPair]IDE,Default" Height="[float]16" Id="2880" LabelOwner="[UIModel]2855" Left="[float]919" Text="[string]FFT Power Spectrum" Top="[float]312" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
+			<Button BaseName="[string]Stop" ClickMode="[ClickMode]Release" Content="[string]Stop" Foreground="[SMColor]#ffff0000" Height="[float]30" Id="2996" IncludeInCapture="[bool]False" IsMomentary="[bool]False" IsReadOnly="[bool]False" Label="[UIModel]2999" Latch="[bool]True" Left="[float]721" MinHeight="[float]13" MinWidth="[float]13" Shape="[ButtonShape]Square" Top="[float]822" Value="{DataItemBinding Id=1176}" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="2999" LabelOwner="[UIModel]2996" Left="[float]721" Text="[string]Stop Capture" Top="[float]799" Width="[float]70" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Id="3062" Left="[float]511" MinHeight="[float]11" MinWidth="[float]11" Text="[string]Recommend using peak hold for finding spikes. weighting mode applies&#xD;&#xA;to vector and rms. linear weighting gives all Rxs equal weight. exponential&#xD;&#xA;gives heigher weight to the most recent Rx. " TextWrapping="[TextWrapping]Wrap" Top="[float]209" xmlns="http://www.ni.com/PlatformFramework" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="4614" Interval="[int]1" Label="[UIModel]4615" Left="[float]1562" MinHeight="[float]22" Top="[float]663" Value="{DataItemBinding Id=4613}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="4615" LabelOwner="[UIModel]4614" Left="[float]1562" Text="[string]Waterfall Histpry Length" Top="[float]640" Width="[float]128" xmlns="http://www.ni.com/PanelCommon" />
+			<IntensityGraph BaseName="[string]Intensity Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=5033}" Height="[float]240" Id="5025" Label="[UIModel]5032" Left="[float]919" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]NaN,NaN,NaN,NaN" SuppressScaleLayout="[bool]False" Top="[float]726" Width="[float]819" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="5026" Label="[string]Frequency Bins" Orientation="[SMOrientation]Horizontal" Range="[IRange]-200, 1600.5, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" />
+				<Axis Adjuster="[RangeAdjuster]FitExactly" Id="5027" Label="[string]History" MajorDivisions="[UIModel]5029" Orientation="[SMOrientation]Vertical" Range="[IRange]-2, 51, System.Double" ValueType="[Type]Double">
 					<RangeLabeledDivisions Id="5029" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
 				</Axis>
 				<ColorScale Adjuster="[RangeAdjuster]None" HighColor="[SMColor]#ffffffff" Id="5028" LabelVisibility="[SMVisibility]Collapsed" Location="[RelativeLocation]Far" LowColor="[SMColor]#ff000000" MajorDivisions="[UIModel]5030" Markers="[SMLinearGradientBrush]{Start: 0 0}, {End: 1 1}, {Stops: {Stop: #ff000000 -100}, {Stop: #ff0000ff -70.0000000000001}, {Stop: #ffffffff -40}}">
 					<RangeLabeledDivisions Id="5030" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
 				</ColorScale>
 			</IntensityGraph>
-			<ScaleLegend Graph="[UIModel]5025" Height="[float]75" Id="5031" Left="[float]1649" MinHeight="[float]50" Top="[float]695" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="5032" LabelOwner="[UIModel]5025" Left="[float]823" Text="[string]Waterfall Plot" Top="[float]534" Width="[float]72" xmlns="http://www.ni.com/PanelCommon" />
+			<ScaleLegend Graph="[UIModel]5025" Height="[float]75" Id="5031" Left="[float]1745" MinHeight="[float]50" Top="[float]864" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="5032" LabelOwner="[UIModel]5025" Left="[float]919" Text="[string]Waterfall Plot" Top="[float]703" Width="[float]72" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Foreground="[SMColor]#ffffffff" Id="5040" Left="[float]789" MinHeight="[float]11" MinWidth="[float]11" Text="[string]Spectrum Monitor" TextWrapping="[TextWrapping]Wrap" Top="[float]54" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontFamily="Segoe UI" FontSize="28" Id="5041" />
+			</Text>
+			<Text Foreground="[SMColor]#ffffffff" Id="5042" Left="[float]802" MinHeight="[float]11" MinWidth="[float]11" Text="[string](sweep without saving peaks)" TextWrapping="[TextWrapping]Wrap" Top="[float]99" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontFamily="Segoe UI" FontSize="16" Id="5043" />
+			</Text>
 		</CPFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="@dc789e82304940cd90b315f0f42c9867" Id="21" Name="RX Parameters In" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -882,7 +890,7 @@
 				<TypeDefinitionTarget TargetName="Power\ Detection\ cluster\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="4613" Name="Waterfall Time Scale (s)" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" DataType="Int32" Id="4613" Name="Waterfall Histpry Length" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>5</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Double[,]" Id="5033" Name="Waterfall Plot" xmlns="http://www.ni.com/MocCommon">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F473C56AF6485703ABB38C90E11D59B7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2FAAFA5FE5F91317E2C410103678C46C" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -42,7 +42,7 @@
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="62" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="63" Interval="[int]1" Label="[UIModel]64" Left="[float]888" MinHeight="[float]22" Top="[float]538" Value="{DataItemBinding Id=58}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="64" LabelOwner="[UIModel]63" Left="[float]888" Text="[string]Waterfall Time Scale (s)" Top="[float]515" Width="[float]123" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="64" LabelOwner="[UIModel]63" Left="[float]888" Text="[string]Waterfall History Length" Top="[float]515" Width="[float]123" xmlns="http://www.ni.com/PanelCommon" />
 			<IntensityGraph BaseName="[string]Intensity Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=60}" Height="[float]400" Id="66" Label="[UIModel]73" Left="[float]632" MetadataAlwaysOverridesPlotNames="[bool]True" PlotAreaMargin="[SMThickness]NaN,NaN,NaN,NaN" SuppressScaleLayout="[bool]False" Top="[float]170" Width="[float]802" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<Axis Adjuster="[RangeAdjuster]None" Id="67" Label="[string]Frequency" Orientation="[SMOrientation]Horizontal" Range="[IRange]-0.5, 16383.5, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" />
 				<Axis Adjuster="[RangeAdjuster]FitExactly" Id="68" Label="[string]Time (ds)" MajorDivisions="[UIModel]70" Orientation="[SMOrientation]Vertical" Range="[IRange]-0.5, 49.5, System.Double" ValueType="[Type]Double">
@@ -58,7 +58,7 @@
 		<BlockDiagram Id="13">
 			<InsertIntoArray Bounds="2035 140 40 50" Id="15" Rank="2" Terminals="inArray=37, outArray=41, index0, index1=40, c0t0v=38" />
 			<DeleteFromArray Bounds="2113 180 40 50" Id="16" Rank="2" Terminals="inArray=41, length (1)=42, outArray=45, deleted, index0, index1=35" />
-			<CaseStructure Bounds="1915 -15 162 115" Default="18" Id="17" Selected="19" UserSelectorBounds="37.3333321 0 88 17.333334">
+			<CaseStructure Bounds="1915 -15 162 115" Default="18" Id="17" Selected="19" UserSelectorBounds="37 0 88 17">
 				<CaseStructure.Case Bounds="5 5 152 105" Id="18" Pattern="False" />
 				<CaseStructure.Case Bounds="5 5 152 105" Id="19" Pattern="True">
 					<InitializeArray Bounds="87 25 40 40" Id="24" Terminals="element=26, outArray=30, c0t0v=29, c1t0v=28" VerticalChunkCount="2" />
@@ -82,8 +82,7 @@
 			<FeedbackNode Bounds="2115 125 30 20" EnableTerminalVisible="False" Id="31" />
 			<IsFirstCall Bounds="1887 10 15 15" Id="32" />
 			<Wire Id="33" Joints="N(32:First Call?: T/F) N(20:17)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Multiply Bounds="1840 210 30 30" Id="34" Terminals="o=35, c0t0v=44, c1t0v=43" />
-			<Wire Id="35" Joints="N(34:o) h(10) B(1) N(16:index1) B(1) v(-175) N(21:17)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="35" Joints="N(48:Value) h(130) v(-5) B(2) N(16:index1) B(2) v(-175) N(21:17)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="36" Joints="N(23:17) h(49) N(31:initial value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="37" Joints="N(31:output) h(-110) v(10) N(15:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="38" Joints="N(47:Value) h(50) v(40) B(2) h(-95) v(65) N(74:array) B(2) v(55) N(15:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -94,13 +93,7 @@
 			<Wire Id="40" Joints="N(39:Out) N(15:index1)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="41" Joints="N(15:outArray) h(5) v(40) N(16:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="42" Joints="N(74:size(s\)) h(150) B(1) N(16:length (1\)) B(1) v(-165) N(22:17)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="43" Joints="N(48:Value) N(34:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="44" Joints="N(46:Out) N(34:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="45" Joints="N(16:outArray) h(5) v(-50) B(2) N(31:input) B(2) N(50:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="1773 210 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="46" Label="52" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>10</p.Data>
-				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-			</Literal>
 			<DataAccessor Bounds="1705 85 40 15" DataItem="57" Id="47" Label="53" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -113,14 +106,11 @@
 			<NodeLabel AttachedTo="39" Bounds="1960 170 0 0" Id="51" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>column index</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="46" Bounds="1773 210 0 0" Id="52" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>input 0</p.Text>
-			</NodeLabel>
 			<NodeLabel AttachedTo="47" Bounds="1642 85 58 14" Id="53" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Magnitude</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="48" Bounds="1572 225 133 14" Id="54" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Waterfall Time Scale (s)</p.Text>
+			<NodeLabel AttachedTo="48" Bounds="1571 225 134 14" Id="54" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Waterfall History Length</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="50" Bounds="2535 130 74 14" Id="56" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Waterfall Plot</p.Text>
@@ -131,7 +121,7 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Double[]" Id="57" Name="Magnitude" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem CallDirection="Input" CallIndex="2" DataType="Int32" Id="58" Name="Waterfall Time Scale (s)" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="2" DataType="Int32" Id="58" Name="Waterfall History Length" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>5</p.DefaultValue>
 		</DataItem>
 		<DataItem CallDirection="Output" CallIndex="0" DataType="Double[,]" Id="60" Name="Waterfall Plot" xmlns="http://www.ni.com/MocCommon">

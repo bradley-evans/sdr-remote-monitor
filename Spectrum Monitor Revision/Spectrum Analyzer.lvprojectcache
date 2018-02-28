@@ -278,15 +278,11 @@
 				</p.Entry>
 			</p.Dictionary>
 		</KeyToEnvoysUserSetting>
-		<ProjectLayoutUserSetting Envoy="1" Layout="&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;\r\n&lt;SandDockLayout Version=&quot;4.5.2.0&quot; IncludeDocuments=&quot;False&quot;&gt;\r\n  &lt;Window Guid=&quot;5ff24aa0-3f64-4fdb-862b-d12100fb1e3d&quot; ContentSize=&quot;248&quot; LastFocused=&quot;-8586835205244225796&quot; DockedContentSize=&quot;250&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Left&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot; DockedIndexInWindowGroup=&quot;1&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;be3e01c3-0792-4c1c-b1a2-70e3bb642ab1&quot; ContentSize=&quot;300&quot; LastFocused=&quot;-8587456879219791635&quot; DockedContentSize=&quot;313&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Right&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;b5fd77fe-d0d7-4cc9-8b3c-e19bdbb9968d&quot; DockedIndexInWindowGroup=&quot;1&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;668f5cee-765e-4a0a-b915-ab1ed88cdf68&quot; ContentSize=&quot;300&quot; LastFocused=&quot;-8586818908268489090&quot; DockedContentSize=&quot;313&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Right&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;b5fd77fe-d0d7-4cc9-8b3c-e19bdbb9968d&quot; DockedIndexInWindowGroup=&quot;0&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;93f86101-6c34-42ed-8688-9d7c421b8a81&quot; ContentSize=&quot;248&quot; LastFocused=&quot;-8586818913195759025&quot; DockedContentSize=&quot;250&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Left&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot; DockedIndexInWindowGroup=&quot;0&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;a0a0b4cf-3538-4178-9e6f-a9f961db6963&quot; ContentSize=&quot;248&quot; LastFocused=&quot;-8586833951174829746&quot; DockedContentSize=&quot;250&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Left&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot; DockedIndexInWindowGroup=&quot;3&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;ef8e9c49-58c8-42f3-b808-8b7ae53b5293&quot; ContentSize=&quot;248&quot; LastFocused=&quot;-8586818930460736926&quot; DockedContentSize=&quot;250&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Left&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot; DockedIndexInWindowGroup=&quot;2&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;72562866-aa95-49b2-be38-4c78fe7c2b1a&quot; ContentSize=&quot;290&quot; LastFocused=&quot;-8586818925821124499&quot; DockedContentSize=&quot;200&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Bottom&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;11d7ffb0-b9da-4dc7-9dd2-d54ca442cf4f&quot; DockedIndexInWindowGroup=&quot;0&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;DockedSplitContainer Dock=&quot;Bottom&quot; ContentSize=&quot;200&quot; SplitterOrientation=&quot;Vertical&quot;&gt;\r\n    &lt;WindowGroup WorkingSize=&quot;100,70&quot; Pinned=&quot;False&quot; SelectedWindow=&quot;72562866-aa95-49b2-be38-4c78fe7c2b1a&quot; Guid=&quot;11d7ffb0-b9da-4dc7-9dd2-d54ca442cf4f&quot;&gt;\r\n      &lt;Window Guid=&quot;72562866-aa95-49b2-be38-4c78fe7c2b1a&quot; /&gt;\r\n    &lt;/WindowGroup&gt;\r\n  &lt;/DockedSplitContainer&gt;\r\n  &lt;DockedSplitContainer Dock=&quot;Left&quot; ContentSize=&quot;250&quot; SplitterOrientation=&quot;Horizontal&quot;&gt;\r\n    &lt;WindowGroup WorkingSize=&quot;100,70&quot; Pinned=&quot;True&quot; SelectedWindow=&quot;93f86101-6c34-42ed-8688-9d7c421b8a81&quot; Guid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot;&gt;\r\n      &lt;Window Guid=&quot;93f86101-6c34-42ed-8688-9d7c421b8a81&quot; /&gt;\r\n      &lt;Window Guid=&quot;5ff24aa0-3f64-4fdb-862b-d12100fb1e3d&quot; /&gt;\r\n      &lt;Window Guid=&quot;ef8e9c49-58c8-42f3-b808-8b7ae53b5293&quot; /&gt;\r\n      &lt;Window Guid=&quot;a0a0b4cf-3538-4178-9e6f-a9f961db6963&quot; /&gt;\r\n    &lt;/WindowGroup&gt;\r\n  &lt;/DockedSplitContainer&gt;\r\n  &lt;DockedSplitContainer Dock=&quot;Right&quot; ContentSize=&quot;313&quot; SplitterOrientation=&quot;Horizontal&quot;&gt;\r\n    &lt;WindowGroup WorkingSize=&quot;100,70&quot; Pinned=&quot;True&quot; SelectedWindow=&quot;668f5cee-765e-4a0a-b915-ab1ed88cdf68&quot; Guid=&quot;b5fd77fe-d0d7-4cc9-8b3c-e19bdbb9968d&quot;&gt;\r\n      &lt;Window Guid=&quot;668f5cee-765e-4a0a-b915-ab1ed88cdf68&quot; /&gt;\r\n      &lt;Window Guid=&quot;be3e01c3-0792-4c1c-b1a2-70e3bb642ab1&quot; /&gt;\r\n    &lt;/WindowGroup&gt;\r\n  &lt;/DockedSplitContainer&gt;\r\n&lt;/SandDockLayout&gt;&quot;" Target="Project" xmlns="http://www.ni.com/PlatformFramework" />
+		<ProjectLayoutUserSetting Envoy="1" Layout="&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;\r\n&lt;SandDockLayout Version=&quot;4.5.2.0&quot; IncludeDocuments=&quot;False&quot;&gt;\r\n  &lt;Window Guid=&quot;5ff24aa0-3f64-4fdb-862b-d12100fb1e3d&quot; ContentSize=&quot;248&quot; LastFocused=&quot;-8586835205244225796&quot; DockedContentSize=&quot;250&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Left&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot; DockedIndexInWindowGroup=&quot;1&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;be3e01c3-0792-4c1c-b1a2-70e3bb642ab1&quot; ContentSize=&quot;300&quot; LastFocused=&quot;-8586817939055633673&quot; DockedContentSize=&quot;313&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Right&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;b5fd77fe-d0d7-4cc9-8b3c-e19bdbb9968d&quot; DockedIndexInWindowGroup=&quot;1&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;668f5cee-765e-4a0a-b915-ab1ed88cdf68&quot; ContentSize=&quot;300&quot; LastFocused=&quot;-8586817884494849787&quot; DockedContentSize=&quot;313&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Right&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;b5fd77fe-d0d7-4cc9-8b3c-e19bdbb9968d&quot; DockedIndexInWindowGroup=&quot;0&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;93f86101-6c34-42ed-8688-9d7c421b8a81&quot; ContentSize=&quot;248&quot; LastFocused=&quot;-8586817885187067818&quot; DockedContentSize=&quot;250&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Left&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot; DockedIndexInWindowGroup=&quot;0&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;a0a0b4cf-3538-4178-9e6f-a9f961db6963&quot; ContentSize=&quot;248&quot; LastFocused=&quot;-8586833951174829746&quot; DockedContentSize=&quot;250&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Left&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot; DockedIndexInWindowGroup=&quot;3&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;ef8e9c49-58c8-42f3-b808-8b7ae53b5293&quot; ContentSize=&quot;248&quot; LastFocused=&quot;-8586818930460736926&quot; DockedContentSize=&quot;250&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Left&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot; DockedIndexInWindowGroup=&quot;2&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;Window Guid=&quot;72562866-aa95-49b2-be38-4c78fe7c2b1a&quot; ContentSize=&quot;101&quot; LastFocused=&quot;-8586818925821124499&quot; DockedContentSize=&quot;200&quot; LastOpenDockSituation=&quot;Docked&quot; LastFixedDockSituation=&quot;Docked&quot; DockedPosition=&quot;Bottom&quot; LastFloatingWindowGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingLocation=&quot;0,0&quot; FloatingSize=&quot;250,370&quot; LastDockContainerCount=&quot;1&quot; LastDockContainerIndex=&quot;0&quot; DockedWorkingSize=&quot;100,70&quot; DockedWindowGroupGuid=&quot;11d7ffb0-b9da-4dc7-9dd2-d54ca442cf4f&quot; DockedIndexInWindowGroup=&quot;0&quot; DockedSplitPath=&quot;0&quot; DocumentWorkingSize=&quot;240,180&quot; DocumentWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; DocumentIndexInWindowGroup=&quot;0&quot; DocumentSplitPath=&quot;0&quot; FloatingWorkingSize=&quot;240,180&quot; FloatingWindowGroupGuid=&quot;00000000-0000-0000-0000-000000000000&quot; FloatingIndexInWindowGroup=&quot;0&quot; FloatingSplitPath=&quot;0&quot; /&gt;\r\n  &lt;DockedSplitContainer Dock=&quot;Bottom&quot; ContentSize=&quot;200&quot; SplitterOrientation=&quot;Vertical&quot;&gt;\r\n    &lt;WindowGroup WorkingSize=&quot;100,70&quot; Pinned=&quot;False&quot; SelectedWindow=&quot;72562866-aa95-49b2-be38-4c78fe7c2b1a&quot; Guid=&quot;11d7ffb0-b9da-4dc7-9dd2-d54ca442cf4f&quot;&gt;\r\n      &lt;Window Guid=&quot;72562866-aa95-49b2-be38-4c78fe7c2b1a&quot; /&gt;\r\n    &lt;/WindowGroup&gt;\r\n  &lt;/DockedSplitContainer&gt;\r\n  &lt;DockedSplitContainer Dock=&quot;Left&quot; ContentSize=&quot;250&quot; SplitterOrientation=&quot;Horizontal&quot;&gt;\r\n    &lt;WindowGroup WorkingSize=&quot;100,70&quot; Pinned=&quot;True&quot; SelectedWindow=&quot;93f86101-6c34-42ed-8688-9d7c421b8a81&quot; Guid=&quot;578c2055-f5c7-4097-ad80-86b9c3cd3092&quot;&gt;\r\n      &lt;Window Guid=&quot;93f86101-6c34-42ed-8688-9d7c421b8a81&quot; /&gt;\r\n      &lt;Window Guid=&quot;5ff24aa0-3f64-4fdb-862b-d12100fb1e3d&quot; /&gt;\r\n      &lt;Window Guid=&quot;ef8e9c49-58c8-42f3-b808-8b7ae53b5293&quot; /&gt;\r\n      &lt;Window Guid=&quot;a0a0b4cf-3538-4178-9e6f-a9f961db6963&quot; /&gt;\r\n    &lt;/WindowGroup&gt;\r\n  &lt;/DockedSplitContainer&gt;\r\n  &lt;DockedSplitContainer Dock=&quot;Right&quot; ContentSize=&quot;313&quot; SplitterOrientation=&quot;Horizontal&quot;&gt;\r\n    &lt;WindowGroup WorkingSize=&quot;100,70&quot; Pinned=&quot;True&quot; SelectedWindow=&quot;668f5cee-765e-4a0a-b915-ab1ed88cdf68&quot; Guid=&quot;b5fd77fe-d0d7-4cc9-8b3c-e19bdbb9968d&quot;&gt;\r\n      &lt;Window Guid=&quot;668f5cee-765e-4a0a-b915-ab1ed88cdf68&quot; /&gt;\r\n      &lt;Window Guid=&quot;be3e01c3-0792-4c1c-b1a2-70e3bb642ab1&quot; /&gt;\r\n    &lt;/WindowGroup&gt;\r\n  &lt;/DockedSplitContainer&gt;\r\n&lt;/SandDockLayout&gt;&quot;" Target="Project" xmlns="http://www.ni.com/PlatformFramework" />
 		<BookmarkManager Envoy="1" Target="Project" xmlns="http://www.ni.com/PlatformFramework" />
 		<OpenDocumentManager Envoy="1" Target="Project" xmlns="http://www.ni.com/PlatformFramework">
-			<OpenDocument ActiveEditor="NationalInstruments.VI.Design.VIPanelControl" Envoy="1332" />
-			<OpenDocument ActiveEditor="NationalInstruments.VI.Design.VIDiagramControl" Envoy="2543" />
-			<OpenDocument ActiveEditor="NationalInstruments.VI.Design.VIDiagramControl" Envoy="3161" />
-			<OpenDocument ActiveEditor="NationalInstruments.VI.Design.VIPanelControl" Envoy="3155" />
-			<OpenDocument ActiveEditor="NationalInstruments.VI.Design.VIDiagramControl" Envoy="2915" />
-			<OpenDocument ActiveDocument="True" ActiveEditor="NationalInstruments.VI.Design.VIPanelControl" Envoy="3167" />
+			<OpenDocument ActiveDocument="True" ActiveEditor="NationalInstruments.VI.Design.VIPanelControl" Envoy="1332" />
+			<OpenDocument ActiveEditor="NationalInstruments.VI.Design.VIPanelControl" Envoy="3167" />
 		</OpenDocumentManager>
 	</UserSettingsDefinition>
 	<UserSettingsDefinition Envoy="2277" Name=":PC:Interactive:\(Edited\)\ Power\ Spectrum\ for\ 1\ Chan\ \(CDB\)\.gvi">
@@ -634,8 +630,8 @@
 			</SharedLibraryEntryPointSignatureCache>
 		</DefinitionCacheUserSetting>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="2420" Name=":PC:Interactive:NI:Analysis:IntegralDifferentiation:AAL\ Integration\ Differentiation\.sli:Integral90">
-		<DefinitionCacheUserSetting Envoy="2420" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="2420" Name=":PC:Interactive:NI:Analysis:IntegralDifferentiation:AAL\ Integration\ Differentiation\.sli:Integral90" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="2420" Target="Envoy">
 			<SharedLibraryEntryPointSignatureCache CacheSignature="1D1D2545F308693" Height="70" IsReentrant="True" ListViewHeight="215" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/ExtCodeInterface">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -3444,12 +3440,6 @@
 						</MergeItem>
 					</MergeScript>
 				</p.IconModel>
-				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="30" TargetName="Local\ Interests\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="125" TargetName="Error\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="276" TargetName="Signal\ Data\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedTypeDefinitionDependency ExportedSignature="1193200118" SourceId="29" TargetName="Local\ Interests\.gtype" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedTypeDefinitionDependency ExportedSignature="694443715" SourceId="124" TargetName="Error\.gtype" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedTypeDefinitionDependency ExportedSignature="459483172" SourceId="199" TargetName="Signal\ Data\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 				<DataItemCacheInfo CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="@f2b82c0ffb914c6da8780c9771cd1824" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="Local_2000Interests_DataItem_Name" Name="Local Interests" PreferredDirection="Input" SideIndex="L0" UnitAnnotation="">
 					<p.DefaultValue>
 						<Cluster>
@@ -3482,7 +3472,13 @@
 					</p.DefaultValue>
 				</DataItemCacheInfo>
 				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" CallUsage="Recommended" DataType="Double[,]" HotSpot="50 5" ListViewHotSpot="150 65" LocalizedNameKey="signals2D_DataItem_Name" Name="signals2D" PreferredDirection="Output" SideIndex="R0" UnitAnnotation="" />
+				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="30" TargetName="Local\ Interests\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
+				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="125" TargetName="Error\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
+				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="276" TargetName="Signal\ Data\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedMethodCallDependency ExportedSignature="1379748257" SourceId="93" TargetName="NI:Analysis:Measurement:Spectrum\ Unit\ Conversion\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedTypeDefinitionDependency ExportedSignature="1193200118" SourceId="29" TargetName="Local\ Interests\.gtype" xmlns="http://www.ni.com/PanelCommon" />
+				<CachedTypeDefinitionDependency ExportedSignature="694443715" SourceId="124" TargetName="Error\.gtype" xmlns="http://www.ni.com/PanelCommon" />
+				<CachedTypeDefinitionDependency ExportedSignature="459483172" SourceId="199" TargetName="Signal\ Data\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 		<ScrollAndZoomSettingCache Envoy="2543" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
@@ -4158,7 +4154,7 @@
 	</UserSettingsDefinition>
 	<UserSettingsDefinition Envoy="2915" Name=":PC:Interactive:Waterfal\ Plot\ Generator\.gvi">
 		<DefinitionCacheUserSetting Envoy="2915" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-			<FunctionDefinitionSignatureCache CacheSignature="1D3A7699CEC1A80" Height="40" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
+			<FunctionDefinitionSignatureCache CacheSignature="1D3B086ADB8E2CF" Height="40" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
 						<MergeItem Path="." IsPrimary="True">
@@ -4178,7 +4174,7 @@
 					</MergeScript>
 				</p.IconModel>
 				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Double[]" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="Magnitude_DataItem_Name" Name="Magnitude" PreferredDirection="Input" SideIndex="L0" UnitAnnotation="" />
-				<DataItemCacheInfo CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="Int32" HotSpot="0 25" ListViewHotSpot="0 50" LocalizedNameKey="Waterfall_2000Time_2000Scale_2000_2800s_2900_DataItem_Name" Name="Waterfall Time Scale (s)" PreferredDirection="Input" SideIndex="L2">
+				<DataItemCacheInfo CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="Int32" HotSpot="0 25" ListViewHotSpot="0 50" LocalizedNameKey="Waterfall_2000History_2000Length_DataItem_Name" Name="Waterfall History Length" PreferredDirection="Input" SideIndex="L2">
 					<p.DefaultValue>5</p.DefaultValue>
 				</DataItemCacheInfo>
 				<DataItemCacheInfo CallDirection="Output" CallIndex="0" CallUsage="Recommended" DataType="Double[,]" HotSpot="40 5" ListViewHotSpot="150 65" LocalizedNameKey="Waterfall_2000Plot_DataItem_Name" Name="Waterfall Plot" PreferredDirection="Output" SideIndex="R0" UnitAnnotation="">
@@ -6711,17 +6707,17 @@
 						</MergeItem>
 					</MergeScript>
 				</p.IconModel>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Path" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="file_2000path_DataItem_Name" Name="file path" PreferredDirection="Input" SideIndex="L0" UnitAnnotation="">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Path" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="file_2000path_DataItem_Name" Name="file path" PreferredDirection="Input" SideIndex="L0">
 					<p.DefaultValue>
 						<Path a="1" />
 					</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="Double[,]" HotSpot="0 15" ListViewHotSpot="0 50" LocalizedNameKey="signals2D_DataItem_Name" Name="signals2D" PreferredDirection="Input" SideIndex="L1" UnitAnnotation="" />
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="Double" HotSpot="0 25" ListViewHotSpot="0 65" LocalizedNameKey="df_DataItem_Name" Name="df" PreferredDirection="Input" SideIndex="L2">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="Double[,]" HotSpot="0 15" ListViewHotSpot="0 50" LocalizedNameKey="signals2D_DataItem_Name" Name="signals2D" PreferredDirection="Input" SideIndex="L1" />
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="Double" HotSpot="0 25" ListViewHotSpot="0 65" LocalizedNameKey="df_DataItem_Name" Name="df" PreferredDirection="Input" SideIndex="L2" UnitAnnotation="">
 					<p.DefaultValue>0x0</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" CallUsage="Recommended" DataType="Double[]" HotSpot="0 35" ListViewHotSpot="0 80" LocalizedNameKey="f0_DataItem_Name" Name="f0" PreferredDirection="Input" SideIndex="L3" UnitAnnotation="" />
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" CallUsage="Recommended" DataType="Boolean" HotSpot="0 45" ListViewHotSpot="0 95" LocalizedNameKey="Trigger_2000Save_3F00_DataItem_Name" Name="Trigger Save?" PreferredDirection="Input" SideIndex="L4" UnitAnnotation="">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" CallUsage="Recommended" DataType="Double[]" HotSpot="0 35" ListViewHotSpot="0 80" LocalizedNameKey="f0_DataItem_Name" Name="f0" PreferredDirection="Input" SideIndex="L3" />
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" CallUsage="Recommended" DataType="Boolean" HotSpot="0 45" ListViewHotSpot="0 95" LocalizedNameKey="Trigger_2000Save_3F00_DataItem_Name" Name="Trigger Save?" PreferredDirection="Input" SideIndex="L4">
 					<p.DefaultValue>False</p.DefaultValue>
 				</DataItemCacheInfo>
 			</FunctionDefinitionSignatureCache>
@@ -6752,18 +6748,16 @@
 						</MergeItem>
 					</MergeScript>
 				</p.IconModel>
-				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="2005" TargetName="Signal\ Data\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedTypeDefinitionDependency ExportedSignature="459483172" SourceId="1770" TargetName="Signal\ Data\.gtype" xmlns="http://www.ni.com/PanelCommon" />
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Timestamp" HotSpot="0 35" ListViewHotSpot="0 80" LocalizedNameKey="TimeStamp_DataItem_Name" Name="TimeStamp" PreferredDirection="Input" SideIndex="L3" UnitAnnotation="">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Timestamp" HotSpot="0 35" ListViewHotSpot="0 80" LocalizedNameKey="TimeStamp_DataItem_Name" Name="TimeStamp" PreferredDirection="Input" SideIndex="L3">
 					<p.DefaultValue>60052752000;0;Utc</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="Path" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="file_2000path_DataItem_Name" Name="file path" PreferredDirection="Input" SideIndex="L0" UnitAnnotation="">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="Path" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="file_2000path_DataItem_Name" Name="file path" PreferredDirection="Input" SideIndex="L0">
 					<p.DefaultValue>
 						<Path a="1" />
 					</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" CallUsage="Recommended" DataType="Double[,,]" HotSpot="0 15" ListViewHotSpot="0 50" LocalizedNameKey="Signals3D_DataItem_Name" Name="Signals3D" PreferredDirection="Input" SideIndex="L1" UnitAnnotation="" />
-				<DataItemCacheInfo CallDirection="Input" CallIndex="5" CallUsage="Recommended" DataType="@77e29d62155d44b9a95d707b3c3994ea" HotSpot="0 25" ListViewHotSpot="0 65" LocalizedNameKey="Signal_2000Data_DataItem_Name" Name="Signal Data" PreferredDirection="Input" SideIndex="L2" UnitAnnotation="">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" CallUsage="Recommended" DataType="Double[,,]" HotSpot="0 15" ListViewHotSpot="0 50" LocalizedNameKey="Signals3D_DataItem_Name" Name="Signals3D" PreferredDirection="Input" SideIndex="L1" />
+				<DataItemCacheInfo CallDirection="Input" CallIndex="5" CallUsage="Recommended" DataType="@77e29d62155d44b9a95d707b3c3994ea" HotSpot="0 25" ListViewHotSpot="0 65" LocalizedNameKey="Signal_2000Data_DataItem_Name" Name="Signal Data" PreferredDirection="Input" SideIndex="L2">
 					<p.DefaultValue>
 						<Cluster>
 							<Field1>null</Field1>
@@ -6773,6 +6767,8 @@
 						</Cluster>
 					</p.DefaultValue>
 				</DataItemCacheInfo>
+				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="2005" TargetName="Signal\ Data\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
+				<CachedTypeDefinitionDependency ExportedSignature="459483172" SourceId="1770" TargetName="Signal\ Data\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 		<ScrollAndZoomSettingCache Envoy="3148" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
@@ -6782,7 +6778,7 @@
 	</UserSettingsDefinition>
 	<UserSettingsDefinition Envoy="3155" Name=":PC:Interactive:Read\ From\ File\ ALT\.gvi">
 		<DefinitionCacheUserSetting Envoy="3155" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-			<FunctionDefinitionSignatureCache CacheSignature="1D3AF99615359C8" Height="40" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
+			<FunctionDefinitionSignatureCache CacheSignature="1D3B0871440829C" Height="40" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
 						<MergeItem Path="." IsPrimary="True">
@@ -6830,23 +6826,23 @@
 						</MergeItem>
 					</MergeScript>
 				</p.IconModel>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Double" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="df_DataItem_Name" Name="df" PreferredDirection="Input" SideIndex="L0">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Double" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="df_DataItem_Name" Name="df" PreferredDirection="Input" SideIndex="L0" UnitAnnotation="">
 					<p.DefaultValue>0x0</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="Double[]" HotSpot="0 15" ListViewHotSpot="0 50" LocalizedNameKey="data_DataItem_Name" Name="data" PreferredDirection="Input" SideIndex="L1" UnitAnnotation="" />
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="Double" HotSpot="0 25" ListViewHotSpot="0 65" LocalizedNameKey="f0_DataItem_Name" Name="f0" PreferredDirection="Input" SideIndex="L2">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="Double[]" HotSpot="0 15" ListViewHotSpot="0 50" LocalizedNameKey="data_DataItem_Name" Name="data" PreferredDirection="Input" SideIndex="L1" />
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="Double" HotSpot="0 25" ListViewHotSpot="0 65" LocalizedNameKey="f0_DataItem_Name" Name="f0" PreferredDirection="Input" SideIndex="L2" UnitAnnotation="">
 					<p.DefaultValue>0x0</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" CallUsage="Recommended" DataType="Double" HotSpot="25 50" ListViewHotSpot="0 95" LocalizedNameKey="max_2000freq_DataItem_Name" Name="max freq" PreferredDirection="Input" SideIndex="B1">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" CallUsage="Recommended" DataType="Double" HotSpot="25 50" ListViewHotSpot="0 95" LocalizedNameKey="max_2000freq_DataItem_Name" Name="max freq" PreferredDirection="Input" SideIndex="B1" UnitAnnotation="">
 					<p.DefaultValue>0x0</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" CallUsage="Recommended" DataType="Boolean" HotSpot="15 0" ListViewHotSpot="0 110" LocalizedNameKey="Reset_DataItem_Name" Name="Reset" PreferredDirection="Input" SideIndex="T0" UnitAnnotation="">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" CallUsage="Recommended" DataType="Boolean" HotSpot="15 0" ListViewHotSpot="0 110" LocalizedNameKey="Reset_DataItem_Name" Name="Reset" PreferredDirection="Input" SideIndex="T0">
 					<p.DefaultValue>False</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="5" CallUsage="Recommended" DataType="Double" HotSpot="15 50" ListViewHotSpot="0 125" LocalizedNameKey="min_2000freq_DataItem_Name" Name="min freq" PreferredDirection="Input" SideIndex="B0">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="5" CallUsage="Recommended" DataType="Double" HotSpot="15 50" ListViewHotSpot="0 125" LocalizedNameKey="min_2000freq_DataItem_Name" Name="min freq" PreferredDirection="Input" SideIndex="B0" UnitAnnotation="">
 					<p.DefaultValue>0x0</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" CallUsage="Recommended" DataType="@5d9dcb9b138d4fa98e430ff524105580" HotSpot="40 5" ListViewHotSpot="150 80" LocalizedNameKey="Spectrum_2000to_2000Plot_DataItem_Name" Name="Spectrum to Plot" PreferredDirection="Output" SideIndex="R0" UnitAnnotation="">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" CallUsage="Recommended" DataType="@5d9dcb9b138d4fa98e430ff524105580" HotSpot="40 5" ListViewHotSpot="150 80" LocalizedNameKey="Spectrum_2000to_2000Plot_DataItem_Name" Name="Spectrum to Plot" PreferredDirection="Output" SideIndex="R0">
 					<p.DefaultValue>
 						<Cluster>
 							<Field1>0x0</Field1>
@@ -6862,9 +6858,9 @@
 			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="186" ScrollVerticalOffset="-84" Zoom="1" />
 		</ScrollAndZoomSettingCache>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="3167" Name=":PC:Interactive:Spectrum\ Monitor\ no\ Saving\.gvi">
+	<UserSettingsDefinition Envoy="3167" Name=":PC:Interactive:Spectrum\ Monitor\ \(no\ saving\)\.gvi">
 		<DefinitionCacheUserSetting Envoy="3167" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-			<FunctionDefinitionSignatureCache CacheSignature="1D3AF9B68D81AE5" Height="50" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
+			<FunctionDefinitionSignatureCache CacheSignature="1D3B089F3288130" Height="50" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
 						<MergeItem Path="." IsPrimary="True">
@@ -6873,7 +6869,7 @@
 									<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
 										<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 										<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-										<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Spectrum Monitor no Saving" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Spectrum Monitor (no saving)" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 											<FontSetting FontFamily="Verdana" FontSize="6" />
 										</FileNameText>
 									</IconTemplate>
@@ -6901,6 +6897,7 @@
 				<CachedMethodCallDependency ExportedSignature="-146759448" SourceId="2666" TargetName="Plot\ Spectrum\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 				<CachedMethodCallDependency ExportedSignature="241297963" SourceId="4416" TargetName="Set\ Carrier\ and\ LO_2\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 				<CachedMethodCallDependency ExportedSignature="-1367237100" SourceId="4267" TargetName="Signal\ Power\ Detection_2\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency ExportedSignature="-752412356" SourceId="4418" TargetName="Array\ Fill\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 				<CachedMethodCallDependency ExportedSignature="944992527" SourceId="5016" TargetName="Waterfal\ Plot\ Generator\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 				<CachedMethodCallDependency ExportedSignature="264386249" SourceId="2539" TargetName="niUSRP\ Configure\ Number\ of\ Samples\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 				<CachedMethodCallDependency ExportedSignature="-1768202075" SourceId="2614" TargetName="niUSRP\ Abort\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
@@ -6911,12 +6908,42 @@
 				<CachedTypeDefinitionDependency SourceId="167" TargetName="NI:Analysis:Measurement:Averaging\ Parameters\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency SourceId="271" TargetName="Error\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency SourceId="4289" TargetName="Power\ Detection\ cluster\.gtype" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedMethodCallDependency ExportedSignature="-752412356" SourceId="4418" TargetName="Array\ Fill\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 		<ScrollAndZoomSettingCache Envoy="3167" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
 			<ScrollAndZoomEditor EditorName="VIPanelControl" ScrollHorizontalOffset="0" ScrollVerticalOffset="0" Zoom="0.67" />
-			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-408.88888549804687" ScrollVerticalOffset="90" Zoom="0.9" />
+			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-409" ScrollVerticalOffset="90" Zoom="0.9" />
+		</ScrollAndZoomSettingCache>
+	</UserSettingsDefinition>
+	<UserSettingsDefinition Envoy="3249" Name=":PC:Interactive:Read\ From\ File\.gvi">
+		<DefinitionCacheUserSetting Envoy="3249" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+			<FunctionDefinitionSignatureCache CacheSignature="1D3AF7A305AA94C" Height="40" ListViewHeight="55" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
+				<p.IconModel>
+					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
+						<MergeItem Path="." IsPrimary="True">
+							<Icon ListViewIconCrop="0 0 40 40">
+								<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40">
+									<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+										<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+										<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+										<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Read From File" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+											<FontSetting FontFamily="Verdana" FontSize="6.75" />
+										</FileNameText>
+									</IconTemplate>
+									<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+								</IconPanel>
+							</Icon>
+						</MergeItem>
+					</MergeScript>
+				</p.IconModel>
+				<DataItemCacheInfo CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Int32" HotSpot="0 5" ListViewHotSpot="0 35" LocalizedNameKey="B_DataItem_Name" Name="B" PreferredDirection="Input" SideIndex="L0">
+					<p.DefaultValue>0</p.DefaultValue>
+				</DataItemCacheInfo>
+			</FunctionDefinitionSignatureCache>
+		</DefinitionCacheUserSetting>
+		<ScrollAndZoomSettingCache Envoy="3249" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+			<ScrollAndZoomEditor EditorName="VIPanelControl" ScrollHorizontalOffset="185" ScrollVerticalOffset="155" Zoom="1" />
+			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-94" ScrollVerticalOffset="150" Zoom="1" />
 		</ScrollAndZoomSettingCache>
 	</UserSettingsDefinition>
 	<UserSettingsDefinition Envoy="1116" Name=":PC:Interactive:NI:Analysis:Measurement:Power\ Spectrum\ for\ 1\ Chan\ \(CDB\)\.gvi" xmlns="http://www.ni.com/PlatformFramework">
@@ -11901,8 +11928,8 @@
 			</SharedLibraryEntryPointSignatureCache>
 		</DefinitionCacheUserSetting>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1250" Name=":PC:Interactive:NI:Analysis:Support:AAL\ Base\.sli:SpectrumH_IDP">
-		<DefinitionCacheUserSetting Envoy="1250" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1250" Name=":PC:Interactive:NI:Analysis:Support:AAL\ Base\.sli:SpectrumH_IDP" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1250" Target="Envoy">
 			<SharedLibraryEntryPointSignatureCache CacheSignature="1D1D2545FD8FCE8" Height="40" IsReentrant="True" ListViewHeight="115" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/ExtCodeInterface">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -13305,8 +13332,8 @@
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1293" Name=":PC:Interactive:NI:Analysis:Measurement:Power\ Spectrum\ \(DBL\)\.gvi">
-		<DefinitionCacheUserSetting Envoy="1293" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1293" Name=":PC:Interactive:NI:Analysis:Measurement:Power\ Spectrum\ \(DBL\)\.gvi" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1293" Target="Envoy">
 			<FunctionDefinitionSignatureCache CacheSignature="1D1D2545FCA87FB" Height="50" ListViewHeight="135" ListViewWidth="150" OverloadGroup="NI:Analysis:Measurement:Power Spectrum Single-shot" OverloadHelpId="NI.MocCommon:MethodCall.Power Spectrum (DBL)" Reentrancy="Stateful" Width="50" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -13464,8 +13491,8 @@
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1299" Name=":PC:Interactive:NI:Analysis:Measurement:Power\ Spectrum_Convert\ to\ Single\-Sided\.gvi">
-		<DefinitionCacheUserSetting Envoy="1299" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1299" Name=":PC:Interactive:NI:Analysis:Measurement:Power\ Spectrum_Convert\ to\ Single\-Sided\.gvi" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1299" Target="Envoy">
 			<FunctionDefinitionSignatureCache CacheSignature="1D1D2545FCA61A1" Height="50" ListViewHeight="60" ListViewWidth="150" Reentrancy="Stateful" Width="50" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -13878,7 +13905,7 @@
 	</UserSettingsDefinition>
 	<UserSettingsDefinition Envoy="1332" Name=":PC:Interactive:Spectrum\ Monitor\.gvi">
 		<DefinitionCacheUserSetting Envoy="1332" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-			<FunctionDefinitionSignatureCache CacheSignature="1D3AF9BDB505C02" Height="50" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
+			<FunctionDefinitionSignatureCache CacheSignature="1D3B088C0467846" Height="50" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
 						<MergeItem Path="." IsPrimary="True">
@@ -13897,29 +13924,22 @@
 						</MergeItem>
 					</MergeScript>
 				</p.IconModel>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" CallUsage="Recommended" DataType="Double" HotSpot="40 5" ListViewHotSpot="150 35" LocalizedNameKey="LO_2000Frequency_DataItem_Name" Name="LO Frequency" PreferredDirection="Output" SideIndex="R0" UnitAnnotation="">
-					<p.DefaultValue>0x0</p.DefaultValue>
-				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" CallUsage="Recommended" DataType="Int32" HotSpot="40 15" ListViewHotSpot="150 50" LocalizedNameKey="Spectrum_2000Size_DataItem_Name" Name="Spectrum Size" PreferredDirection="Output" SideIndex="R1" UnitAnnotation="">
-					<p.DefaultValue>0</p.DefaultValue>
-				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" CallUsage="Recommended" DataType="@2aa401105c6f42168b4a9c141e07f38a" HotSpot="40 25" ListViewHotSpot="150 65" LocalizedNameKey="Frame_2000Parameters_2000Out_DataItem_Name" Name="Frame Parameters Out" PreferredDirection="Output" SideIndex="R2" UnitAnnotation="">
-					<p.DefaultValue>0x0_0_0_0x0_0x0_0x0_0_</p.DefaultValue>
-				</DataItemCacheInfo>
-				<CachedMethodCallDependency ExportedSignature="-1311950576" SourceId="15" TargetName="niUSRP\ Open\ Rx\ Session\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-750206355" SourceId="18" TargetName="Set\ Parameters\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-1843139119" SourceId="260" TargetName="niUSRP\ Close\ Session\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-1270449112" SourceId="67" TargetName="Read\ Data\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="1775747208" SourceId="2662" TargetName="Establish\ Sub\-band\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-1379609703" SourceId="4153" TargetName="Gather\ Signals\ for\ Saving\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-1895420786" SourceId="2663" TargetName="Aggregate\ Sub\-band\ into\ Spectrum\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-146759448" SourceId="2666" TargetName="Plot\ Spectrum\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="241297963" SourceId="4416" TargetName="Set\ Carrier\ and\ LO_2\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-1229130286" SourceId="4430" TargetName="Array\ Indices\ for\ Sub\-band\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-1367237100" SourceId="4267" TargetName="Signal\ Power\ Detection_2\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-752412356" SourceId="4418" TargetName="Array\ Fill\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="264386249" SourceId="2539" TargetName="niUSRP\ Configure\ Number\ of\ Samples\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="-1768202075" SourceId="2614" TargetName="niUSRP\ Abort\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="15" TargetName="niUSRP\ Open\ Rx\ Session\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="18" TargetName="Set\ Parameters\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="260" TargetName="niUSRP\ Close\ Session\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="67" TargetName="Read\ Data\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="2662" TargetName="Establish\ Sub\-band\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="4153" TargetName="Gather\ Signals\ for\ Saving\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="2663" TargetName="Aggregate\ Sub\-band\ into\ Spectrum\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="2666" TargetName="Plot\ Spectrum\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="4416" TargetName="Set\ Carrier\ and\ LO_2\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="4430" TargetName="Array\ Indices\ for\ Sub\-band\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="4999" TargetName="Save\ Data\ to\ File\ ALT\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="4267" TargetName="Signal\ Power\ Detection_2\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="4418" TargetName="Array\ Fill\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="5016" TargetName="Waterfal\ Plot\ Generator\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="2539" TargetName="niUSRP\ Configure\ Number\ of\ Samples\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency SourceId="2614" TargetName="niUSRP\ Abort\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 				<CachedTypeDefinitionDependency SourceId="272" TargetName="Error\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency SourceId="168" TargetName="NI:Analysis:Measurement:Averaging\ Parameters\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency SourceId="4403" TargetName="Power\ Detection\ cluster\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
@@ -13929,17 +13949,15 @@
 				<CachedTypeDefinitionDependency SourceId="271" TargetName="Error\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency SourceId="4289" TargetName="Power\ Detection\ cluster\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency SourceId="4919" TargetName="Signal\ Data\.gtype" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedMethodCallDependency ExportedSignature="-214974326" SourceId="4999" TargetName="Save\ Data\ to\ File\ ALT\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="944992527" SourceId="5016" TargetName="Waterfal\ Plot\ Generator\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 		<ScrollAndZoomSettingCache Envoy="1332" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-			<ScrollAndZoomEditor EditorName="VIPanelControl" ScrollHorizontalOffset="0" ScrollVerticalOffset="3" Zoom="0.75" />
-			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-731.25" ScrollVerticalOffset="161.25" Zoom="0.8" />
+			<ScrollAndZoomEditor EditorName="VIPanelControl" ScrollHorizontalOffset="11.534883499145508" ScrollVerticalOffset="0" Zoom="0.75" />
+			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-580" ScrollVerticalOffset="166.25" Zoom="0.8" />
 		</ScrollAndZoomSettingCache>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1360" Name=":PC:Interactive:NI:Analysis:IntegralDifferentiation:Integral\ x\(t\)\.gvi">
-		<DefinitionCacheUserSetting Envoy="1360" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1360" Name=":PC:Interactive:NI:Analysis:IntegralDifferentiation:Integral\ x\(t\)\.gvi" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1360" Target="Envoy">
 			<FunctionDefinitionSignatureCache CacheSignature="1D1D2545F31A636" Height="50" ListViewHeight="150" ListViewWidth="150" Reentrancy="Stateful" Width="50" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -14013,8 +14031,8 @@
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1362" Name=":PC:Interactive:Simple\ Error\ Handler\.gvi">
-		<DefinitionCacheUserSetting Envoy="1362" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1362" Name=":PC:Interactive:Simple\ Error\ Handler\.gvi" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1362" Target="Envoy">
 			<FunctionDefinitionSignatureCache CacheSignature="1D1D2545E83B80C" Height="50" ListViewHeight="45" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -14077,12 +14095,12 @@
 				</DataItemCacheInfo>
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
-		<ScrollAndZoomSettingCache Envoy="1362" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+		<ScrollAndZoomSettingCache Envoy="1362" Target="Envoy">
 			<ScrollAndZoomEditor EditorName="VIPanelControl" ScrollHorizontalOffset="0" ScrollVerticalOffset="0" Zoom="1" />
 		</ScrollAndZoomSettingCache>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1363" Name=":PC:Interactive:General\ Error\ Handler\.gvi">
-		<DefinitionCacheUserSetting Envoy="1363" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1363" Name=":PC:Interactive:General\ Error\ Handler\.gvi" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1363" Target="Envoy">
 			<FunctionDefinitionSignatureCache CacheSignature="1D1D2545E819F20" Height="50" ListViewHeight="75" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -14170,8 +14188,8 @@
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1366" Name=":PC:Interactive:lv_GEH\.sli:NCGGeneralErrorHandler">
-		<DefinitionCacheUserSetting Envoy="1366" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1366" Name=":PC:Interactive:lv_GEH\.sli:NCGGeneralErrorHandler" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1366" Target="Envoy">
 			<SharedLibraryEntryPointSignatureCache CacheSignature="1D1D2545E82720F" Height="130" IsReentrant="True" ListViewHeight="335" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/ExtCodeInterface">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -14278,8 +14296,8 @@
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1379" Name=":PC:Interactive:NI:Analysis:LinearAlgebra:Real\ A\ x\ B\.gvi">
-		<DefinitionCacheUserSetting Envoy="1379" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1379" Name=":PC:Interactive:NI:Analysis:LinearAlgebra:Real\ A\ x\ B\.gvi" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1379" Target="Envoy">
 			<FunctionDefinitionSignatureCache CacheSignature="1D1D2545F4C8A51" Height="50" ListViewHeight="105" ListViewWidth="150" OverloadGroup="NI:Analysis:LinearAlgebra:A x B" OverloadHelpId="NI.MocCommon:MethodCall.Real A x B" Reentrancy="Stateful" Width="50" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -16187,7 +16205,7 @@
 						</MergeItem>
 					</MergeScript>
 				</p.IconModel>
-				<DataItemCacheInfo CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="@dc789e82304940cd90b315f0f42c9867" HotSpot="0 5" ListViewHotSpot="0 50" LocalizedNameKey="RX_2000Parameters_2000In_DataItem_Name" Name="RX Parameters In" PreferredDirection="Input" SideIndex="L0">
+				<DataItemCacheInfo CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="@dc789e82304940cd90b315f0f42c9867" HotSpot="0 5" ListViewHotSpot="0 50" LocalizedNameKey="RX_2000Parameters_2000In_DataItem_Name" Name="RX Parameters In" PreferredDirection="Input" SideIndex="L0" UnitAnnotation="">
 					<p.DefaultValue>
 						<Cluster>
 							<Field1>0x0</Field1>
@@ -16201,19 +16219,19 @@
 						</Cluster>
 					</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="UInt32" HotSpot="15 0" ListViewHotSpot="0 95" LocalizedNameKey="LCM_DataItem_Name" Name="LCM" PreferredDirection="Input" SideIndex="T0" UnitAnnotation="">
+				<DataItemCacheInfo CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="UInt32" HotSpot="15 0" ListViewHotSpot="0 95" LocalizedNameKey="LCM_DataItem_Name" Name="LCM" PreferredDirection="Input" SideIndex="T0">
 					<p.DefaultValue>0</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="Double" HotSpot="25 0" ListViewHotSpot="0 110" LocalizedNameKey="IQ_2000frac_DataItem_Name" Name="IQ frac" PreferredDirection="Input" SideIndex="T1" UnitAnnotation="">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="Double" HotSpot="25 0" ListViewHotSpot="0 110" LocalizedNameKey="IQ_2000frac_DataItem_Name" Name="IQ frac" PreferredDirection="Input" SideIndex="T1">
 					<p.DefaultValue>0x0</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" CallUsage="Recommended" DataType="@2aa401105c6f42168b4a9c141e07f38a" HotSpot="70 5" ListViewHotSpot="150 35" LocalizedNameKey="Frame_2000Parameters_2000Out_DataItem_Name" Name="Frame Parameters Out" PreferredDirection="Output" SideIndex="R0">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" CallUsage="Recommended" DataType="@2aa401105c6f42168b4a9c141e07f38a" HotSpot="70 5" ListViewHotSpot="150 35" LocalizedNameKey="Frame_2000Parameters_2000Out_DataItem_Name" Name="Frame Parameters Out" PreferredDirection="Output" SideIndex="R0" UnitAnnotation="">
 					<p.DefaultValue>0x0_0_0_0x0_0x0_0x0_0_</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo CallDirection="Output" CallIndex="1" CallUsage="Recommended" DataType="Int64" HotSpot="70 15" ListViewHotSpot="150 65" LocalizedNameKey="Samples_2000per_2000Acquisition_DataItem_Name" Name="Samples per Acquisition" PreferredDirection="Output" SideIndex="R1">
+				<DataItemCacheInfo CallDirection="Output" CallIndex="1" CallUsage="Recommended" DataType="Int64" HotSpot="70 15" ListViewHotSpot="150 65" LocalizedNameKey="Samples_2000per_2000Acquisition_DataItem_Name" Name="Samples per Acquisition" PreferredDirection="Output" SideIndex="R1" UnitAnnotation="">
 					<p.DefaultValue>0</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" CallUsage="Recommended" DataType="Double[]" HotSpot="70 25" ListViewHotSpot="150 80" LocalizedNameKey="Test_2000Carrier_2000Frequencies_DataItem_Name" Name="Test Carrier Frequencies" PreferredDirection="Output" SideIndex="R2">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" CallUsage="Recommended" DataType="Double[]" HotSpot="70 25" ListViewHotSpot="150 80" LocalizedNameKey="Test_2000Carrier_2000Frequencies_DataItem_Name" Name="Test Carrier Frequencies" PreferredDirection="Output" SideIndex="R2" UnitAnnotation="">
 					<p.DefaultValue>
 						<Array Lengths="0" />
 					</p.DefaultValue>
@@ -17662,12 +17680,6 @@
 						</MergeItem>
 					</MergeScript>
 				</p.IconModel>
-				<CachedTypeDefinitionDependency SourceId="18" TargetName="Usrp:niUSRPClass:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="30,90" TargetName="Error\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedMethodCallDependency ExportedSignature="2054732705" SourceId="134" TargetName="niUSRP\ Initiate\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedMethodCallDependency ExportedSignature="408171729" SourceId="139" TargetName="niUSRP\ Fetch\ Rx\ Data\ \(CDB\)\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-				<CachedTypeDefinitionDependency ExportedSignature="1873840888" SourceId="17,114" TargetName="Usrp:niUSRPClass" xmlns="http://www.ni.com/PanelCommon" />
-				<CachedTypeDefinitionDependency ExportedSignature="694443715" SourceId="29,89" TargetName="Error\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 				<DataItemCacheInfo CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="@f261aca30cd44609875979717cdeb8e0" HotSpot="0 5" ListViewHotSpot="0 80" LocalizedNameKey="USRP_2000Session_2000Handle_2000In_DataItem_Name" Name="USRP Session Handle In" PreferredDirection="Input" SideIndex="L0" UnitAnnotation="">
 					<p.DefaultValue>""</p.DefaultValue>
 				</DataItemCacheInfo>
@@ -17696,6 +17708,12 @@
 					</p.DefaultValue>
 				</DataItemCacheInfo>
 				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" CallUsage="Recommended" DataType="ComplexDouble[]" HotSpot="40 25" ListViewHotSpot="150 65" LocalizedNameKey="data_DataItem_Name" Name="data" PreferredDirection="Output" SideIndex="R2" UnitAnnotation="" />
+				<CachedTypeDefinitionDependency SourceId="18" TargetName="Usrp:niUSRPClass:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
+				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="30,90" TargetName="Error\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
+				<CachedMethodCallDependency ExportedSignature="2054732705" SourceId="134" TargetName="niUSRP\ Initiate\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency ExportedSignature="408171729" SourceId="139" TargetName="niUSRP\ Fetch\ Rx\ Data\ \(CDB\)\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedTypeDefinitionDependency ExportedSignature="1873840888" SourceId="17,114" TargetName="Usrp:niUSRPClass" xmlns="http://www.ni.com/PanelCommon" />
+				<CachedTypeDefinitionDependency ExportedSignature="694443715" SourceId="29,89" TargetName="Error\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 			</FunctionDefinitionSignatureCache>
 		</DefinitionCacheUserSetting>
 		<ScrollAndZoomSettingCache Envoy="1537" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
@@ -17703,8 +17721,8 @@
 			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-190" ScrollVerticalOffset="20" Zoom="1" />
 		</ScrollAndZoomSettingCache>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1546" Name=":PC:Interactive:NI:Analysis:Resampling:Upsample\ \(DBL\)\.gvi">
-		<DefinitionCacheUserSetting Envoy="1546" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1546" Name=":PC:Interactive:NI:Analysis:Resampling:Upsample\ \(DBL\)\.gvi" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1546" Target="Envoy">
 			<FunctionDefinitionSignatureCache CacheSignature="1D1D2545F8B8926" Height="50" ListViewHeight="120" ListViewWidth="150" OverloadGroup="NI:Analysis:Resampling:Upsample" OverloadHelpId="NI.MocCommon:MethodCall.Upsample (DBL)" Reentrancy="Stateless" Width="50" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -17834,7 +17852,7 @@
 	</UserSettingsDefinition>
 	<UserSettingsDefinition Envoy="1548" Name=":PC:Interactive:Aggregate\ Sub\-band\ into\ Spectrum\.gvi">
 		<DefinitionCacheUserSetting Envoy="1548" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-			<FunctionDefinitionSignatureCache CacheSignature="1D3AEDA82890E00" Height="60" ListViewHeight="190" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/MocCommon">
+			<FunctionDefinitionSignatureCache CacheSignature="1D3B0825B9CCBBA" Height="60" ListViewHeight="190" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/MocCommon">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
 						<MergeItem Path="." IsPrimary="True">
@@ -17900,7 +17918,7 @@
 		</DefinitionCacheUserSetting>
 		<ScrollAndZoomSettingCache Envoy="1548" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
 			<ScrollAndZoomEditor EditorName="VIPanelControl" ScrollHorizontalOffset="192.633544921875" ScrollVerticalOffset="63" Zoom="1" />
-			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-282.22222900390625" ScrollVerticalOffset="227" Zoom="0.9" />
+			<ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-584.4444580078125" ScrollVerticalOffset="227" Zoom="0.9" />
 		</ScrollAndZoomSettingCache>
 	</UserSettingsDefinition>
 	<UserSettingsDefinition Envoy="1554" Name=":PC:Interactive:NI:Analysis:SpecialFunc:GCD\.gvi" xmlns="http://www.ni.com/PlatformFramework">
@@ -19513,8 +19531,8 @@
 			</SharedLibraryEntryPointSignatureCache>
 		</DefinitionCacheUserSetting>
 	</UserSettingsDefinition>
-	<UserSettingsDefinition Envoy="1601" Name=":PC:Interactive:NI:Analysis:LinearAlgebra:AAL\ Linear\ Algebra\.sli:MatrixMul_head">
-		<DefinitionCacheUserSetting Envoy="1601" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
+	<UserSettingsDefinition Envoy="1601" Name=":PC:Interactive:NI:Analysis:LinearAlgebra:AAL\ Linear\ Algebra\.sli:MatrixMul_head" xmlns="http://www.ni.com/PlatformFramework">
+		<DefinitionCacheUserSetting Envoy="1601" Target="Envoy">
 			<SharedLibraryEntryPointSignatureCache CacheSignature="1D1D2545F3F0EAD" Height="60" IsReentrant="True" ListViewHeight="185" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/ExtCodeInterface">
 				<p.IconModel>
 					<MergeScript xmlns="http://www.ni.com/PlatformFramework">
@@ -24064,16 +24082,16 @@
 						</MergeItem>
 					</MergeScript>
 				</p.IconModel>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Boolean" HotSpot="25 50" ListViewHotSpot="0 35" LocalizedNameKey="Restart_2000Averaging_DataItem_Name" Name="Restart Averaging" PreferredDirection="Input" SideIndex="B1">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" CallUsage="Recommended" DataType="Boolean" HotSpot="25 50" ListViewHotSpot="0 35" LocalizedNameKey="Restart_2000Averaging_DataItem_Name" Name="Restart Averaging" PreferredDirection="Input" SideIndex="B1" UnitAnnotation="">
 					<p.DefaultValue>False</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="@2aa401105c6f42168b4a9c141e07f38a" HotSpot="15 50" ListViewHotSpot="0 50" LocalizedNameKey="Frame_2000Parameters_DataItem_Name" Name="Frame Parameters" PreferredDirection="Input" SideIndex="B0">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" CallUsage="Recommended" DataType="@2aa401105c6f42168b4a9c141e07f38a" HotSpot="15 50" ListViewHotSpot="0 50" LocalizedNameKey="Frame_2000Parameters_DataItem_Name" Name="Frame Parameters" PreferredDirection="Input" SideIndex="B0" UnitAnnotation="">
 					<p.DefaultValue>0x0_0_0_0x0_0x0_0x0_0_</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="@f94937c7b7fc4299b96164725f4188c0" HotSpot="25 0" ListViewHotSpot="0 65" LocalizedNameKey="Averaging_2000Parameters_DataItem_Name" Name="Averaging Parameters" PreferredDirection="Input" SideIndex="T1">
+				<DataItemCacheInfo CallDirection="Input" CallIndex="2" CallUsage="Recommended" DataType="@f94937c7b7fc4299b96164725f4188c0" HotSpot="25 0" ListViewHotSpot="0 65" LocalizedNameKey="Averaging_2000Parameters_DataItem_Name" Name="Averaging Parameters" PreferredDirection="Input" SideIndex="T1" UnitAnnotation="">
 					<p.DefaultValue>0_1_10_</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo CallDirection="Input" CallIndex="3" CallUsage="Recommended" DataType="Error" HotSpot="0 25" ListViewHotSpot="0 80" LocalizedNameKey="error_2000in_DataItem_Name" Name="error in" PreferredDirection="Input" SideIndex="L2">
+				<DataItemCacheInfo CallDirection="Input" CallIndex="3" CallUsage="Recommended" DataType="Error" HotSpot="0 25" ListViewHotSpot="0 80" LocalizedNameKey="error_2000in_DataItem_Name" Name="error in" PreferredDirection="Input" SideIndex="L2" UnitAnnotation="">
 					<p.DefaultValue>
 						<Cluster>
 							<Field1>False</Field1>
@@ -24082,15 +24100,15 @@
 						</Cluster>
 					</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo CallDirection="Input" CallIndex="4" CallUsage="Recommended" DataType="ComplexDouble[]" HotSpot="0 5" ListViewHotSpot="0 95" LocalizedNameKey="Input_2000Baseband_2000IQ_DataItem_Name" Name="Input Baseband IQ" PreferredDirection="Input" SideIndex="L0">
+				<DataItemCacheInfo CallDirection="Input" CallIndex="4" CallUsage="Recommended" DataType="ComplexDouble[]" HotSpot="0 5" ListViewHotSpot="0 95" LocalizedNameKey="Input_2000Baseband_2000IQ_DataItem_Name" Name="Input Baseband IQ" PreferredDirection="Input" SideIndex="L0" UnitAnnotation="">
 					<p.DefaultValue>
 						<Array Lengths="0" />
 					</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo CallDirection="Input" CallIndex="5" CallUsage="Recommended" DataType="@aa606820ff8d4da3b651f0182bc33b06" HotSpot="0 35" ListViewHotSpot="0 110" LocalizedNameKey="Window_2000Parameters_DataItem_Name" Name="Window Parameters" PreferredDirection="Input" SideIndex="L3">
+				<DataItemCacheInfo CallDirection="Input" CallIndex="5" CallUsage="Recommended" DataType="@aa606820ff8d4da3b651f0182bc33b06" HotSpot="0 35" ListViewHotSpot="0 110" LocalizedNameKey="Window_2000Parameters_DataItem_Name" Name="Window Parameters" PreferredDirection="Input" SideIndex="L3" UnitAnnotation="">
 					<p.DefaultValue>0_0xFFF8000000000000_</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" CallUsage="Recommended" DataType="@a8106957b9c74a119f0e3cfccf03e781" HotSpot="50 5" ListViewHotSpot="150 125" LocalizedNameKey="Power_2000Spectrum_2000averaged_2000Subset_DataItem_Name" Name="Power Spectrum averaged Subset" PreferredDirection="Output" SideIndex="R0">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" CallUsage="Recommended" DataType="@a8106957b9c74a119f0e3cfccf03e781" HotSpot="50 5" ListViewHotSpot="150 125" LocalizedNameKey="Power_2000Spectrum_2000averaged_2000Subset_DataItem_Name" Name="Power Spectrum averaged Subset" PreferredDirection="Output" SideIndex="R0" UnitAnnotation="">
 					<p.DefaultValue>
 						<Cluster>
 							<Field1>0x0</Field1>
@@ -24099,10 +24117,10 @@
 						</Cluster>
 					</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" CallUsage="Recommended" DataType="@4484fb0b04a843d9a1521b2b33826f6d" HotSpot="50 35" ListViewHotSpot="150 140" LocalizedNameKey="Window_2000Properties_DataItem_Name" Name="Window Properties" PreferredDirection="Output" SideIndex="R3">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" CallUsage="Recommended" DataType="@4484fb0b04a843d9a1521b2b33826f6d" HotSpot="50 35" ListViewHotSpot="150 140" LocalizedNameKey="Window_2000Properties_DataItem_Name" Name="Window Properties" PreferredDirection="Output" SideIndex="R3" UnitAnnotation="">
 					<p.DefaultValue>0x0_0x0_</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo CallDirection="Output" CallIndex="2" CallUsage="Recommended" DataType="Error" HotSpot="50 45" ListViewHotSpot="150 155" LocalizedNameKey="error_2000out_DataItem_Name" Name="error out" PreferredDirection="Output" SideIndex="R4">
+				<DataItemCacheInfo CallDirection="Output" CallIndex="2" CallUsage="Recommended" DataType="Error" HotSpot="50 45" ListViewHotSpot="150 155" LocalizedNameKey="error_2000out_DataItem_Name" Name="error out" PreferredDirection="Output" SideIndex="R4" UnitAnnotation="">
 					<p.DefaultValue>
 						<Cluster>
 							<Field1>False</Field1>
@@ -24111,10 +24129,10 @@
 						</Cluster>
 					</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="3" CallUsage="Recommended" DataType="@2aa401105c6f42168b4a9c141e07f38a" HotSpot="50 15" ListViewHotSpot="150 170" LocalizedNameKey="Frame_2000Parameters_2000Out_DataItem_Name" Name="Frame Parameters Out" PreferredDirection="Output" SideIndex="R1">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="3" CallUsage="Recommended" DataType="@2aa401105c6f42168b4a9c141e07f38a" HotSpot="50 15" ListViewHotSpot="150 170" LocalizedNameKey="Frame_2000Parameters_2000Out_DataItem_Name" Name="Frame Parameters Out" PreferredDirection="Output" SideIndex="R1" UnitAnnotation="">
 					<p.DefaultValue>0x0_0_0_0x0_0x0_0x0_0_</p.DefaultValue>
 				</DataItemCacheInfo>
-				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="4" CallUsage="Recommended" DataType="@e99e87e4c574400a846af5e70b5108af" HotSpot="50 25" ListViewHotSpot="150 185" LocalizedNameKey="power_2000spectrum_2000current_DataItem_Name" Name="power spectrum current" PreferredDirection="Output" SideIndex="R2">
+				<DataItemCacheInfo AdaptToDiagramType="True" CallDirection="Output" CallIndex="4" CallUsage="Recommended" DataType="@e99e87e4c574400a846af5e70b5108af" HotSpot="50 25" ListViewHotSpot="150 185" LocalizedNameKey="power_2000spectrum_2000current_DataItem_Name" Name="power spectrum current" PreferredDirection="Output" SideIndex="R2" UnitAnnotation="">
 					<p.DefaultValue>
 						<Cluster>
 							<Field1>0x0</Field1>
@@ -24127,6 +24145,7 @@
 				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="127,146" TargetName="Error\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency ExportedSignature="0" SourceId="155" TargetName="NI:Analysis:Measurement:Averaging\ Parameters\.gtype:ControlDefinition" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedMethodCallDependency ExportedSignature="919458613" SourceId="21" TargetName="NI:Analysis:Windows:Window\ Properties\ by\ Name\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+				<CachedMethodCallDependency ExportedSignature="1623009909" SourceId="233" TargetName="\(Edited\)\ Power\ Spectrum\ for\ 1\ Chan\ \(CDB\)\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
 				<CachedTypeDefinitionDependency ExportedSignature="-145461510" SourceId="79" TargetName="NI:Analysis:Windows:windowTd\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency ExportedSignature="694443715" SourceId="81,84" TargetName="Error\.gtype" xmlns="http://www.ni.com/PanelCommon" />
 				<CachedTypeDefinitionDependency ExportedSignature="1788535385" SourceId="86" TargetName="NI:Analysis:Measurement:Averaging\ Parameters\.gtype" xmlns="http://www.ni.com/PanelCommon" />
@@ -27008,6 +27027,9 @@
 				</DataType>
 			</Enumeration>
 		</p.TypeReference>
+		<p.TypeReference TypeId="e29b9e0d06ca4874a247b8e0c713845e">
+			<Typedef TypedefName="Signal Data.gtype" UnderlyingType="@8abb9df5900e4475acd6c473f3c17ba3" />
+		</p.TypeReference>
 		<p.TypeReference TypeId="1b4705fb337c41c9ac1c1aca79d9f11e">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
@@ -27093,6 +27115,39 @@
 					</Field>
 					<Field FieldAccessPolicy="ReadWrite" Name="Num. peaks detected" DataType="Int32" />
 					<Field FieldAccessPolicy="ReadWrite" Name="Num. in queue" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="66b22b51471844b28de51e39bcba9918">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="fc">
+						<DataType>
+							<VariableArray DereferenceType="Double" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="df" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="B" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Trigger Save?" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8abb9df5900e4475acd6c473f3c17ba3">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="fc">
+						<DataType>
+							<VariableArray DereferenceType="Double" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="df" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="B" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Trigger Save?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="current time">
+						<DataType>
+							<Composite Id="2" Name="Timestamp" GenericTypeDefinition="Void" BaseType="Void" />
+						</DataType>
+					</Field>
 				</Members>
 			</Composite>
 		</p.TypeReference>
@@ -28178,42 +28233,6 @@
 					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
 				</AttributeValues>
 			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="66b22b51471844b28de51e39bcba9918">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="fc">
-						<DataType>
-							<VariableArray DereferenceType="Double" />
-						</DataType>
-					</Field>
-					<Field FieldAccessPolicy="ReadWrite" Name="df" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="B" DataType="UInt32" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Trigger Save?" DataType="Boolean" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="e29b9e0d06ca4874a247b8e0c713845e">
-			<Typedef TypedefName="Signal Data.gtype" UnderlyingType="@8abb9df5900e4475acd6c473f3c17ba3" />
-		</p.TypeReference>
-		<p.TypeReference TypeId="8abb9df5900e4475acd6c473f3c17ba3">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="fc">
-						<DataType>
-							<VariableArray DereferenceType="Double" />
-						</DataType>
-					</Field>
-					<Field FieldAccessPolicy="ReadWrite" Name="df" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="B" DataType="UInt32" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Trigger Save?" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="current time">
-						<DataType>
-							<Composite Id="2" Name="Timestamp" GenericTypeDefinition="Void" BaseType="Void" />
-						</DataType>
-					</Field>
-				</Members>
-			</Composite>
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 </SourceFile>
