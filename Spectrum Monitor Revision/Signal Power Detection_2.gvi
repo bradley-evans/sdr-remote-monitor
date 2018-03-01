@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F1E2E1E342908EE17162B8660A24A7C2" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="88873B9B34E6494386437F94619214B0" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -118,17 +118,17 @@
 			<DataAccessor Bounds="-35 860 40 15" DataItem="65" Id="63" Label="64" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@5d9dcb9b138d4fa98e430ff524105580" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="63" Bounds="-131 860 91 14" Id="64" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="63" Bounds="-35 843 91 14" Id="64" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Power Spectrum</p.Text>
 			</NodeLabel>
 			<Wire Id="74" Joints="N(63:Value) N(19:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="1090 1100 40 15" DataItem="80" Id="84" Label="85" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="1120 1060 40 15" DataItem="80" Id="84" Label="85" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="84" Bounds="1135 1100 31 14" Id="85" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="84" Bounds="1165 1060 31 14" Id="85" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>count</p.Text>
 			</NodeLabel>
-			<Wire Id="86" Joints="N(15:R1) h(10) v(40) N(84:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="86" Joints="N(15:R1) N(84:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ForLoop Bounds="468 758 590 220" DiagramId="91" Id="90">
 				<LoopIteration Bounds="15 180 15 15" Id="93" />
 				<ArraySubset Bounds="290 75 40 40" Id="187" Terminals="array=193, subarray=198, index0=277, length0=301" />
@@ -154,7 +154,7 @@
 					<p.Point>65 140</p.Point>
 					<p.Text>ind(i++)</p.Text>
 				</WireComment>
-				<Comment Bounds="10 30 178.666672 15" Id="309" xmlns="http://www.ni.com/MocCommon">
+				<Comment Bounds="10 30 179 15" Id="309" xmlns="http://www.ni.com/MocCommon">
 					<p.Text>Finding peak above threshold</p.Text>
 				</Comment>
 				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="92" Terminals="90=302, 91" />
@@ -191,12 +191,6 @@
 			<Wire Id="208" Joints="N(257:o0) v(-73) B(1) N(310:x) B(1) v(-45) N(206:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="209" Joints="N(206:o) h(5) v(-20) N(122:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="263" Joints="N(122:o) N(159:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="300 1070 290 28" Id="264" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>"Returns first index of a peak above threshold,\r\nbut doesn't return the index of max in the group."</p.Text>
-			</Comment>
-			<Comment Bounds="35 1110 202 28" Id="267" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>"Adjust parameter for signal width\r\ndesired above threshold. "</p.Text>
-			</Comment>
 			<Wire Id="280" Joints="N(17:Out) N(15:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Rotate1DArray Bounds="405 895 40 30" Id="281" />
 			<Literal Bounds="355 945 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="282" Label="283" xmlns="http://www.ni.com/MocCommon">
@@ -214,7 +208,7 @@
 			<Wire Id="302" Joints="N(95:size(s\)) N(92:90)" xmlns="http://www.ni.com/PlatformFramework" />
 			<ArraySize Bounds="275 915 40 20" Id="303" />
 			<Wire Id="305" Joints="N(303:size(s\)) N(289:c0new)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Comment Bounds="330 970 98.6666641 28" Id="308" xmlns="http://www.ni.com/MocCommon">
+			<Comment Bounds="330 970 99 28" Id="308" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"last ind(i++)\r\n= end ind of iq"</p.Text>
 			</Comment>
 			<QuotientAndRemainder Bounds="990 675 30 30" Id="310" />
