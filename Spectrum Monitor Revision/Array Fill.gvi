@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="411C2754C866A748EB71602E3BE38C48" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B845E0C872DEEF0CD0A0D6FFBCC25A28" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -77,9 +77,8 @@
 				<CaseStructure.Case Bounds="5 5 725 420" Id="327" Pattern="True">
 					<ForLoop Bounds="93 78 600 310" DiagramId="44" Id="43">
 						<LoopIteration Bounds="5 280 15 15" Id="46" />
-						<CaseStructure Bounds="215 25 350 170" Default="55" Id="54" Selected="55" UserSelectorBounds="131 0 88 17">
+						<CaseStructure Bounds="215 25 350 170" Default="55" Id="54" Selected="56" UserSelectorBounds="131 0 88 17">
 							<CaseStructure.Case Bounds="5 5 340 160" Id="55" Pattern="False">
-								<Wire Id="1206" Joints="N(1205:55) h(317) v(-70) N(147:55)" xmlns="http://www.ni.com/PlatformFramework" />
 								<ArrayLiteral Bounds="95 50 101 44" DataType="Double[]" Facade="NationalInstruments.MocCommon.SourceModel.IArrayBehavior" Id="1255" xmlns="http://www.ni.com/MocCommon">
 									<p.Data>null</p.Data>
 									<ArrayBehavior ElementType="Double" VisibleRows="2">
@@ -90,7 +89,8 @@
 										<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 									</Literal>
 								</ArrayLiteral>
-								<Wire Id="1257" Joints="N(1255:Out) h(5) v(-35) N(1241:55)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="1257" Joints="N(1255:Out) h(135) v(-35) N(1241:55)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="1269" Joints="N(1201:55) h(306) v(20) N(147:55)" xmlns="http://www.ni.com/PlatformFramework" />
 							</CaseStructure.Case>
 							<CaseStructure.Case Bounds="5 5 340 160" Id="56" Pattern="True">
 								<BuildArray Bounds="155 60 40 20" CanToggle="False" Id="213" Terminals="outArray=1240, c0t0v=1198, c1t0v=220" VerticalChunkCount="2" />
@@ -102,21 +102,21 @@
 							</CaseStructure.Case>
 							<CaseStructure.Selector Bounds="-4 65 13 10" Docking="Left" Id="57" Terminals="54=73, 55, 56" />
 							<CaseStructure.Tunnel Bounds="-4 155 13 10" Docking="Left" Id="142" Terminals="54=141, 55, 56=1195" />
-							<CaseStructure.Tunnel Bounds="341 40 13 10" Docking="Right" Id="147" Terminals="54=1239, 55=1206, 56=1198" />
-							<CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="1201" Terminals="54=1196, 55, 56=1198" />
-							<CaseStructure.Tunnel Bounds="-4 110 13 10" Docking="Left" Id="1205" Terminals="54=1200, 55=1206, 56" />
+							<CaseStructure.Tunnel Bounds="341 40 13 10" Docking="Right" Id="147" Terminals="54=1239, 55=1269, 56=1198" />
+							<CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="1201" Terminals="54=1196, 55=1269, 56=1198" />
+							<CaseStructure.Tunnel Bounds="-4 110 13 10" Docking="Left" Id="1205" Terminals="54=1200, 55, 56" />
 							<CaseStructure.Tunnel Bounds="341 20 13 10" Docking="Right" Id="1241" Terminals="54=1250, 55=1257, 56=1240" />
 						</CaseStructure>
 						<IsGreater Bounds="145 80 30 30" Id="72" />
 						<Wire Id="73" Joints="N(72:x &gt; y?) h(25) B(1) N(57:54) B(1) v(-90) h(383) v(45) N(1251:condition)" xmlns="http://www.ni.com/PlatformFramework" />
 						<AbsoluteValue Bounds="80 55 30 30" Id="78" />
 						<Wire Id="79" Joints="N(78:abs(x\)) h(5) v(15) N(72:x)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Literal Bounds="90 95 49 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="82" Label="83" xmlns="http://www.ni.com/MocCommon">
-							<p.Data>0x41024F8000000000</p.Data>
+						<Literal Bounds="97 95 42 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="82" Label="83" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>0x40F24F8000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LVSI:G6" />
 						</Literal>
 						<Wire Id="84" Joints="N(82:Out) N(72:y)" xmlns="http://www.ni.com/PlatformFramework" />
-						<NodeLabel AttachedTo="82" Bounds="90 95 0 0" Id="83" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<NodeLabel AttachedTo="82" Bounds="97 95 0 0" Id="83" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>y</p.Text>
 						</NodeLabel>
 						<Wire Id="141" Joints="N(52:i0) h(194) v(-10) N(142:54)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -126,6 +126,19 @@
 						<Wire Id="1200" Joints="N(71:i0) h(5) v(5) h(19) B(3) N(151:y) B(3) v(65) N(1205:54)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1239" Joints="N(147:54) N(70:44)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1250" Joints="N(1241:54) h(6) v(-10) N(1251:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+						<WireComment AttachedTo="1196" Bounds="30 42 40 16" Id="1271" xmlns="http://www.ni.com/PlatformFramework">
+							<p.ExpandedWidth>40</p.ExpandedWidth>
+							<p.Point>50 50</p.Point>
+							<p.Text>top</p.Text>
+						</WireComment>
+						<WireComment AttachedTo="1200" Bounds="-1 119 62 16" Id="1272" xmlns="http://www.ni.com/PlatformFramework">
+							<p.ExpandedWidth>62</p.ExpandedWidth>
+							<p.Point>30 127</p.Point>
+							<p.Text>bottom</p.Text>
+						</WireComment>
+						<Comment Bounds="120 250 440 28" Id="1274" xmlns="http://www.ni.com/MocCommon">
+							<p.Text>"Top is always feed to bottom. Top and index should always correspond when\r\nwriting to 2D. "</p.Text>
+						</Comment>
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="45" Terminals="43, 44" />
 						<LoopTunnel AutoIndex="True" Bounds="-5 192 13 10" Docking="Left" Id="52" Terminals="o0=1191, i0=141" TunnelMode="0" />
 						<LoopTunnel AutoIndex="True" Bounds="-5 57 13 10" Docking="Left" Id="67" Terminals="o0=1189, i0=1196" TunnelMode="0" />
