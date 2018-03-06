@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B845E0C872DEEF0CD0A0D6FFBCC25A28" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1266F6046B7241632E563C5E39B5ABEE" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -111,12 +111,12 @@
 						<Wire Id="73" Joints="N(72:x &gt; y?) h(25) B(1) N(57:54) B(1) v(-90) h(383) v(45) N(1251:condition)" xmlns="http://www.ni.com/PlatformFramework" />
 						<AbsoluteValue Bounds="80 55 30 30" Id="78" />
 						<Wire Id="79" Joints="N(78:abs(x\)) h(5) v(15) N(72:x)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Literal Bounds="97 95 42 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="82" Label="83" xmlns="http://www.ni.com/MocCommon">
-							<p.Data>0x40F24F8000000000</p.Data>
+						<Literal Bounds="90 95 49 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="82" Label="83" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>0x410E848000000000</p.Data>
 							<NumericBehavior Interpretation="Exact" ValueFormatter="LVSI:G6" />
 						</Literal>
 						<Wire Id="84" Joints="N(82:Out) N(72:y)" xmlns="http://www.ni.com/PlatformFramework" />
-						<NodeLabel AttachedTo="82" Bounds="97 95 0 0" Id="83" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<NodeLabel AttachedTo="82" Bounds="90 95 0 0" Id="83" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>y</p.Text>
 						</NodeLabel>
 						<Wire Id="141" Joints="N(52:i0) h(194) v(-10) N(142:54)" xmlns="http://www.ni.com/PlatformFramework" />
