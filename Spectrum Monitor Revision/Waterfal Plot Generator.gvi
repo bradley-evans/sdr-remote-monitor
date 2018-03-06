@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="CAA18214B0F1B377023487A0D28D3BBB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="4561774AF0EE70335B605C9F037889E2" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -147,15 +147,15 @@
 				<p.Text>Compress?</p.Text>
 			</NodeLabel>
 			<Wire Id="127" Joints="N(112:Value) h(25) v(10) N(146:1)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="141" Joints="N(146:2) N(15:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<MathNode Bounds="1635 -65 375 285" DocumentText="&quot;if Compress\r\n    reduction_factor = 5; \r\n    len = floor(length(vec0)/reduction_factor); \r\n    vec1 = zeros(1,len);\r\n    for ii = 1:len\r\n        jj = ii*5-2;\r\n        vec1(ii) = mean(vec0(jj-2:jj+2));\r\n    end\r\nelse\r\n    vec1 = vec0;\r\n    len = length(vec1);\r\nend&quot;" Id="146" OutliningMode="Manual" xmlns="http://www.ni.com/MScript">
-				<MVariable Bounds="-65 45 85 15" DataType="Boolean" Direction="Input" Facade="" Hotspot="-65 50" Id="1" Name="Compress" Usage="Required" />
-				<MVariable Bounds="355 245 60 15" DataType="Double[]" Direction="Output" Facade="" Hotspot="415 250" Id="2" Name="vec1" Usage="Optional" />
-				<MVariable Bounds="-35 65 55 15" DataType="Double[]" Direction="Input" Facade="" Hotspot="-35 70" Id="3" Name="vec0" Usage="Required" />
-				<MVariable Bounds="355 115 50 15" DataType="Double" Direction="Output" Facade="" Hotspot="405 120" Id="4" Name="len" Usage="Optional" />
+			<Wire Id="141" Joints="N(146:2) h(5) v(90) N(15:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MathNode Bounds="1635 -65 385 180" DocumentText="&quot;vec1 = vec0;\r\nif Compress\r\n    rf= 5; %reduction factor \r\n    len = floor(length(vec0)/rf); \r\n    vec1 = reshape(vec1(1:len*rf),rf,len);\r\n    vec1 = mean(vec1,1)\r\nelse\r\n    len = length(vec1);\r\nend&quot;" Id="146" OutliningMode="Manual" xmlns="http://www.ni.com/MScript">
+				<MVariable Bounds="-65 45 85 15" DataType="Boolean" Direction="Input" Hotspot="-65 50" Id="1" Name="Compress" Usage="Required" />
+				<MVariable Bounds="365 155 60 15" DataType="Double[]" Direction="Output" Hotspot="425 160" Id="2" Name="vec1" Usage="Optional" />
+				<MVariable Bounds="-35 65 55 15" DataType="Double[]" Direction="Input" Hotspot="-35 70" Id="3" Name="vec0" Usage="Required" />
+				<MVariable Bounds="365 115 50 15" DataType="Double" Direction="Output" Hotspot="415 120" Id="4" Name="len" Usage="Optional" />
 			</MathNode>
 			<Wire Id="150" Joints="N(98:c0t0v) h(113) v(-5) N(146:3)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="155" Joints="N(146:4) h(20) v(-15) N(22:17)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="155" Joints="N(146:4) h(15) v(-15) N(22:17)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem CallDirection="Input" CallIndex="2" DataType="Int32" Id="58" Name="Waterfall History Length" xmlns="http://www.ni.com/MocCommon">

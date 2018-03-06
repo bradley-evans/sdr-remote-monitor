@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1DCAE9026AD65D1F21CABD968C451E5C" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1006E470A5630947B48B1634DE293234" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -191,6 +191,14 @@
 				<p.Text>error cleared?</p.Text>
 			</NodeLabel>
 			<Wire Id="252" Joints="N(233:R1) h(40) v(30) N(250:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="755 285 39.5 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="253" Label="254" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x3FF0000000000000</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="253" Bounds="755 285 0 0" Id="254" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>timeout</p.Text>
+			</NodeLabel>
+			<Wire Id="255" Joints="N(253:Out) N(139:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="247" IsReadOnly="[bool]True" Label="[UIModel]248" Left="[float]343" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]240" TrueContent="[string]On" Value="{DataItemBinding Id=246}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
