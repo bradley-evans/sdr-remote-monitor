@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="9BCE841AB84211711C25B161F3371470" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CA811F1AD30CAF84E8A21CCF917F0E5B" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -61,9 +61,9 @@
 				<p4:Label Height="[float]16" Id="36" LabelOwner="[UIModel]33" Left="[float]5" Text="[string]Indices in sub-band?" Top="[float]118" Width="[float]110" />
 			</Cluster>
 			<Label Height="[float]16" Id="39" LabelOwner="[UIModel]30" Left="[float]0" Text="[string]Local Interests" Top="[float]23" Width="[float]76" xmlns="http://www.ni.com/PanelCommon" />
-			<ArrayViewer ArrayElement="[UIModel]66" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]2" Height="[float]52" Id="69" IndexVisibility="[Visibility]Visible" Left="[float]0" Name="[string]signals2D" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]23" Value="{DataItemBinding Id=63}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
-				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="66" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ArrayViewer ArrayElement="[UIModel]66" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]2" Height="[float]52" Id="69" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Left="[float]0" Name="[string]signals2D" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]23" Value="{DataItemBinding Id=63}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="66" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[short]1" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Int16" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4484fb0b04a843d9a1521b2b33826f6d" Height="[float]103" Id="112" Left="[float]0" Name="[string]Window Properties" Top="[float]23" Value="{DataItemBinding Id=111}" Width="[float]88" xmlns="http://www.ni.com/PanelCommon">
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="113" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]115" Left="[float]5" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=eq\ noise\ bw}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -122,15 +122,15 @@
 			<Label Height="[float]16" Id="302" LabelOwner="[UIModel]297" Left="[float]165" Text="[string]Display" Top="[float]159" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
-			<MathNode Bounds="325 95 540 275" DocumentText="&quot;B = uint32(round(500000/df));\r\nL_ind = length(ind);\r\nL_IQ = length(IQ_current);\r\nsignals2D = zeros(L_ind, 2*B+1);\r\nfc = zeros(1,L_ind);\r\nif indices_in_subband\r\n    for ii = 1:L_ind\r\n        if ind(ii) - B &lt; 0 || ind(ii) + B &gt; L_IQ\r\n            %error\r\n        else\r\n            signals2D(ii,:) = IQ_current(ind(ii) - B : ind(ii) + B);\r\n            fc(ii) = freq(ii);\r\n        end\r\n    end\r\nend&quot;" Id="15" OutliningMode="Manual" xmlns="http://www.ni.com/MScript">
-				<MVariable Bounds="-25 125 45 15" DataType="Double" Direction="Input" Facade="" Hotspot="-25 130" Id="1" Name="df" Usage="Required" />
-				<MVariable Bounds="-30 65 50 15" DataType="UInt32[]" Direction="Input" Facade="" Hotspot="-30 70" Id="2" Name="ind" Usage="Required" />
-				<MVariable Bounds="-70 140 90 15" DataType="Double[]" Direction="Input" Facade="" Hotspot="-70 145" Id="3" Name="IQ_current" Usage="Required" />
-				<MVariable Bounds="520 60 90 15" DataType="Double[,]" Direction="Output" Facade="" Hotspot="610 65" Id="4" Name="signals2D" Usage="Optional" />
-				<MVariable Bounds="-35 80 55 15" DataType="Double[]" Direction="Input" Facade="" Hotspot="-35 85" Id="6" Name="freq" Usage="Required" />
-				<MVariable Bounds="-120 95 140 15" DataType="Boolean" Direction="Input" Facade="" Hotspot="-120 100" Id="8" Name="indices_in_subband" Usage="Required" />
-				<MVariable Bounds="520 100 50 15" DataType="UInt32" Direction="Output" Hotspot="570 105" Id="9" Name="B" Usage="Optional" />
-				<MVariable Bounds="520 80 50 15" DataType="Double[]" Direction="Output" Facade="" Hotspot="570 85" Id="10" Name="fc" Usage="Optional" />
+			<MathNode Bounds="325 95 540 275" DocumentText="&quot;B = uint32(round(500000/df));\r\nL_ind = length(ind);\r\nL_IQ = length(IQ_current);\r\nsignals2D = -100*ones(L_ind, 2*B+1);\r\nfc = zeros(1,L_ind);\r\nif indices_in_subband\r\n    for ii = 1:L_ind\r\n        if ind(ii) - B &lt; 0 || ind(ii) + B &gt; L_IQ\r\n            %error\r\n        else\r\n            signals2D(ii,:) = IQ_current(ind(ii) - B : ind(ii) + B);\r\n            fc(ii) = freq(ii);\r\n        end\r\n    end\r\nend\r\nsignals2D = int16(signals2D);&quot;" Id="15" OutliningMode="Manual" xmlns="http://www.ni.com/MScript">
+				<MVariable Bounds="-25 125 45 15" DataType="Double" Direction="Input" Hotspot="-25 130" Id="1" Name="df" Usage="Required" />
+				<MVariable Bounds="-30 65 50 15" DataType="UInt32[]" Direction="Input" Hotspot="-30 70" Id="2" Name="ind" Usage="Required" />
+				<MVariable Bounds="-70 140 90 15" DataType="Int16[]" Direction="Input" Hotspot="-70 145" Id="3" Name="IQ_current" Usage="Required" />
+				<MVariable Bounds="520 60 90 15" DataType="Int16[,]" Direction="Output" Hotspot="610 65" Id="4" Name="signals2D" Usage="Optional" />
+				<MVariable Bounds="-35 80 55 15" DataType="Double[]" Direction="Input" Hotspot="-35 85" Id="6" Name="freq" Usage="Required" />
+				<MVariable Bounds="-120 95 140 15" DataType="Boolean" Direction="Input" Hotspot="-120 100" Id="8" Name="indices_in_subband" Usage="Required" />
+				<MVariable Bounds="520 100 50 15" DataType="UInt32" Direction="Output" Facade="" Hotspot="570 105" Id="9" Name="B" Usage="Optional" />
+				<MVariable Bounds="520 80 50 15" DataType="Double[]" Direction="Output" Hotspot="570 85" Id="10" Name="fc" Usage="Optional" />
 			</MathNode>
 			<DataAccessor Bounds="-45 115 40 15" DataItem="29" Id="27" Label="28" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@f2b82c0ffb914c6da8780c9771cd1824" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -158,7 +158,7 @@
 				<PropertyItemTerminal DataType="Double[]" Hotspot="93 30" Id="c2t0v" Path="magnitude" Usage="Optional" />
 			</PropertyNode>
 			<DataAccessor Bounds="955 155 40 15" DataItem="63" Id="68" Label="70" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Double[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int16[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="68" Bounds="1000 155 54 14" Id="70" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>signals2D</p.Text>
@@ -218,7 +218,9 @@
 				<p.Text>Display</p.Text>
 			</NodeLabel>
 			<Wire Id="306" Joints="N(304:Value) h(25) N(292:B0)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="307" Joints="N(59:c2t0v) N(15:3)" xmlns="http://www.ni.com/PlatformFramework" />
+			<ToWordInteger Bounds="95 240 30 10" Id="308" />
+			<Wire Id="309" Joints="N(308:16bit integer) h(123) v(-5) N(15:3)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="310" Joints="N(59:c2t0v) h(7) v(5) N(308:number)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@e99e87e4c574400a846af5e70b5108af" Height="[float]250" Id="50" Label="[UIModel]58" Left="[float]119" Top="[float]79" Value="{DataItemBinding Id=49}" Width="[float]283" xmlns="http://www.ni.com/PanelCommon">
@@ -255,7 +257,7 @@
 				</Cluster>
 			</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Double[,]" Id="63" Name="signals2D" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Int16[,]" Id="63" Name="signals2D" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="@4484fb0b04a843d9a1521b2b33826f6d" Id="111" Name="Window Properties" xmlns="http://www.ni.com/MocCommon">
